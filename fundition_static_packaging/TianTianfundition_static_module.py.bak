@@ -1,0 +1,104 @@
+from common_module_and_fuction.base_request import *
+from common_module_and_fuction.txt_io import *
+from common_module_and_fuction.adjust_string import adjust_string
+import datetime
+from time import sleep
+
+"""
+这是天天基金查询统计功能简化的函数
+
+参数1：filepath：文件路径（str）格式
+    基金数值为6位连续字符串，本函数自动切割
+
+返回值：
+    0： 总计基金个数int——len(fundition_yield)
+    1： 各个基金及信息dict——fundition_yield
+    2： 涨幅过1基金数量int——len(up_over_1point)
+    3： 涨幅过1基金dict——up_over_1point
+    4： 跌幅过1基金数量int——len(down_over_1point)
+    5： 跌幅过1基金dict——down_over_1point
+    6： 涨幅过2基金数量int——len(up_over_2point)
+    7： 涨幅过2基金dict——up_over_2point
+    8： 跌幅过2基金数量int——len(down_over_2point)
+    9： 跌幅过2基金dict——down_over_2point
+    10：增长基金数int——len(up_fund)
+    11：增长基金dict——up_fund
+    12：下降基金数int——len(down_fund)
+    13：下降基金dict——down_fund
+    14：涨跌数值平均度——average_veild
+
+"""
+def fundition_output(filepath):
+    rep = read_file_inline(filepath)
+
+    up_over_1point = []#涨幅过1的基金
+    down_over_1point = []#'跌幅过1的基金'
+    up_over_2point = []#'涨幅过2的基金
+    down_over_2point = []#'跌幅过2的基金
+    up_fund = []#涨基金
+    down_fund = []#跌基金
+    fundition_yield = []#基金收益
+    all_veild = []
+    sum_veild = 0
+    average_veild = 0
+
+    today_date = str(datetime.datetime.now().day)
+
+    if len(today_date)<2 :
+        today_date=str('0'+str(today_date))
+
+
+    for i in range(int(len(rep)/6)):
+        c=rep[i*6:i*6+6]
+        a = base_request('http://fundgz.1234567.com.cn/js/'+c+'.js?rt=1463558676006')
+
+
+        fund_name = adjust_string(a[a.find('name') + 7:a.find('jzrq') - 3],19,' ')  # 名称
+        fund_rate = a[a.find('gszzl') + 8:a.find('gztime') - 3]+'%' # 增长值
+        all_veild.append(a[a.find('gszzl') + 8:a.find('gztime') - 3])
+        fund_date = a[a.find('gztime')+17:a.find('"});')-6]  # 日期
+        sleep(0.5)
+
+        if fund_rate != '':
+            fund_rate = fund_rate.strip()
+            numbers=float(fund_rate[:len(fund_rate)-1])
+            if  numbers>= 2.0:
+                      up_over_2point.append(fund_name+'  '+fund_rate+'   '+c)
+            if numbers>= 1.0:
+                      up_over_1point.append(fund_name+'  '+fund_rate+'   '+c)
+            if numbers<= -1.0:
+                     down_over_1point.append(fund_name + '  ' + fund_rate+ '   ' + c)
+            if numbers<= -2.0:
+                    down_over_2point.append(fund_name + '  ' + fund_rate +'   ' + c)
+            if numbers > 0:
+                    up_fund.append(fund_name + '  ' + fund_rate +  '   ' + c)
+            if numbers < 0:
+                    down_fund.append(fund_name + '  ' + fund_rate +  '   ' + c)
+
+
+            if str(fund_date) == str(today_date):
+                day_or_yestoday='今日'
+            else:
+                day_or_yestoday='昨日'
+            fundition_yield.append(fund_name + ' '+day_or_yestoday+'估值收益率为： ' + adjust_string(fund_rate,7,' ') +'   ('+c+')')
+
+            ret0 = str(len(fundition_yield))
+            ret1 = fundition_yield
+            ret2 = str(len(up_over_1point))
+            ret3 = up_over_1point
+            ret4 = str(len(down_over_1point))
+            ret5 = down_over_1point
+            ret6 = str(len(up_over_2point))
+            ret7 = up_over_2point
+            ret8 = str(len(down_over_2point))
+            ret9 = down_over_2point
+            ret10 =str(len(up_fund))
+            ret11 =up_fund
+            ret12 =str(len(down_fund))
+            ret13 =down_fund
+
+    return ret0,ret1,ret2,ret3,ret4,ret5,ret6,ret7,ret8,ret9,ret10,ret11,ret12,ret13
+
+
+
+

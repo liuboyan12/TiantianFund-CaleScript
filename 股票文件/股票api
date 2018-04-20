@@ -1,0 +1,12 @@
+搜狐 API
+优点：JSON数据结果容易处理；获取速度快。
+
+缺点：每次只能获取100个节点的数据；API经常变动。
+
+方法1：http://q.stock.sohu.com/hisHq?code=[股票市场和代码]8&start=[开始日期]&end=[结束日期]&stat=1&order=D&period=d&callback=historySearchHandler&rt=jsonp
+
+返回结果：JSON；时间段内的100个数据节点。
+
+例如，http://q.stock.sohu.com/hisHq?code=cn_300228&start=20130930&end=20131231&stat=1&order=D&period=d&callback=historySearchHandler&rt=jsonp，返回30022股票20130930到20131231时间段内的日线数据。
+
+​
