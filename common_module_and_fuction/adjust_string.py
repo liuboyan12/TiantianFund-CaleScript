@@ -7,7 +7,7 @@
 # 如果需要截取11位就会在后面补一个filler
 """
 #裁剪函数传入字符串和裁切字符串长度（半角）
-def adjust_string(string,digit,filler):
+def adjust_string(string,digit=10,filler=' '):
     strings=str(string)
     p=all_digit(string)[0]
     if p>digit:
@@ -40,7 +40,7 @@ def fill_string(string,digit,filler):
     return  string
 
 #裁切字符串（传入字符串，位数-半角）
-def crop_string(string,digit,filler):
+def crop_string(string,digit=10,filler=' '):
          strs=''
          dig=digit
          for i in range(len(string)):

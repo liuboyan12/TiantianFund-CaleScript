@@ -6,6 +6,8 @@ from time import sleep
 """
 这是天天基金查询统计功能简化的函数
 
+\\匹配Daily_running是Daily_running的出导入py\\
+
 参数1：filepath：文件路径（str）格式
     基金数值为6位连续字符串，本函数自动切割
 
@@ -104,4 +106,4 @@ def single_fund_date(code):
     return a
 
 if __name__ == '__main__':
-    print(  )
+    print(single_fund_date('377240'))

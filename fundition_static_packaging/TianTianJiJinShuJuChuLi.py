@@ -125,8 +125,8 @@ def stock_propotion(fund_date):
 
 if __name__ == '__main__':
     funddate = singleness_fund_inquire('002001')
-    print
-    a =cut_stock_date(funddate)
-    stock_propotion(funddate)
-    print("a",a)
+    print(stock_propotion(funddate))
+    # a =cut_stock_date(funddate)
+    # stock_propotion(funddate)
+    # print("a",a)
 #目前问题在拿到的股票持仓数据跟得到的数据不一样
