@@ -7,7 +7,7 @@
 # 如果需要截取11位就会在后面补一个filler
 """
 #裁剪函数传入字符串和裁切字符串长度（半角）
-def adjust_string(string,digit=10,filler=' '):
+def adjust_string(string,digit,filler):
     strings=str(string)
     p=all_digit(string)[0]
     if p>digit:
@@ -32,7 +32,7 @@ def all_digit(string):
     return sum1,quanjiao,banjiao
 
 #填充字符串(传入字符串，位数-半角）
-def fill_string(string,digit,filler):
+def fill_string(string,digit=10,filler=' '):
     quanjiao=all_digit(string)[1]
     banjiao=all_digit(string)[2]
     digit=digit-quanjiao*2-banjiao
@@ -74,5 +74,5 @@ def find_and_cut(strings,cut_point1,cut_point2):
 
 #格式化字符串，去掉所有乱七八糟的东西
 def format_removeal(strings):
-    return_strings =strings.replace(" ","").replace("\t","").strip().replace('\n','').replace('\r','').replace('\f','')
+    return_strings =strings.replace(" ","").replace("\t","").strip().replace('\n','').replace('\r','').replace('\f','').replace('\0','')
     return return_strings

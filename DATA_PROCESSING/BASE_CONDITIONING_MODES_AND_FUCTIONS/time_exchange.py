@@ -57,8 +57,11 @@ def msUnix_2_datetime(msunixtime):
     time = datetime.datetime.fromtimestamp(msunixtime)
     return time
 
-def sUnix_2_datetime(msunixtime):
-    msunixtime = float(msunixtime)
-    time = datetime.datetime.fromtimestamp(msunixtime)
+def sUnix_2_datetime(sunixtime):
+    sunixtime = float(sunixtime)
+    time = datetime.datetime.fromtimestamp(sunixtime)
     return time
 
+if __name__ == '__main__':
+    a = datetime_2_sUnix(str_2_datetime('2018-03-02'))
+    print(type(a))
