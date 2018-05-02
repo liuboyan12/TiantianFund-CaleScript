@@ -54,10 +54,9 @@ def cut_stock_date(fund_date):  # 基金持仓股票代码
     a = find_and_cut(str(fund_date), 'var stockCodes=', '/*基金持仓债券代码*/')
     a = format_removeal(a)
     def Data_stockThrend(return_value):
-        return_value = return_value.replace(' ', '').replace('"', "").replace(';', '').replace('[', '').replace(';', '')
-        return_value = str(return_value)
-        target_list = [i for i in return_value.split(',')]
-        return target_list
+        return_value = return_value.replace(' ', '').replace('"', "'").replace(';', '').replace('[', '').replace(';', '')
+        return_value = eval('['+return_value)
+        return return_value
     a = Data_stockThrend(a)
     return a
 
@@ -71,6 +70,7 @@ def cut_bond_date(fund_date):  # 基金持仓债券代码
         return_value = return_value.replace(' ', '').replace('"', "").replace(';', '').replace('[', '').replace(']', '')
         target_list = [i for i in return_value.split(',')]
         return target_list
+
     a = Data_bondThrend(a)
     return a
 
@@ -83,9 +83,7 @@ def cut_trend_date(fund_date):  # 单位净值走势
     a = format_removeal(a)
     def Data_netWorthTrend(return_value):
         p = return_value.replace('},{"x":', '},')
-        p = p.replace('{"x":', '').replace(',"y"', ':{"y"').replace(']', '}').replace('[', "{'").replace('"',
-                                                                                                         "'").replace(
-            "},", "},'").replace(":{'y'", "':{'y'").replace(";", "")
+        p = p.replace('{"x":', '').replace(',"y"', ':{"y"').replace(']', '}').replace('[', "{'").replace('"',"'").replace("},", "},'").replace(":{'y'", "':{'y'").replace(";", "")
         p = eval(p)
         return p
     fund_date_result = Data_netWorthTrend(a)
@@ -104,7 +102,7 @@ def cut_Data_ACWorthTrend(fund_date):
         return_value = return_value.replace("}}", "}}}").replace(":", ":{'ACWorthTrend':").replace("},", "}},")
         return_value = return_value.replace("{{'", "{'").replace("}},", "},").replace(",{'", ",'").replace("}}}", "}}")
         return return_value
-    a = Data_ACWorthTrend(a)
+    a = eval(Data_ACWorthTrend(a))
     return a
 
 
@@ -132,23 +130,7 @@ def all_fundcode_2_list():
     return _list
 
 
-def stock_propotion(fund_date):
-    _string = format_removeal(fund_date)
-    _string = find_and_cut(_string, "/*资产配置*/", "/*业绩评价")
-
-    _string = find_and_cut(_string, '"股票占净比","type":null,"data":', ',"yAxis":0},{"name":"债券占净比",')
-    # print(a)
-    # a = Data_ACWorthTrend(a)
-    # return a
-    print(_string)
 
 if __name__ == '__main__':
-    # funddate = singleness_fund_inquire('002001')
-    # print(stock_propotion(funddate))
-    # # a =cut_stock_date(funddate)
-    # stock_propotion(funddate)
-    # print("a",a)
-#目前问题在拿到的股票持仓数据跟得到的数据不一样
-    a= singleness_fund_inquire('002001')
-    a=cut_stock_date(a)
-    print(a)
+
+    print()

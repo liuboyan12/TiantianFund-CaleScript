@@ -1,5 +1,5 @@
-from fundition_static_packaging.TianTianJiJinShuJuChuLi import *
-from common_module_and_fuction.time_exchange import *
+from PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import *
+from BASE_CONDITIONING_MODES_AND_FUCTIONS.time_exchange import *
 #均线计算函数
 #传入参数：_list:列，_days:所求的均线个数
 #例如传入值为['1','2','3','4','5'](_list),计算3位(_days)均线
@@ -31,12 +31,11 @@ def moving_average_calc(_list,_days):
 """\\天天基金日均线计算函数\\：传入值dict，传出值list"""
 def daily_line_calc(_dict,days):
     a = _dict
-    a=eval(cut_Data_ACWorthTrend(a))
+    _list = a.keys()
     ACWorthTrend_list = []
-    for key in a :
+    for key in _list :
         ACWorthTrend_list.append(a[key]['ACWorthTrend'])
     ACWorthTrend_daily_line = moving_average_calc(ACWorthTrend_list,days)
-
     return ACWorthTrend_daily_line,
 
 #     \\日均线——字典拼装函数\\
@@ -51,7 +50,7 @@ def daily_line_calc(_dict,days):
 """\\天天基金日均线——字典拼装函数\\"""
 def daily_line_dict_assembly_test(_dict,days):
     a = _dict
-    a=eval(cut_Data_ACWorthTrend(a))
+    # a=eval(cut_Data_ACWorthTrend(a))
     ACWorthTrend_list = []
     for key in a :
         ACWorthTrend_list.append(a[key]['ACWorthTrend'])
@@ -76,22 +75,10 @@ def daily_line_dict_assembly_test(_dict,days):
     return _string
 
 if __name__ == '__main__':
-    a = singleness_fund_inquire('180012')
-    """数据字典"""
-
-    """60日日均线计算"""
-    _string = eval(daily_line_dict_assembly_test(a,60))
-
-    """时间转换"""
-    unixtime = datetime_2_msUnix(str_2_datetime('2018-04-04'))
-
-    """取值-打印-比较"""
-    value = _string[str(unixtime)]
-    print('昨日60均线',value)
-    string2 = eval(cut_Data_ACWorthTrend(a))
-    value2 = string2[str(unixtime)]
-    print('昨日值',value2)
-
+    _dict = singleness_fund_inquire('002001')
+    _dict = cut_Data_ACWorthTrend(_dict)
+    a= daily_line_dict_assembly_test(_dict,3)
+    print(type(a),a)
 
 
 

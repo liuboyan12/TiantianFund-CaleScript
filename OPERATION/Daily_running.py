@@ -1,4 +1,4 @@
-from fundition_static_packaging.TianTianfundition_static_module import fund_static_main
+from PERSONAL_PACKAGING_MODES_AND_FUCTIONS.TianTianfundition_static_module import fund_static_main
 import datetime
 import os
 import time
