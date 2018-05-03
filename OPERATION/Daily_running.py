@@ -1,11 +1,13 @@
-from PERSONAL_PACKAGING_MODES_AND_FUCTIONS.TianTianfundition_static_module import fund_static_main
+from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.TianTianfundition_static_module import fund_static_main
 import datetime
 import os
 import time
 
-filepath = ['d:\\Python_Lib_local\基金计算\基金文件\个人基金.txt',\
-            'd:\\Python_Lib_local\基金计算\基金文件\媳妇基金.txt', \
-            'd:\\Python_Lib_local\基金计算\基金文件\关注基金列表.txt']
+
+# pwd = os.getcwd()
+# filepath = ['d:\\Python_Lib_local\基金计算\基金文件\个人基金.txt',\
+#             'd:\\Python_Lib_local\基金计算\基金文件\媳妇基金.txt', \
+#             'd:\\Python_Lib_local\基金计算\基金文件\关注基金列表.txt']
 
 def daily_ruuning(filepath):
     for i in filepath:
@@ -59,6 +61,10 @@ def daily_ruuning(filepath):
 stop_while_code = 1
 plus_plus = 0
 if __name__ == '__main__':
+    pwd = os.getcwd()
+    pwd =pwd.replace(":\\",':\\\\')
+    filepath = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件'
+
     while(stop_while_code == 1):
         try:
             daily_ruuning(filepath)

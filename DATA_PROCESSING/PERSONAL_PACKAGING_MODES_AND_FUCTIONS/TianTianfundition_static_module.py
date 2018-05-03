@@ -1,6 +1,6 @@
-from BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import *
-from BASE_CONDITIONING_MODES_AND_FUCTIONS.txt_io import *
-from BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import adjust_string
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import *
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.txt_io import *
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import adjust_string
 from time import sleep
 
 """
