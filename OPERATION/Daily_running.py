@@ -4,11 +4,6 @@ import os
 import time
 
 
-# pwd = os.getcwd()
-# filepath = ['d:\\Python_Lib_local\基金计算\基金文件\个人基金.txt',\
-#             'd:\\Python_Lib_local\基金计算\基金文件\媳妇基金.txt', \
-#             'd:\\Python_Lib_local\基金计算\基金文件\关注基金列表.txt']
-
 def daily_ruuning(filepath):
     for i in filepath:
         filepath_use = i
@@ -63,7 +58,10 @@ plus_plus = 0
 if __name__ == '__main__':
     pwd = os.getcwd()
     pwd =pwd.replace(":\\",':\\\\')
-    filepath = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件'
+    filepath_all = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\\'
+    # print(filepath)
+    filename = ['个人基金.txt','关注基金列表.txt','媳妇基金.txt']
+    filepath = [filepath_all+filename[0],filepath_all+filename[1],filepath_all+filename[2]]
 
     while(stop_while_code == 1):
         try:

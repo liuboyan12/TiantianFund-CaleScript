@@ -7,8 +7,8 @@ http://fund.eastmoney.com/pingzhongdata/[基金代号].js?v=20160518155842
 [所有基金名称列表代码：]
 http://fund.eastmoney.com/js/fundcode_search.js
 """
-from BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import base_request
-from BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import *
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import base_request
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import *
 
 # 数据传入封装
 def singleness_fund_inquire(fund_code_inquire):
