@@ -37,31 +37,36 @@ def chongfudu_hanshu(fundcode_list):
                 _dict[i]=_dict[i]+1
     return _dict
 
+def ChongFuDuQuanZhong(_list=[],_dict={}):
+    for i in _list:
+        ifcode = _dict.get(i)
+        _string = ''
+        if ifcode == None:
+            _string ="{'"+i+"':1}"
+            ready_dict = eval(_string)
+            _dict.update(ready_dict)
+            # print(ready_dict,type(ready_dict))
+        else:
+            _dict[i]=_dict[i]+1
+    return _dict
+
+
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.txt_io import *
-from os import *
+import os
 if __name__ == '__main__':
-    # os.getcwd()
-    filepath = ["D:\\github\TiantianFund-CaleScript\INFORMATION_AND_ATTACHMENT\基金文件\个人基金.txt",'D:\\github\TiantianFund-CaleScript\INFORMATION_AND_ATTACHMENT\基金文件\媳妇基金.txt']
+
+    pwd = os.getcwd()
+    pwd = pwd.replace(":\\", ':\\\\')
+    filepath_all = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\\'
+    filename=['个人基金.txt','媳妇基金.txt']
+    filepath = [filepath_all + filename[0], filepath_all + filename[1]]
     rfi_list = []
     for file_i in filepath:
         rfi = read_file_inline(file_i)
         for i in range(int(len(rfi)/6)):
-            result = rfi[i:i+6]
+            result = rfi[i*6:i*6+6]
             rfi_list.append(result)
-    print(rfi_list)
-    _dict_string = ''
-    for i in rfi_list:
-        _dict_string = _dict_string + str(i)
-    _dict_result_for_part_1 = eval('{' + _dict_string + '}')
-    _dict = {}
-    _list = []
-    print(type(_dict))
-    for value_list in _dict_result_for_part_1.values():
-        for i in value_list:
-            get_value = _dict.get(i)
-            if get_value == None:
-                wait_add = eval("{'"+str(i)+"':1}")
-                _dict.update(wait_add)
-            else :
-                _dict[i]=_dict[i]+1
-    print(_dict)
+    print(type(rfi_list),rfi_list)
+    result = ChongFuDuQuanZhong(rfi_list)
+    print(result)
+
