@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 (venv)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

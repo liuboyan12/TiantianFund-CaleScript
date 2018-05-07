@@ -1,5 +1,5 @@
-from PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import *
-from BASE_CONDITIONING_MODES_AND_FUCTIONS.time_exchange import *
+from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import *
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.time_exchange import *
 #均线计算函数
 #传入参数：_list:列，_days:所求的均线个数
 #例如传入值为['1','2','3','4','5'](_list),计算3位(_days)均线

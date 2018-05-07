@@ -1,7 +1,5 @@
-from common_module_and_fuction.adjust_string import *
-from fundition_static_packaging.TianTianfundition_static_module import *
-from common_module_and_fuction. txt_io import *
-
+from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import *
+from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.TianTianfundition_static_module import *
 
 if __name__ == '__main__':
     _list = read_file_inline('D:\\Python_Lib_Local\基金计算\基金文件\所有基金中可查询基金.txt')

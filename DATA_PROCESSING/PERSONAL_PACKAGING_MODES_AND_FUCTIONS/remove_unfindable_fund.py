@@ -1,5 +1,5 @@
-from  BASE_CONDITIONING_MODES_AND_FUCTIONS.txt_io import *
-from BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import base_request
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.txt_io import *
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import base_request
 
 filepath = 'D:\\Python_Lib_local\基金计算\基金文件\关注基金列表.txt'
 every_number = []

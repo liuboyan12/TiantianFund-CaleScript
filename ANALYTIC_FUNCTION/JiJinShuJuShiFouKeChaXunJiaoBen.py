@@ -1,7 +1,5 @@
-from fundition_static_packaging.TianTianJiJinShuJuChuLi import *
-from fundition_static_packaging.TianTianfundition_static_module import *
-
-
+from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import *
+from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.TianTianfundition_static_module import *
 
 if __name__ == '__main__':
     all_fund = all_fundcode_2_list()
