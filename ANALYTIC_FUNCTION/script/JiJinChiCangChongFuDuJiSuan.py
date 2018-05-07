@@ -55,18 +55,19 @@ from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.txt_io import *
 import os
 if __name__ == '__main__':
 
-    pwd = os.getcwd()
-    pwd = pwd.replace(":\\", ':\\\\')
-    filepath_all = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\\'
-    filename=['个人基金.txt','媳妇基金.txt']
-    filepath = [filepath_all + filename[0], filepath_all + filename[1]]
-    rfi_list = []
-    for file_i in filepath:
-        rfi = read_file_inline(file_i)
-        for i in range(int(len(rfi)/6)):
-            result = rfi[i*6:i*6+6]
-            rfi_list.append(result)
-    print(type(rfi_list),rfi_list)
-    result = ChongFuDuQuanZhong(rfi_list)
-    print(result)
-
+    # pwd = os.getcwd()
+    # pwd = pwd.replace(":\\", ':\\\\')
+    # filepath_all = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\\'
+    # filename=['个人基金.txt','媳妇基金.txt']
+    # filepath = [filepath_all + filename[0], filepath_all + filename[1]]
+    # rfi_list = []
+    # for file_i in filepath:
+    #     rfi = read_file_inline(file_i)
+    #     for i in range(int(len(rfi)/6)):
+    #         result = rfi[i*6:i*6+6]
+    #         rfi_list.append(result)
+    # print(type(rfi_list),rfi_list)
+    # result = ChongFuDuQuanZhong(rfi_list)
+    # print(result)
+    a = stock_list('002001')
+    print(a)
