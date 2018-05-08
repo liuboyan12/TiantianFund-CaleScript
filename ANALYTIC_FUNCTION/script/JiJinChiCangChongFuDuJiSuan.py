@@ -3,6 +3,9 @@ from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuC
 """
 传入值
 """
+"""
+获取股票数据，输入基金code
+"""
 def stock_list(fundcode):
     _date = singleness_fund_inquire(fundcode)
     _result = cut_stock_date(_date)
