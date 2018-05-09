@@ -4,13 +4,15 @@ from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuC
 传入值
 """
 """
-获取股票数据，输入基金code
+获取股票数据，输入基金code，该基金目前的股票数据
 """
 def stock_list(fundcode):
     _date = singleness_fund_inquire(fundcode)
     _result = cut_stock_date(_date)
     return _result
 
+
+""""传入基金6位代码list，计算天天基金接口下的股票重复度"""
 def chongfudu_hanshu(fundcode_list):
     code_list = fundcode_list
     result_list = []
@@ -38,6 +40,7 @@ def chongfudu_hanshu(fundcode_list):
                 _dict.update(wait_add)
             else :
                 _dict[i]=_dict[i]+1
+
     return _dict
 
 def ChongFuDuQuanZhong(_list=[],_dict={}):
@@ -72,5 +75,4 @@ if __name__ == '__main__':
     # print(type(rfi_list),rfi_list)
     # result = ChongFuDuQuanZhong(rfi_list)
     # print(result)
-    a = stock_list('002001')
-    print(a)
+    print()
