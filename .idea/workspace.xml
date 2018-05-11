@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="85fb652d-169b-45cd-a5c4-7d52b51e7198" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/test1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +14,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JiJinChiCangChongFuDuJiSuan.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JiJinChiCangChongFuDuJiSuan.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/JiJinChiCangChongFuDuJiSuan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="53" column="39" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="53" selection-end-column="39" />
+            <state relative-caret-position="1350">
+              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="daily_line.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="80" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -31,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/TianTianfundition_static_module.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/OPERATION/Daily_running.py" />
@@ -44,6 +64,7 @@
         <option value="$PROJECT_DIR$/ANALYTIC_FUNCTION/MeiRiQuanBuJiJinShuJuJiaoBen.py" />
         <option value="$PROJECT_DIR$/ANALYTIC_FUNCTION/JiJinShuJuShiFouKeChaXunJiaoBen.py" />
         <option value="$PROJECT_DIR$/ANALYTIC_FUNCTION/script/JiJinChiCangChongFuDuJiSuan.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
       </list>
     </option>
   </component>
@@ -77,12 +98,6 @@
               <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
               <item name="ANALYTIC_FUNCTION" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="ANALYTIC_FUNCTION" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
@@ -129,7 +144,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Daily_running">
+  <component name="RunManager" selected="Python.test1">
     <configuration name="Daily_running" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,16 +217,36 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
+    <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TiantianFund-CaleScript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.Daily_running" />
       <item index="1" class="java.lang.String" itemvalue="Python.JiJinChiCangChongFuDuJiSuan" />
       <item index="2" class="java.lang.String" itemvalue="Python.JiJinChiCangChongFuDuJiSuan (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test1" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python.Daily_running" />
-        <item index="1" class="java.lang.String" itemvalue="Python.JiJinChiCangChongFuDuJiSuan (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.JiJinChiCangChongFuDuJiSuan" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.JiJinChiCangChongFuDuJiSuan (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.JiJinChiCangChongFuDuJiSuan" />
       </list>
     </recent_temporary>
   </component>
@@ -443,7 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py" />
     <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/txt_io.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -486,13 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/TianTianfundition_static_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -531,10 +558,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="80" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/JiJinChiCangChongFuDuJiSuan.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="53" column="39" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="1350">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding />
         </state>
       </provider>
