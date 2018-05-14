@@ -8,6 +8,7 @@ def daily_ruuning(filepath):
     for i in filepath:
         filepath_use = i
         result = fund_static_main(filepath_use)
+        # print(result[6])
         import_file_name=filepath_use[(filepath_use.find("\基金文件")+1+len("\基金文件")):filepath_use.find('.txt')]
         import_file_name1 = str(str(datetime.datetime.now())[:10] + import_file_name)+'.txt'
         filepath = os.path.join("d:\\Python_Lib_local\基金计算\基金统计结果", import_file_name1)
@@ -61,8 +62,9 @@ if __name__ == '__main__':
     filepath_all = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\\'
     # print(filepath)
     filename = ['个人基金.txt','关注基金列表.txt','媳妇基金.txt']
+    # filename = ['媳妇基金.txt']
     filepath = [filepath_all+filename[0],filepath_all+filename[1],filepath_all+filename[2]]
-
+    # filepath = [filepath_all + filename[0]]
     while(stop_while_code == 1):
         try:
             daily_ruuning(filepath)

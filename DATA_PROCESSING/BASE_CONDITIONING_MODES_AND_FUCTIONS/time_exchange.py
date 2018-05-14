@@ -55,6 +55,9 @@ def msUnix_2_datetime(msunixtime):
     msunixtime = msunixtime[:-3]
     msunixtime = float(msunixtime)
     time = datetime.datetime.fromtimestamp(msunixtime)
+    ifcode = str(time)[-9:]
+    if ifcode ==' 00:00:00':
+        time = str(time)[:-9]
     return time
 
 def sUnix_2_datetime(sunixtime):

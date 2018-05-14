@@ -2,6 +2,7 @@ from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import *
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.txt_io import *
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import adjust_string
 from time import sleep
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import *
 
 """
 这是天天基金查询统计功能简化的函数
@@ -18,6 +19,7 @@ from time import sleep
         4：lower_than_1_list——跌幅过1基金-[]
         5：upper_than_2_list——涨幅过2基金-[]
         6：lower_than_2_list——得福过2基金-[]
+
 """
 
 def fund_static_main(filepath):
@@ -52,6 +54,7 @@ def fund_static_main(filepath):
             i] + "':{'fund_name':'" + fund_name + "','fund_rate':'" + fund_rate + "','veild':'" + veild + "','fund_date':'" + fund_date + "'}}"
         knock_together = eval(str(knock_together))
         fund_info_dict.update(knock_together)
+
 
     for i in range(len(fund_code_list)):  # 筛选不同涨跌——CDEFGH
         vield = vield + float(fund_info_dict[fund_code_list[i]]['veild'])  # ——
@@ -105,5 +108,6 @@ def single_fund_date(code):
     a = made_date(a)
     return a
 
+
 if __name__ == '__main__':
-    print(single_fund_date('377240'))
+    print()
