@@ -47,8 +47,8 @@ def daily_line_calc(_dict,days):
 #     days为int型，一般为 日均线计算函数 传入的同days值
 #
 #     该函数自动将写好的日均线拼装进原函数中
-"""\\天天基金日均线——字典拼装函数\\"""
-def daily_line_dict_assembly_test(_dict,days):
+"""\\天天基金[累计净值走势]日均线——字典拼装函数\\"""
+def daily_line_dict_assembly_ACWorthTrend(_dict,days):
     a = _dict
     # a=eval(cut_Data_ACWorthTrend(a))
     ACWorthTrend_list = []
@@ -72,6 +72,7 @@ def daily_line_dict_assembly_test(_dict,days):
     _string = "{"+str(_list_2_dict)+"}"
     _string = _string.replace("},}","}}")
     # print(_string)
+    _string = eval(_string)
     return _string
 
 if __name__ == '__main__':

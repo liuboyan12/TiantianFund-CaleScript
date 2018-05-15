@@ -96,7 +96,8 @@ def made_date(back_date):
     fund_rate = a[a.find('gszzl') + 8:a.find('gztime') - 3] + '%'  # 增长值
     veild=a[a.find('gszzl') + 8:a.find('gztime') - 3]
     fund_date = a[a.find('gztime') + 17:a.find('"});') - 6]
-    return fund_name,fund_rate,veild,fund_date
+    today_date = find_and_cut(a,'"gztime":"','"});')[:-5]
+    return fund_name,fund_rate,veild,fund_date,today_date
 
 def out_put_string(present_fund_code,present_fund_info):
     out_put = str(present_fund_info['fund_name']) + ' ' + '估值收益率为： ' + adjust_string(present_fund_info['fund_rate'], 7,\
