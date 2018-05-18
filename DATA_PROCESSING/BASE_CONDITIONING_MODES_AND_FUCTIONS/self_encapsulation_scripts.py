@@ -29,6 +29,29 @@ def getLastDict(_dict):
     result_value = _dict[dict_key]
     return dict_key, result_value
 
+#截取传入key的前半段或者后半段
+#前半段left后半段rignt
+#{.........left........|........right..........}
+def dict_JieQuBanDuan(_dict,key,diction='right'):
+    in_time = key
+    _list = list(_dict.keys())
+    a = _list.index(in_time)
+    final_dict = {}
+    if diction == 'left':
+        for i in range(a + 1):
+            value = _dict[_list[i]]
+            assembly_dict = eval("{'" + str(_list[i]) + "':" + str(value) + "}")
+            final_dict.update(assembly_dict)
+    elif diction == 'right':
+        _list_right = _list[a:]
+        for i in _list_right:
+            value = _dict[i]
+            assembly_dict = eval("{'" + str(i) + "':" + str(value) + "}")
+            final_dict.update(assembly_dict)
+    else:
+        print('参数错误')
+    return final_dict
+
 if __name__ == '__main__':
     b='1'
 
