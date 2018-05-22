@@ -8,6 +8,7 @@ if __name__ == '__main__':
     filepath_all = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\\'
     # print(filepath)
     filename = ['个人基金.txt','媳妇基金.txt']
+
     for i in filename:
         txt_path = filepath_all+i
         fundcode = read_file_inline(txt_path)

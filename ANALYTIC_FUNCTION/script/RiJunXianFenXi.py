@@ -67,6 +67,7 @@ def Dailyline_20_forecast(fundcode,dailyline = 20):
     result3= c[0] + '  今日预测值与二十日日均线差距比例为' + str(round(rate,4)) + '%'
     return result1,result2,_self_dict,result3
 
+
 def Dailyline_60_warning(fundcode):
     warning_60 = Dailyline_20_forecast(fundcode,60)[0]
     if warning_60<=0:
