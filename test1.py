@@ -36,7 +36,7 @@ if __name__ == '__main__':
     T = ''
     AN_Tr = AN_lib[Tr]['ACWorthTrend']
 
-    tprint(AN_Tr)
+
     _dict = {}
     for T in Tr_lib:
         AN = AN_lib[T]['ACWorthTrend']
@@ -56,8 +56,17 @@ if __name__ == '__main__':
         DL20_lib.update(_string)
     # 时间--日均线差值比率
 
-    tprint(DL20_lib)
-    tprint(_dict)
+    tprint(DL20_lib)# 时间--日均线差值比率
+    tprint(_dict)#时间--收益
 
+    all_list = list(DL20_lib.keys())
+    # final_dict = {}
+    # for i in all_list:
+    #     _value1 = DL20_lib[i]
+    #     _value2 = _dict[i]
+    #     _string1 = eval("{'"+str(i)+"':["+str(_value1)+","+str(_value2)+"]}")
+    #     final_dict.update(_string1)
+    # tprint(final_dict)#{日期：[20收益率，收入值]}
 
-
+    all_value_list=list(_dict.values())
+    tprint(all_value_list)
