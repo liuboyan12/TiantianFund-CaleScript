@@ -52,7 +52,9 @@ def dict_JieQuBanDuan(_dict,key,diction='right'):
         print('参数错误')
     return final_dict
 
-if __name__ == '__main__':
-    b='1'
+def value_2_key(_dict={},_value=''):
+    a1 = list(_dict.keys())[list(_dict.values()).index(_value)]
+    return a1
 
-    # print(type(a),a)
+if __name__ == '__main__':
+   print()
