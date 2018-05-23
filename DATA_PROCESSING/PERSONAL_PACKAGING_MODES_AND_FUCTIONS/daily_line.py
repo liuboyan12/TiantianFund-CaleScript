@@ -78,7 +78,7 @@ def daily_line_dict_assembly_ACWorthTrend(_dict,days):
 if __name__ == '__main__':
     _dict = singleness_fund_inquire('002001')
     _dict = cut_Data_ACWorthTrend(_dict)
-    a= daily_line_dict_assembly_ACWorthTrend(_dict,3)
+    a= daily_line_dict_assembly_ACWorthTrend(_dict,60)
     print(type(a),a)
 
 

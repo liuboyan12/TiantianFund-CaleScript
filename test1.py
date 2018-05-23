@@ -70,3 +70,5 @@ if __name__ == '__main__':
 
     all_value_list=list(_dict.values())
     tprint(all_value_list)
+    a = max(all_value_list)
+    tprint(a)

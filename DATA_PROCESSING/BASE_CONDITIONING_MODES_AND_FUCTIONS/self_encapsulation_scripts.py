@@ -57,4 +57,15 @@ def value_2_key(_dict={},_value=''):
     return a1
 
 if __name__ == '__main__':
-   print()
+    _list = list("[ 0.03, 0.03, 0.003, 0.002, 0.009, 0.028, 0.026, 0.061, 0.073, 0.07, 0.086, 0.075, 0.091, 0.099, 0.095, 0.076, 0.084, 0.085]")
+    print(type(_list))
+    _geshu = 3
+    _return_list = []
+    if len(_list)<=_geshu:
+        print("传入长度小于取值个数")
+    else:
+        for i in range(_geshu):
+               return_value = max(_list)
+               _list.remove(return_value)
+               _return_list.append(return_value)
+    print(_return_list)
