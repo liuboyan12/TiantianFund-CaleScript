@@ -9,7 +9,7 @@ http://fund.eastmoney.com/js/fundcode_search.js
 """
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import base_request
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import *
-
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.time_exchange import *
 # 数据传入封装
 def singleness_fund_inquire(fund_code_inquire):
     c = fund_code_inquire
@@ -129,6 +129,23 @@ def all_fundcode_2_list():
             backdate = backdate[d:]
     return _list
 
+#基金交易日日期数据
+def fund_trade_date(fundcode):
+    backdate = singleness_fund_inquire(fundcode)
+    AN_lib = cut_Data_ACWorthTrend(backdate)
+    def changeUnixTime(_dict):
+        result_dict = _dict
+        time_list = _dict.keys()
+        new_dict = {}
+        for i in time_list:
+            _string = ''
+            datetime_num = str(msUnix_2_datetime(i))
+            _string = "{'" + datetime_num + "':" + str(result_dict[i]) + "}"
+            _part_dict = eval(_string)
+            new_dict.update(_part_dict)
+        return new_dict
+    AN_lib = changeUnixTime(AN_lib)
+    return list(AN_lib.keys())
 
 
 if __name__ == '__main__':

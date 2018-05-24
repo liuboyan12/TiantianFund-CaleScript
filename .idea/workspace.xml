@@ -4,7 +4,7 @@
     <list default="true" id="85fb652d-169b-45cd-a5c4-7d52b51e7198" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py" afterPath="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py" />
-      <change beforePath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py" afterPath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py" />
+      <change beforePath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" afterPath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
       <change beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/test1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,89 +16,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RiJunXianFenXi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/RiJunXianFenXi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
-              <folding>
-                <element signature="e#154#321#0" expanded="false" />
-                <element signature="e#323#401#0" expanded="true" />
-                <element signature="e#2421#2547#0" expanded="false" />
-                <element signature="e#2616#3011#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+            <state relative-caret-position="100">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#104#0" expanded="true" />
+                <element signature="e#554#721#0" expanded="false" />
+                <element signature="e#754#1078#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="self_encapsulation_scripts.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="68" column="41" lean-forward="true" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="天天基金地址库.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/天天基金地址库.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="daily_line.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20、60日均线分析脚本.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPERATION/20、60日均线分析脚本.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Daily_running.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OPERATION/Daily_running.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="A_TianTianJiJinShuJuChuLi_ChangeData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2350">
-              <caret line="95" column="25" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -124,6 +51,9 @@
       <find>20</find>
       <find>AN</find>
       <find>,file=doc</find>
+      <find>0.0135</find>
+      <find>P</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>fundcode</replace>
@@ -136,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
         <option value="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/个人基金.txt" />
         <option value="$PROJECT_DIR$/ANALYTIC_FUNCTION/JiJinChiCangChongFuDuJiSuan.py" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/remove_unfindable_fund.py" />
@@ -151,8 +80,9 @@
         <option value="$PROJECT_DIR$/OPERATION/20、60日均线分析脚本.py" />
         <option value="$PROJECT_DIR$/ANALYTIC_FUNCTION/script/RiJunXianFenXi.py" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py" />
-        <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py" />
+        <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
       </list>
     </option>
   </component>
@@ -178,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,35 +118,29 @@
             <path>
               <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="DATA_PROCESSING" type="462c0819:PsiDirectoryNode" />
+              <item name="ANALYTIC_FUNCTION" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
+              <item name="ANALYTIC_FUNCTION" type="462c0819:PsiDirectoryNode" />
+              <item name="script" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
               <item name="DATA_PROCESSING" type="462c0819:PsiDirectoryNode" />
-              <item name="BASE_CONDITIONING_MODES_AND_FUCTIONS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="DATA_PROCESSING" type="462c0819:PsiDirectoryNode" />
-              <item name="PERSONAL_PACKAGING_MODES_AND_FUCTIONS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="INFORMATION_AND_ATTACHMENT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="INFORMATION_AND_ATTACHMENT" type="462c0819:PsiDirectoryNode" />
-              <item name="基金文件" type="462c0819:PsiDirectoryNode" />
+              <item name="OPERATION" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -237,7 +160,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.self_encapsulation_scripts">
+  <component name="RunManager" selected="Python.test1">
     <configuration name="20、60日均线分析脚本" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -256,7 +179,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="RiJunXianFenXi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Daily_running" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -268,7 +191,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TiantianFund-CaleScript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ANALYTIC_FUNCTION/script/RiJunXianFenXi.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OPERATION/Daily_running.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -347,19 +270,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.RiJunXianFenXi" />
-      <item index="1" class="java.lang.String" itemvalue="Python.20、60日均线分析脚本" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.daily_line" />
-      <item index="4" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
+      <item index="0" class="java.lang.String" itemvalue="Python.20、60日均线分析脚本" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.daily_line" />
+      <item index="3" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Daily_running" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.daily_line" />
-        <item index="3" class="java.lang.String" itemvalue="Python.20、60日均线分析脚本" />
-        <item index="4" class="java.lang.String" itemvalue="Python.RiJunXianFenXi" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Daily_running" />
+        <item index="2" class="java.lang.String" itemvalue="Python.20、60日均线分析脚本" />
+        <item index="3" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
+        <item index="4" class="java.lang.String" itemvalue="Python.daily_line" />
       </list>
     </recent_temporary>
   </component>
@@ -386,13 +309,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13087775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3501529" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3501529" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -434,7 +357,7 @@
           <properties exception="BaseException" />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -619,14 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2350">
-          <caret line="95" column="25" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python36/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2">
@@ -636,22 +551,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/OPERATION/Daily_running.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="350">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/RiJunXianFenXi.py">
+    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
-          <folding>
-            <element signature="e#154#321#0" expanded="false" />
-            <element signature="e#323#401#0" expanded="true" />
-            <element signature="e#2421#2547#0" expanded="false" />
-            <element signature="e#2616#3011#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="226">
+          <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -663,37 +573,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="70" column="64" lean-forward="false" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+          <folding>
+            <element signature="e#105#273#0" expanded="false" />
+            <element signature="e#150#273#0" expanded="false" />
+            <element signature="e#363#516#0" expanded="false" />
+            <element signature="e#563#715#0" expanded="false" />
+            <element signature="e#855#1460#0" expanded="false" />
+            <element signature="e#1514#1681#0" expanded="false" />
+            <element signature="e#2015#2572#0" expanded="false" />
+            <element signature="e#2671#2817#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2388">
+          <caret line="11" column="80" lean-forward="false" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <element signature="e#213#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/OPERATION/20、60日均线分析脚本.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="25">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
+    <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/RiJunXianFenXi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="81" column="20" lean-forward="true" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="-800">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding>
+            <element signature="e#2421#2547#0" expanded="false" />
+            <element signature="e#2616#3011#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        <state relative-caret-position="100">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#104#0" expanded="true" />
+            <element signature="e#554#721#0" expanded="false" />
+            <element signature="e#754#1078#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="68" column="41" lean-forward="true" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
