@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="85fb652d-169b-45cd-a5c4-7d52b51e7198" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py" afterPath="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py" />
-      <change beforePath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" afterPath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
-      <change beforePath="$PROJECT_DIR$/test1.py" afterPath="$PROJECT_DIR$/test1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,17 +12,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test1.py">
+    <leaf>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#104#0" expanded="true" />
-                <element signature="e#554#721#0" expanded="false" />
-                <element signature="e#754#1078#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="200">
+              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,7 +68,6 @@
         <option value="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/媳妇基金.txt" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/time_exchange.py" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/TianTianfundition_static_module.py" />
-        <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/OPERATION/Daily_running.py" />
         <option value="$PROJECT_DIR$/OPERATION/20、60日均线分析脚本.py" />
         <option value="$PROJECT_DIR$/ANALYTIC_FUNCTION/script/RiJunXianFenXi.py" />
@@ -83,6 +75,7 @@
         <option value="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py" />
         <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -108,6 +101,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,17 +126,10 @@
               <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
               <item name="DATA_PROCESSING" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="OPERATION" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test1">
+  <component name="RunManager" selected="Python.test">
     <configuration name="20、60日均线分析脚本" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,24 +203,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="daily_line" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TiantianFund-CaleScript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="self_encapsulation_scripts" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,6 +216,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TiantianFund-CaleScript" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/self_encapsulation_scripts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TiantianFund-CaleScript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,17 +260,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.20、60日均线分析脚本" />
       <item index="1" class="java.lang.String" itemvalue="Python.test1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.daily_line" />
-      <item index="3" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Daily_running" />
+      <item index="2" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Daily_running" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
         <item index="1" class="java.lang.String" itemvalue="Python.Daily_running" />
-        <item index="2" class="java.lang.String" itemvalue="Python.20、60日均线分析脚本" />
-        <item index="3" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
-        <item index="4" class="java.lang.String" itemvalue="Python.daily_line" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.20、60日均线分析脚本" />
+        <item index="4" class="java.lang.String" itemvalue="Python.self_encapsulation_scripts" />
       </list>
     </recent_temporary>
   </component>
@@ -306,16 +294,16 @@
     <frame x="-4" y="-4" width="1305" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13087775" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24059561" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3501529" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3501529" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39908257" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -362,13 +350,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/个人基金.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/媳妇基金.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -520,7 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/JiJinShuJuShiFouKeChaXunJiaoBen.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -553,7 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,7 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,16 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="70" column="64" lean-forward="false" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
-          <folding>
-            <element signature="e#105#273#0" expanded="false" />
-            <element signature="e#150#273#0" expanded="false" />
-            <element signature="e#363#516#0" expanded="false" />
-            <element signature="e#563#715#0" expanded="false" />
-            <element signature="e#855#1460#0" expanded="false" />
-            <element signature="e#1514#1681#0" expanded="false" />
-            <element signature="e#2015#2572#0" expanded="false" />
-            <element signature="e#2671#2817#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -594,9 +561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2388">
           <caret line="11" column="80" lean-forward="false" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
-          <folding>
-            <element signature="e#213#303#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,7 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,22 +575,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-800">
           <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#2421#2547#0" expanded="false" />
-            <element signature="e#2616#3011#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
+    <entry file="file://$PROJECT_DIR$/test1.py" />
+    <entry file="file://$PROJECT_DIR$/desired_caps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#104#0" expanded="true" />
-            <element signature="e#554#721#0" expanded="false" />
-            <element signature="e#754#1078#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
