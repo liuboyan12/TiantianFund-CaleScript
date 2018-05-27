@@ -72,15 +72,49 @@ def daily_line_analyze(fundcode,start_day,long=30,_quzhigeshu=3,max_or_min='max'
 
 
 if __name__ == '__main__':
-    fundcode = '377240'
 
-    trade_date = fund_trade_date(fundcode)
-    average_list = []
-    for i in trade_date:
-        a=daily_line_analyze(fundcode,i,60)
-        average_list.append(a)
-    for i in average_list:
-        sum = sum+i
-    average_value = float(sum)/len(average_list)
-    print(round(average_value,4))
+    _list1 = ['519772','110013','110011','377240','070001','001878','002001','481001','001387','163804']
+    for fundcode in _list1:
+
+        trade_date = fund_trade_date(fundcode)
+        #近两年数据吧，例如易方达那个，有九年数据就很吓人了啊
+
+        # tprint(trade_date)
+        average_list = []
+        _strings=''
+        dayslong=60
+        trade_date=trade_date[:-60]
+        for i in trade_date:
+            a=daily_line_analyze(fundcode,i,dayslong)[0]
+            # tprint(a)
+            for ai in a:
+                average_list.append(ai)
+        # tprint(average_list)
+            # average_list.append(str(a))
+        maxvalue = max(average_list)
+        while 1<2:
+            try:
+                whilenum = average_list.index(maxvalue)
+                # tprint(whilenum)
+                average_list.remove(maxvalue)
+            except:
+                break
+        minvalue = min(average_list)
+        while 1 < 2:
+            try:
+                whilenum = average_list.index(minvalue)
+                # tprint(whilenum)
+                average_list.remove(minvalue)
+            except:
+                break
+        lenth=float(len(average_list))
+        # tprint(lenth)
+        sum = float(0)
+        for ali in average_list:
+            sum = sum+float(ali)
+            # tprint(sum)
+        result = round(sum/lenth,4)
+        print(fundcode,':',result)
+
+
 
