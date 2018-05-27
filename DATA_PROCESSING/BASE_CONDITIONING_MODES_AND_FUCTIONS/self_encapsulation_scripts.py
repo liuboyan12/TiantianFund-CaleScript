@@ -103,15 +103,16 @@ def dict_cut_out_piece_in_sequence(_dict,start_position,end_num=1):
         ifcode = len(_list)-(num_s+end_num)
         if ifcode<0:
             end_num = len(_list) - num_s
-            print('截取值溢出，修改截取值为最末位',end_num)
+            e1 = '截取值溢出，修改截取值为最末位'+str(end_num)
+
         else:
-            pass
-        num_e = num_s+int(end_num)
-        _list = _list[num_s:num_e]
-        return_dict = {}
-        for i in _list:
-            return_dict_update =eval("{'"+str(i)+"':'"+str(_dict[i])+"'}")
-            return_dict.update(return_dict_update)
+            #pass
+            num_e = num_s+int(end_num)
+            _list = _list[num_s:num_e]
+            return_dict = {}
+            for i in _list:
+                return_dict_update =eval("{'"+str(i)+"':'"+str(_dict[i])+"'}")
+                return_dict.update(return_dict_update)
         return return_dict
     except Exception as e:
         print(e)
