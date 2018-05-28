@@ -27,53 +27,64 @@ def changeUnixTime(_dict):
 # 也可以选择输出多个值_quzhigeshu
 
 def daily_line_analyze(fundcode,start_day,long=30,_quzhigeshu=3,max_or_min='max'):
-    backdate = singleness_fund_inquire(fundcode)
-    AN_lib = cut_Data_ACWorthTrend(backdate)
-    AN_lib = changeUnixTime(AN_lib)
-    #数据转换
+    while 1<2:
+        try:
+            backdate = singleness_fund_inquire(fundcode)
+            AN_lib = cut_Data_ACWorthTrend(backdate)
+            AN_lib = changeUnixTime(AN_lib)
+            #数据转换
 
-    Tr_lib = list(AN_lib.keys())
-    Tr = start_day
+            Tr_lib = list(AN_lib.keys())
+            Tr = start_day
 
-    AN_Tr = AN_lib[Tr]['ACWorthTrend']
-    _dict = {}
-    for T in Tr_lib:
-        AN = AN_lib[T]['ACWorthTrend']
-        AN_input = round(AN - AN_Tr, 4)
-        _string = "{'" + str(T) + "':" + str(AN_input) + "}"
-        _dict.update(eval(_string))# 时间--收益
-    DL20 = GO(AN_lib, 20)
-    DL_list = list(DL20.keys())
-    DL20_lib = {}
-    for i in DL_list:
-        _value = DL20[i]['20dailyLine']
-        real_value = AN_lib[i]['ACWorthTrend']
-        rate = round((real_value - _value) / real_value, 4)
-        _string = eval("{'" + i + "':" + str(rate) + "}")
-        DL20_lib.update(_string)
-    # 时间--日均线差值比率
+            AN_Tr = AN_lib[Tr]['ACWorthTrend']
+            _dict = {}
+            for T in Tr_lib:
+                AN = AN_lib[T]['ACWorthTrend']
+                AN_input = round(AN - AN_Tr, 4)
+                _string = "{'" + str(T) + "':" + str(AN_input) + "}"
+                _dict.update(eval(_string))# 时间--收益
+            DL20 = GO(AN_lib, 20)
+            DL_list = list(DL20.keys())
+            DL20_lib = {}
+            for i in DL_list:
+                _value = DL20[i]['20dailyLine']
+                real_value = AN_lib[i]['ACWorthTrend']
+                rate = round((real_value - _value) / real_value, 4)
+                _string = eval("{'" + i + "':" + str(rate) + "}")
+                DL20_lib.update(_string)
+            # 时间--日均线差值比率
 
-    DL_20_final =dict_cut_out_piece_in_sequence(DL20_lib,Tr,long)
-    _dict_final = dict_cut_out_piece_in_sequence(_dict,Tr,long)
-    _dict_final_value = list(_dict_final.values())
+            DL_20_final =dict_cut_out_piece_in_sequence(DL20_lib,Tr,long)
+            _dict_final = dict_cut_out_piece_in_sequence(_dict,Tr,long)
+            _dict_final_value = list(_dict_final.values())
 
-    a = max_some(_dict_final_value,_quzhigeshu, max_or_min)
-    key_list = []
-    for i in a:
-        key_list_append = value_2_key(_dict_final, i)
-        key_list.append(key_list_append)
-    # 选取区间内最大收益反推该收益的key
-    DL20_max_or_min_list = find_dict_key_and_fetch_value_to_list(DL_20_final, key_list)
-    example="出现收益最大/最小的20日日均线离线值为："
-    for i in DL20_max_or_min_list:
-        example= example+str(i)+" , "
-    example=example[:-3]
+            a = max_some(_dict_final_value,_quzhigeshu, max_or_min)
+            key_list = []
+            for i in a:
+                key_list_append = value_2_key(_dict_final, i)
+                key_list.append(key_list_append)
+            # 选取区间内最大收益反推该收益的key
+            DL20_max_or_min_list = find_dict_key_and_fetch_value_to_list(DL_20_final, key_list)
+            example="出现收益最大/最小的20日日均线离线值为："
+            for i in DL20_max_or_min_list:
+                example= example+str(i)+" , "
+            example=example[:-3]
+            break
+        except Exception as e:
+            continue
     return DL20_max_or_min_list,example
 
 
 if __name__ == '__main__':
+    import os
 
-    _list1 = ['519772','110013','110011','377240','070001','001878','002001','481001','001387','163804']
+    pwd = os.getcwd()
+    pwd = pwd.replace(":\\", ':\\\\')
+    filepath = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\均线最大收益均值结果\均线最大收益.txt'
+    f = open(filepath, "w")
+    # ['519772', '110013',
+    _list1 = ['110011','377240','070001','001878','002001','481001','001387','163804']
     for fundcode in _list1:
 
         trade_date = fund_trade_date(fundcode)
@@ -85,6 +96,7 @@ if __name__ == '__main__':
         dayslong=60
         trade_date=trade_date[:-60]
         for i in trade_date:
+            print(fundcode,":",i)
             a=daily_line_analyze(fundcode,i,dayslong)[0]
             # tprint(a)
             for ai in a:
@@ -111,10 +123,12 @@ if __name__ == '__main__':
         # tprint(lenth)
         sum = float(0)
         for ali in average_list:
+            print(fundcode,":",ali)
             sum = sum+float(ali)
             # tprint(sum)
         result = round(sum/lenth,4)
-        print(fundcode,':',result)
+        print(fundcode,':',result,file= f)
 
+    f.close()
 
 
