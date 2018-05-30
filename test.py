@@ -34,6 +34,8 @@ if __name__ == '__main__':
     # tprint(pz_string)
     # a = pz_string.find('-1-11-1')sd
     # tprint(a)
+
+
     return_list = []
     string = '-1010111001-01-010-10'
     a = string.find('010')

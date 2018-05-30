@@ -61,9 +61,9 @@ if __name__ == '__main__':
     pwd =pwd.replace(":\\",':\\\\')
     filepath_all = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\\'
     # print(filepath)
-    filename = ['个人基金.txt','关注基金列表.txt','媳妇基金.txt']
+    filename = ['个人基金.txt','媳妇基金.txt']
     # filename = ['媳妇基金.txt']
-    filepath = [filepath_all+filename[0],filepath_all+filename[1],filepath_all+filename[2]]
+    filepath = [filepath_all+filename[0],filepath_all+filename[1]]
     # filepath = [filepath_all + filename[0]]
     while(stop_while_code == 1):
         try:
