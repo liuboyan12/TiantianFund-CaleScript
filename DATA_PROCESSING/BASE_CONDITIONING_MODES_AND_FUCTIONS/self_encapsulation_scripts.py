@@ -184,12 +184,14 @@ def find_dict_key_and_fetch_value_to_list(_dict={},_key_list=[]):
         return_list_value = _dict[i]
         return_list.append(return_list_value)
     return return_list
+
+
 """
 #从字典中选择一个起始位置向后截取end_num个键值对并返回
 start_position为dict中想要开始截取的起始未知的key
 
 ┏━━━━━━━┳━━━━━━━━━┓
-┃传入值        ┃类型              ┃
+┃ 传入值       ┃ 类型             ┃
 ┣━━━━━━━╋━━━━━━━━━┫
 ┃_dict         ┃ dict             ┃
 ┣━━━━━━━╋━━━━━━━━━┫
@@ -198,7 +200,7 @@ start_position为dict中想要开始截取的起始未知的key
 ┃end_num       ┃ int = 1          ┃
 ┗━━━━━━━┻━━━━━━━━━┛
 ┏━━━━━━┳━━━┓
-┃返回值      ┃类型  ┃
+┃ 返回值     ┃ 类型 ┃
 ┣━━━━━━╋━━━┫
 ┃return_dict ┃ dict ┃
 ┗━━━━━━┻━━━┛
@@ -227,8 +229,9 @@ def dict_cut_out_piece_in_sequence(_dict,start_position,end_num=1):
         print(e)
 """
 取出字典序列的第n个键值对
+
 ┏━━━━━━━┳━━━━━━━━━┓
-┃传入值        ┃类型              ┃
+┃ 传入值       ┃ 类型             ┃
 ┣━━━━━━━╋━━━━━━━━━┫
 ┃_dict         ┃ dict             ┃
 ┣━━━━━━━╋━━━━━━━━━┫

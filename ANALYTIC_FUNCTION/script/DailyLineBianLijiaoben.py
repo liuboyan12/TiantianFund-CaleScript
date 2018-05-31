@@ -84,7 +84,7 @@ if __name__ == '__main__':
     filepath = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\均线最大收益均值结果\均线最大收益.txt'
     f = open(filepath, "w")
     # ['519772', '110013',
-    _list1 = ['110011','377240','070001','001878','002001','481001','001387','163804']
+    _list1 = ['161725','165312','000619']
     for fundcode in _list1:
 
         trade_date = fund_trade_date(fundcode)
