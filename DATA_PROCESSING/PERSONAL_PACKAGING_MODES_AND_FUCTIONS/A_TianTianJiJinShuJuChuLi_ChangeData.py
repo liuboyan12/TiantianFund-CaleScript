@@ -147,7 +147,11 @@ def fund_trade_date(fundcode):
     AN_lib = changeUnixTime(AN_lib)
     return list(AN_lib.keys())
 
+def fund_name(fundcode):
+    a = singleness_fund_inquire(fundcode)
+    a=find_and_cut(a,'var fS_name = "','";var fS_code ')
+    return a
 
 if __name__ == '__main__':
-    a = singleness_fund_inquire('002001')
-    print(a)
+
+    print()

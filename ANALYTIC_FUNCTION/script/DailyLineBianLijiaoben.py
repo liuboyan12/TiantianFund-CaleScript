@@ -81,13 +81,15 @@ if __name__ == '__main__':
 
     pwd = os.getcwd()
     pwd = pwd.replace(":\\", ':\\\\')
-    filepath = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\均线最大收益均值结果\均线最大收益.txt'
-    f = open(filepath, "w")
+
     # ['519772', '110013',
     #
     #
     _list1 = ['519772','110013','110011','377240','070001','001878','002001','481001','001387','163804','161725','000619','165312']
     for fundcode in _list1:
+        filename = '\\' + str(fundcode) + '.txt'
+        filepath = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\均线最大收益均值结果'+filename
+        f = open(filepath, "w")
         name = singleness_fund_inquire(fundcode)
         trade_date = fund_trade_date(fundcode)
         #近两年数据吧，例如易方达那个，有九年数据就很吓人了啊
@@ -129,9 +131,9 @@ if __name__ == '__main__':
             sum = sum+float(ali)
             # tprint(sum)
         result = round(sum/lenth,4)
-        print()
+        print(fund_name(fundcode),file=f)
         print(fundcode,':',result,file= f)
-        print("历史最大值为:",maxvalue,file= f)
+        print("历史最大值为:",maxvalue,file=f)
     f.close()
 
 
