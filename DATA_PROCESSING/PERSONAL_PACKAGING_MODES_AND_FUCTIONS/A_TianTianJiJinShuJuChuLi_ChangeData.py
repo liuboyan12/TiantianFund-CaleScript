@@ -149,5 +149,5 @@ def fund_trade_date(fundcode):
 
 
 if __name__ == '__main__':
-
-    print()
+    a = singleness_fund_inquire('002001')
+    print(a)
