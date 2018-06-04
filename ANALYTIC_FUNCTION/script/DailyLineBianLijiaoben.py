@@ -128,6 +128,7 @@ if __name__ == '__main__':
             # tprint(sum)
         result = round(sum/lenth,4)
         print(fundcode,':',result,file= f)
+        print("历史最大值为:",maxvalue)
 
     f.close()
 
