@@ -14,6 +14,7 @@ def daily_ruuning(filepath):
         filepath = os.path.join("d:\\Python_Lib_local\基金计算\基金统计结果", import_file_name1)
         doc = open(filepath, 'w')
         print('==================================================',file=doc)
+        print('++++++++++++++++++++++++++++++++++++++++++++++++++')
         print(import_file_name,file=doc)
         stings = i[i.find("基金文件")+5:i.find(".txt")]
         print(stings +'今日涨跌无权重平均： ' + str(result[0]) + "%")
@@ -21,35 +22,52 @@ def daily_ruuning(filepath):
         print('==================================================',file=doc)
         print('涨基金：',file=doc)
         print('     1以内:',file=doc)
+        print('今日涨跌无权重平均： '+str(result[0])+"%")
+        print('==================================================')
+        print('涨基金：')
+        print('     1以内:')
         result1 = result[1]
         for i in range(len(result1)):
             print(result1[i],file=doc)
+            print(result1[i])
+        print('     1以上: ')
         print('     1以上: ',file=doc)
         result3 = result[3]
         for i in result3:
             print(i,file=doc)
+            print(i)
+        print('     2以上: ')
         print('     2以上: ',file=doc)
         result5=result[5]
         for i in result5:
             print(i,file=doc)
+            print(i)
         print('==================================================',file=doc)
+        print('==================================================')
         print('跌基金：',file=doc)
         print('     1以内:',file=doc)
+        print('跌基金：')
+        print('     1以内:')
         result2 = result[2]
         for i in range(len(result2)):
             print(result2[i],file=doc)
+            print(result2[i])
         print('     1以上: ',file=doc)
+        print('     1以上: ')
         result4= result[4]
         for i in result4:
             print(i,file=doc)
+            print(i)
         print('     2以上: ',file=doc)
+        print('     2以上: ')
         result6=result[6]
         for i in result6:
             print(i,file=doc)
+            print(i)
         print('==================================================',file=doc)
+        print('++++++++++++++++++++++++++++++++++++++++++++++++++')
         # print('记录时间： '+datetime.datetime.now())
         print()
-        time.sleep(30)
         # i = datetime.datetime.now()
         # print(str(i.year)+str(i.day)+str(i.month)+' '+str(i.hour)+':'+str(i.minute))
 
@@ -81,7 +99,9 @@ if __name__ == '__main__':
             print('结果跑出次数统计：'+str(plus_plus))
             print('=============================================')
             print(datetime.datetime.now())
-            time.sleep(150)
+            time.sleep(30)
+            print()
+            print()
         except Exception as e:
             print(e)
             pass
