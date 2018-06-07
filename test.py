@@ -82,21 +82,23 @@ def cross_line(_dictA, _dictB):
 
             try:
                 def test(_dict, ix):
+                    jiangex = 1
                     while 1 < 2:
-                        jiangex = 1
                         a = changes_fuction(find_double(_dict, ix))
-                        #
+                        print('a',a)
                         b = changes_fuction(find_double(_dict, ix + jiangex))
-                        print('a,b', a, b)
+                        print('b',  b)
                         axb = a * b
+                        print(axb)
                         if axb == 0:
                             jiangex = jiangex + 1
+                            print(jiangex)
                             # print('jiange1',jiange)
                         else:
                             break
                     return axb, i1, jiangex
 
-                axb = test(single_dict, i1)[0]
+                axb1 = test(single_dict, i1)[0]
                 jiange = test(single_dict, i1)[2]
                 # while 1 < 2:
                 #     a = changes_fuction(find_double(single_dict, i1))
@@ -113,7 +115,7 @@ def cross_line(_dictA, _dictB):
 
 
 
-                if axb < 0:
+                if axb1 < 0:
                     jiaodianQ = str(list(find_double(single_dict, i1).keys())[0])
                     jiaodianH = str(list(find_double(single_dict, i1 + jiange).keys())[0])
                     print('jiaodianH:',jiaodianH)
