@@ -8,11 +8,12 @@ def tprint(obj, except_word=""):
             print(obj)
             # print()
 
-def cross_line(dictA={},dictB={}):
+
+def cross_line(dictA={},dictB={},startLocation=1):
     """
-    :param dictA:
-    :param dictB:
-    :return:
+    :param dictA:传入离散点dict数据
+    :param dictB:传入离散点lict数据
+    :return:dictR:穿线点的字典
 
     焦点表示规则（way)：
     ABX——0，BAX——1
@@ -24,57 +25,70 @@ def cross_line(dictA={},dictB={}):
         返回值为dict
         格式：
             dictR={
-                    "pointNo":{"X前":"Y前"，"X后":"Y后"，"way":"ABX/BAX"}
+                    "pointNo":{"firstPoint":"Xi"，"secondPoint":"Xi+step"，"way":"ABX/BAX"}
                     }
     """
     Xi = list(dictA.keys())
     step=1
-    i = 1
+    i=startLocation
+    i1 = 1
+    dictR = {}
+    dictPart = '{"pointNo":{"firstPoint":"","secondPoint":"","way":""}}'
     while 1<2:
         if i+1>=len(Xi):
+            print("break")
             break
         else:
-            Yai = dictA[Xi[i]]
-            Ybi = dictB[Xi[i]]
-            Yaip1 = dictA[Xi[i+step]]
-            Ybip2 = dictB[Xi[i+step]]
-            Value1=Ybi-Yai
-            Value2=Ybip2-Yaip1
+            print(Xi)
+            X = Xi[i-1]
+            print("X",X)
+            Xp=Xi[i+step-1]
+            print("Xp",Xp)
+            Yai = float(dictA[X])
+            Ybi = float(dictB[X])
+            Yaip = float(dictA[Xp])
+            Ybip = float(dictB[Xp])
+            Value1 = Ybi - Yai
+            Value2 = Ybip - Yaip
             judgement = Value1*Value2
-            if judgement<0:
-
-                i=i+step
+            startPoint = Yai - Ybi
+            # print("Yai,Ybi,Yaip,Ybip",Yai,Ybi,Yaip,Ybip)
+            # print("Value1,Value2,judgement",Value1,Value2,judgement)
+            if judgement == 0:
+                step = step + 1
+                print("judge")
+                continue
+            else:
+                i= i+step
                 step=1
-
-            if judgement>0:
-
-                i=i+step
-                step=1
-
-            if judgement==0:
-                    step = step + 1
+                if startPoint == 0:
+                    i=i+1
                     continue
-            i=i+1
+                else:
+                    controlString = "point" + str(i1)
+                    dictPart=dictPart.replace("pointNo",controlString)
+                    i1 = i1 + 1
+                    dictP=eval(dictPart)
 
+                    dictP[controlString]["firstPoint"] = X
+                    dictP[controlString]["secondPoint"] = Xp
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    if startPoint<0:
+                        # yai>ybi,A线在上B线在下——ABX
+                        dictP[controlString]['way']='ABX'
+                    else:
+                        #BAX
+                        dictP[controlString]['way'] = 'BAX'
+                    dictR.update(dictP)
+                    dictPart = '{"pointNo":{"firstPoint":"","secondPoint":"","way":""}}'
+    return dictR
 
 if __name__ == '__main__':
-
-    print()
-
+    dictA={'a':'2','b':'0','c':'0'}
+    dictB = {'a':'1','b': '1', 'c': '1'}
+    returnvalue= cross_line(dictA,dictB)
+    print(returnvalue)
+    # cross_lisetest(dictA)
 
 
 
