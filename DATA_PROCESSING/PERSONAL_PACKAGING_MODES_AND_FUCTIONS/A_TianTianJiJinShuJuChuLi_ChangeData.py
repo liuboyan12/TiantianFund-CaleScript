@@ -48,9 +48,14 @@ cut_Data_ACWorthTrend()
 """
 
 
-# 基金持仓股票代码
-# ['1280282']
+
 def cut_stock_date(fund_date):  # 基金持仓股票代码
+    """
+    # 基金持仓股票代码
+    # ['1280282']
+    :param fund_date:
+    :return:
+    """
     a = find_and_cut(str(fund_date), 'var stockCodes=', '/*基金持仓债券代码*/')
     a = format_removeal(a)
     def Data_stockThrend(return_value):
@@ -61,9 +66,14 @@ def cut_stock_date(fund_date):  # 基金持仓股票代码
     return a
 
 
-# 基金债券持仓代码
-# ['1280282']
+
 def cut_bond_date(fund_date):  # 基金持仓债券代码
+    """
+    # 基金债券持仓代码
+    # ['1280282']
+    :param fund_date:
+    :return:
+    """
     a = find_and_cut(str(fund_date), 'zqCodes=', '/*收益率*/')
     a = format_removeal(a)
     def Data_bondThrend(return_value):
@@ -75,9 +85,13 @@ def cut_bond_date(fund_date):  # 基金持仓债券代码
     return a
 
 
-# 单位净值走势
-# {'1310486400000': {'y': 1.0, 'equityReturn': 0, 'unitMoney': ''}}
 def cut_trend_date(fund_date):  # 单位净值走势
+    """
+    # 单位净值走势
+    # {'1310486400000': {'y': 1.0, 'equityReturn': 0, 'unitMoney': ''}}
+    :param fund_date:
+    :return:
+    """
     a = format_removeal(fund_date)
     a = find_and_cut(a, 'varData_netWorthTrend=', '/*累计净值走势*/')
     a = format_removeal(a)
@@ -90,10 +104,15 @@ def cut_trend_date(fund_date):  # 单位净值走势
     return fund_date_result
 
 
-# /*累计净值走势*/
-# 传入天天基金全部数据，返回累计净值走势
-# {'1310486400000':{'ACWorthTrend':1.0}}
+
 def cut_Data_ACWorthTrend(fund_date):
+    """
+    /*累计净值走势*/
+    传入天天基金全部数据，返回累计净值走势
+    {'1310486400000':{'ACWorthTrend':1.0}}
+    :param fund_date:
+    :return:
+    """
     a = format_removeal(fund_date)
     a = find_and_cut(a, "/*累计净值走势*/", "/*累计收益率走势*/")
     a = find_and_cut(a, "varData_ACWorthTrend=", ";")
@@ -106,10 +125,14 @@ def cut_Data_ACWorthTrend(fund_date):
     return a
 
 
-# 所有基金code
-# 传入地址http://fund.eastmoney.com/js/fundcode_search.js
-# 返回值为该地址内所有数据报出的基金代码
+
 def all_fundcode_2_list():
+    """
+    所有基金code
+    传入地址http://fund.eastmoney.com/js/fundcode_search.js
+    返回值为该地址内所有数据报出的基金代码
+    :return:
+    """
     backdate = base_request('http://fund.eastmoney.com/js/fundcode_search.js')
     backdate = format_removeal(str(backdate))
     backdate = find_and_cut(backdate, '﻿varr=', ';')
@@ -129,8 +152,13 @@ def all_fundcode_2_list():
             backdate = backdate[d:]
     return _list
 
-#基金交易日日期数据
+
 def fund_trade_date(fundcode):
+    """
+    #基金交易日日期数据
+    :param fundcode:
+    :return:
+    """
     backdate = singleness_fund_inquire(fundcode)
     AN_lib = cut_Data_ACWorthTrend(backdate)
     def changeUnixTime(_dict):
@@ -148,6 +176,11 @@ def fund_trade_date(fundcode):
     return list(AN_lib.keys())
 
 def fund_name(fundcode):
+    """
+    基金名称
+    :param fundcode:
+    :return:
+    """
     a = singleness_fund_inquire(fundcode)
     a=find_and_cut(a,'var fS_name = "','";var fS_code ')
     return a

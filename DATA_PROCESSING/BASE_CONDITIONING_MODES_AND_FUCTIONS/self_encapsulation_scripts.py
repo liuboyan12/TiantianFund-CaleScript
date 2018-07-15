@@ -1,35 +1,28 @@
-"""
-#脚本编辑打印辅助工具
-┏━━━━┳━━┓
-┃传入值  ┃类型┃
-┣━━━━╋━━┫
-┃任何变量┃ all┃
-┗━━━━┻━━┛
-#要复制到编写的函数中使用，不可跨py使用
-"""
+
 def tprint(obj, except_word=""):
+    """
+    #脚本编辑打印辅助工具
+    ┏━━━━┳━━┓
+    ┃传入值  ┃类型┃
+    ┣━━━━╋━━┫
+    ┃任何变量┃ all┃
+    ┗━━━━┻━━┛
+    #要复制到编写的函数中使用，不可跨py使用
+    """
     for name, item in globals().items():
         if item == obj and name != except_word:
             print(name + ':',type(obj))
             print(obj)
             print()
-"""
-#传入两个值将两个值转换为str进行对比
-#如果两个是一致的那么返回值1，如果两个值不同返回0
-┏━━━━┳━━━━┓
-┃传入值  ┃类型    ┃
-┣━━━━╋━━━━┫
-┃_first  ┃ string ┃
-┣━━━━╋━━━━┫
-┃_second ┃ string ┃
-┗━━━━┻━━━━┛
-┏━━━━━━┳━━┓
-┃返回值      ┃类型┃
-┣━━━━━━╋━━┫
-┃return_value┃int ┃
-┗━━━━━━┻━━┛
-"""
+
 def if_differ_str(_first, _second):
+    """
+    #传入两个值将两个值转换为str进行对比
+    #如果两个是一致的那么返回值1，如果两个值不同返回0
+    :param _first: 第一个字符串
+    :param _second: 第二个字符串
+    :return: 比较结果
+    """
     _first=str(_first)
     _second=str(_second)
     if _first == _second:
@@ -37,47 +30,30 @@ def if_differ_str(_first, _second):
     else:
         return_value = 0
     return return_value
-"""
-#将字典里面的最后一个键值对取出
-┏━━━━┳━━━┓
-┃传入值  ┃类型  ┃
-┣━━━━╋━━━┫
-┃_dict   ┃ dict ┃
-┗━━━━┻━━━┛
-┏━━━━━━┳━━━┓
-┃返回值      ┃类型  ┃
-┣━━━━━━╋━━━┫
-┃dict_key    ┃string┃
-┣━━━━━━╋━━━┫
-┃return_value┃ dict ┃
-┗━━━━━━┻━━━┛
-"""
+
+
 def getLastDict(_dict):
+    """
+    将字典里面的最后一个键值对取出
+    :param _dict: 要被取出的字典
+    :return: 最后的一对键值对
+    """
     _list = list(_dict.keys())
     length = len(_list)
     dict_key = _list[length - 1]
     result_value = _dict[dict_key]
     return dict_key, result_value
-"""
-#截取传入key的前半段或者后半段
-#前半段left后半段rignt
-#{.........left........|........right..........}
-┏━━━━━┳━━━━━━━━━┓
-┃传入值    ┃类型              ┃
-┣━━━━━╋━━━━━━━━━┫
-┃_dict     ┃ dict             ┃
-┣━━━━━╋━━━━━━━━━┫
-┃key       ┃ key              ┃
-┣━━━━━╋━━━━━━━━━┫
-┃diction   ┃ string:right/left┃
-┗━━━━━┻━━━━━━━━━┛
-┏━━━━━━┳━━━┓
-┃返回值      ┃类型  ┃
-┣━━━━━━╋━━━┫
-┃final_dict  ┃ dict ┃
-┗━━━━━━┻━━━┛
-"""
+
 def dict_JieQuBanDuan(_dict,key,diction='right'):
+    """
+    #截取传入key的前半段或者后半段
+    #前半段left后半段rignt
+    #{.........left........|........right..........}
+    :param _dict: 要被截取的dict
+    :param key: 要截取段中的键值
+    :param diction: 方向，截取方向，向后或者向前（left/right）
+    :return: 截取到的dict
+    """
     in_time = key
     _list = list(_dict.keys())
     a = _list.index(in_time)
@@ -97,25 +73,17 @@ def dict_JieQuBanDuan(_dict,key,diction='right'):
         print('参数错误')
     return final_dict
 
-"""
-#传入字典和字典内存在的value，返回其value的key值
-
-┏━━━━━┳━━━━━━━━━┓
-┃传入值    ┃类型              ┃
-┣━━━━━╋━━━━━━━━━┫
-┃_dict     ┃ dict             ┃
-┣━━━━━╋━━━━━━━━━┫
-┃_value    ┃ dict.value       ┃
-┗━━━━━┻━━━━━━━━━┛
-┏━━━━━━┳━━━┓
-┃返回值      ┃类型  ┃
-┣━━━━━━╋━━━┫
-┃a1          ┃ key  ┃
-┗━━━━━━┻━━━┛
-"""
 
 
 def value_2_key(_dict={},_value=''):
+
+    """
+    #传入字典和字典内存在的value，返回其value的key值
+    知道value反推可以，尽量保证value单一
+    :param _dict: 被筛选的dict
+    :param _value: 要找到的value值
+    :return: key值
+    """
     try:
         a1 = list(_dict.keys())[list(_dict.values()).index(_value)]
     except Exception as e:
@@ -123,26 +91,16 @@ def value_2_key(_dict={},_value=''):
         print(e)
     return a1
 
-"""
-#返回list中最大的几个值，或者最小的几个值
 
-┏━━━━━┳━━━━━━━━━┓
-┃传入值    ┃类型              ┃
-┣━━━━━╋━━━━━━━━━┫
-┃_list     ┃ list             ┃
-┣━━━━━╋━━━━━━━━━┫
-┃_geshu    ┃ int = 1          ┃
-┣━━━━━╋━━━━━━━━━┫
-┃max_or_min┃ string:max/min   ┃
-┗━━━━━┻━━━━━━━━━┛
-┏━━━━━━┳━━━┓
-┃返回值      ┃类型  ┃
-┣━━━━━━╋━━━┫
-┃_return_list┃ list ┃
-┗━━━━━━┻━━━┛
-"""
 
 def find_max_or_min_in_list(_list=[],_geshu=1,max_or_min='max'):
+    """
+    返回list中最大的几个值，或者最小的几个值
+    :param _list: 要进行比较的list
+    :param _geshu: 取出最值的个数
+    :param max_or_min: 输入为"max"或者是"min"表示要取出的是最大还是最小
+    :return: 取出的几个最值
+    """
     _return_list = []
     if len(_list)<=_geshu:
         print("传入长度小于取值个数")
@@ -161,24 +119,14 @@ def find_max_or_min_in_list(_list=[],_geshu=1,max_or_min='max'):
             print('未接收到最大/最小取值')
     return _return_list
 
-"""
-#遍历字典将list中的值对应字典中的key的值取出
-
-┏━━━━━┳━━━━━━━━━┓
-┃传入值    ┃类型              ┃
-┣━━━━━╋━━━━━━━━━┫
-┃_dict     ┃ dict             ┃
-┣━━━━━╋━━━━━━━━━┫
-┃_key_list ┃ list             ┃
-┗━━━━━┻━━━━━━━━━┛
-┏━━━━━━┳━━━┓
-┃返回值      ┃类型  ┃
-┣━━━━━━╋━━━┫
-┃return_list ┃ list ┃
-┗━━━━━━┻━━━┛
-"""
 
 def find_dict_key_and_fetch_value_to_list(_dict={},_key_list=[]):
+    """
+    遍历字典将list中的值对应字典中的key的值取出
+    :param _dict: dict数据
+    :param _key_list: 要取出的键的列表
+    :return: 取出的dict
+    """
     return_list = []
     for i in _key_list:
         return_list_value = _dict[i]
@@ -186,28 +134,16 @@ def find_dict_key_and_fetch_value_to_list(_dict={},_key_list=[]):
     return return_list
 
 
-"""
-#从字典中选择一个起始位置向后截取end_num个键值对并返回
-start_position为dict中想要开始截取的起始未知的key
-
-┏━━━━━━━┳━━━━━━━━━┓
-┃ 传入值       ┃ 类型             ┃
-┣━━━━━━━╋━━━━━━━━━┫
-┃_dict         ┃ dict             ┃
-┣━━━━━━━╋━━━━━━━━━┫
-┃start_position┃ dict.key         ┃
-┣━━━━━━━╋━━━━━━━━━┫
-┃end_num       ┃ int = 1          ┃
-┗━━━━━━━┻━━━━━━━━━┛
-┏━━━━━━┳━━━┓
-┃ 返回值     ┃ 类型 ┃
-┣━━━━━━╋━━━┫
-┃return_dict ┃ dict ┃
-┗━━━━━━┻━━━┛
-
-"""
 
 def dict_cut_out_piece_in_sequence(_dict,start_position,end_num=1):
+    """
+    从字典中选择一个起始位置向后截取end_num个键值对并返回
+    start_position为dict中想要开始截取的起始未知的key
+    :param _dict:  要被截取的dict
+    :param start_position: 起始位置（该位置的键值）
+    :param end_num: 截取到该位置后的第几个
+    :return: 返回截取的dict段
+    """
     try:
         _list = list(_dict.keys())
         num_s = _list.index(start_position)
@@ -227,24 +163,14 @@ def dict_cut_out_piece_in_sequence(_dict,start_position,end_num=1):
         return return_dict
     except Exception as e:
         print(e)
-"""
-取出字典序列的第n个键值对
 
-┏━━━━━━━┳━━━━━━━━━┓
-┃ 传入值       ┃ 类型             ┃
-┣━━━━━━━╋━━━━━━━━━┫
-┃_dict         ┃ dict             ┃
-┣━━━━━━━╋━━━━━━━━━┫
-┃num           ┃ int              ┃
-┗━━━━━━━┻━━━━━━━━━┛
-┏━━━━━━┳━━━┓
-┃返回值      ┃类型  ┃
-┣━━━━━━╋━━━┫
-┃return_dict ┃ dict ┃
-┗━━━━━━┻━━━┛
-
-"""
 def fetch_dict_by_num(_dict, num):
+    """
+    取出字典中顺序的第num个
+    :param _dict: 要取出的字典数据
+    :param num: 要取第num个
+    :return: 第num个键值对
+    """
     _dict = _dict
     _list = list(_dict.keys())
     i = _list[num - 1]  # num-1
@@ -253,6 +179,35 @@ def fetch_dict_by_num(_dict, num):
     return_dict = eval(strings)
     return return_dict
 
+def abandon_front_section_dict(dict={},num=1):
+    """
+    舍弃掉list中前几个键值对，如果舍弃个数大于整个dict的键值对个数将会报错
+    :param dict: 将要被舍弃的dict
+    :param num: 舍弃前面键值对的个数
+    :return: 被舍弃后的dict
+    """
+    _keylist=list(dict.keys())
+    if num>len(_keylist):
+        print("舍弃个数长于字典键值对个数")
+    else:
+        abandonlist = []
+        while 1<2:
+            if num>0:
+                value = _keylist[num-1]
+                print(value)
+                abandonlist.extend(value)
+                print(abandonlist)
+                num=num-1
+            else:
+                break
+        for i in list(abandonlist):
+            dict.pop(i)
+    return dict
+
+
+
+
 if __name__ == '__main__':
     _dict = {'a':1,'b':2,'c':3,'d':4}
-    print(fetch_dict_by_num(_dict,3))
+    _dict=abandon_front_section_dict(_dict,3)
+    print(_dict)

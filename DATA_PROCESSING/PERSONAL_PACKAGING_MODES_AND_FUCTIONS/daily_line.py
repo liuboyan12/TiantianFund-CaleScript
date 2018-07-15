@@ -36,7 +36,7 @@ def daily_line_calc(_dict,days):
     for key in _list :
         ACWorthTrend_list.append(a[key]['ACWorthTrend'])
     ACWorthTrend_daily_line = moving_average_calc(ACWorthTrend_list,days)
-    return ACWorthTrend_daily_line,
+    return ACWorthTrend_daily_line
 
 #     \\日均线——字典拼装函数\\
 #     传入值为天天基金数据的字典,该函数可以将计算得到的日均线值放入到
@@ -49,6 +49,7 @@ def daily_line_calc(_dict,days):
 #     该函数自动将写好的日均线拼装进原函数中
 """\\天天基金[累计净值走势]日均线——字典拼装函数\\"""
 def daily_line_dict_assembly_ACWorthTrend(_dict,days):
+
     a = _dict
     # a=eval(cut_Data_ACWorthTrend(a))
     ACWorthTrend_list = []
