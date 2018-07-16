@@ -194,14 +194,12 @@ def abandon_front_section_dict(dict={},num=1):
         while 1<2:
             if num>0:
                 value = _keylist[num-1]
-                print(value)
-                abandonlist.extend(value)
-                print(abandonlist)
+                abandonlist.append(value)
                 num=num-1
             else:
                 break
-        for i in list(abandonlist):
-            dict.pop(i)
+        for i1 in list(abandonlist):
+            dict.pop(i1)
     return dict
 
 
@@ -209,5 +207,5 @@ def abandon_front_section_dict(dict={},num=1):
 
 if __name__ == '__main__':
     _dict = {'a':1,'b':2,'c':3,'d':4}
-    _dict=abandon_front_section_dict(_dict,3)
+    _dict=abandon_front_section_dict(_dict,0)
     print(_dict)
