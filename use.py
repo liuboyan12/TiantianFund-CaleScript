@@ -2,12 +2,7 @@ from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.cross_line import cro
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import singleness_fund_inquire as data,cut_Data_ACWorthTrend as ljjz
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.daily_line import daily_line_dict_assembly_ACWorthTrend as dl
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import abandon_front_section_dict as ab1dict
-def mechanicalFundCalc(fundcode,fistline,secondline):
-    """
-    基金机械操作脚本,传入参数，查找
-    :param fundcode:
-    :return:
-    """
+
 def makeUseAbleDict(dailyline):
     """
     传本py里面的dl跑出值将值转化为穿线py中可以用的数据格式
@@ -52,7 +47,7 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
         :param dict1:第一条日均线 dict
         :param dict2: 第二条日均线dict
         :param _dictFundDate: 该基金的累计净值
-        :return:一个周期盈利能力dict
+        :return:一个周期盈利能力dict（不加%号的百分比值）
         """
         _result_dict = cline(dict1,dict2,1)
         keylist = _result_dict.keys()
@@ -97,7 +92,7 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
         calcList = list(inValueDict.keys())
         calcResultDict = {}
         for i in calcList:
-            calcResult = round(outValueDict[i]-inValueDict[i],5)
+            calcResult = round(((outValueDict[i]-inValueDict[i])/outValueDict[i])*100,4)
             calcResultPart = eval('{"' + str(i) + '":""}')
             calcResultPart[str(i)]=calcResult
             calcResultDict.update(calcResultPart)
@@ -106,20 +101,43 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
     finalresult = mechanicalDailyLineAnalysisCalcCoreCode(_time1dl_dict, _time2dl_dict, FundDate)
     return finalresult
 
-
 if __name__ == '__main__':
 
-    def tprint(obj, except_word=""):
-        for name, item in globals().items():
-            if item == obj and name != except_word:
-                print(name + ':', type(obj))
-                print(obj)
+    fundlist = []
+    filepath = 'C:\\Users\Administrator\Desktop'
+
+    for i in fundlist:
+        fundcode = i
+        dox =open(filepath+'\\总览.txt','w')
+        filename='\\'+fundcode+'.txt'
+        doc = open(filepath+filename, 'w')
+        day1=[5,10,15,20,15,30]
+        day2=[35,40,45,50,55,60]
+        print("基金",fundcode,"数据",file=doc)
 
 
-    i = mechanicalDailyLineAnalysisCalc("002001")
-    tprint(i)
-    a = 0
-    for i1 in list(i.keys()):
-        a = a+i[i1]
-    print(a/len(list(i.keys())))
+        maxdata = ''
+        ratedata = 0
+        for dayi1 in day1:
+            for dayi2 in day2:
+                i = mechanicalDailyLineAnalysisCalc(fundcode,dayi1,dayi2)
+                a = 0
+                ill=0
+                for i1 in list(i.keys()):
+                    ill=i[i1]
+                    a = a+i[i1]
+
+                # p=a
+
+                print('选择日期为:',dayi1,dayi2,file=doc)
+                junzhi = round(a/len(list(i.keys())),4)
+                print('收益均值：',str(junzhi)+" %",file=doc)
+                print(file=doc)
+                print(dayi1,dayi2)
+            if ratedata <= junzhi:
+                ratedata = junzhi
+                maxdata = str(dayi1) + ' ' + str(dayi2)
+        print(fundcode,file=dox)
+        print("最值为:",maxdata,ratedata,'%',file=dox)
+        print("最值为:", maxdata, ratedata, '%', file=doc)
 

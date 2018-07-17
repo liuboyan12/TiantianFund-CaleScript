@@ -75,7 +75,7 @@ def dict_JieQuBanDuan(_dict,key,diction='right'):
 
 
 
-def value_2_key(_dict={},_value=''):
+def value_2_key(_dict,_value):
 
     """
     #传入字典和字典内存在的value，返回其value的key值
@@ -202,10 +202,37 @@ def abandon_front_section_dict(dict={},num=1):
             dict.pop(i1)
     return dict
 
+def fetch_maxormin_key_pairs(dict={},maxormin='max',num=1):
+    while 1<2:
+        returndict={}
+        if len(dict)<=num:
+            print('取出个数太多，请调整个数')
+        else:
+            keylist = list(dict.keys())
+            dict_value = 0
+            for i in keylist:
+                dict_key = i
+                if maxormin==max:
+                    if dict_value<=float(dict[i]):
+                       dict_value=float(dict[i])
+                       madedict='{"'+i+'":"'+str(dict_value)+'"}'
+                elif maxormin==min:
+                    if dict_value>=float(dict[i]):
+                       dict_value=float(dict[i])
+                       madedict = '{"' + i + '":"' + str(dict_value) + '"}'
+                else:
+                    print('请输入正确的取值,max/min:')
+                    maxormin=input()
+                    continue
+            returndict.update(madedict)
+
+
+
+
+
+        break
 
 
 
 if __name__ == '__main__':
-    _dict = {'a':1,'b':2,'c':3,'d':4}
-    _dict=abandon_front_section_dict(_dict,0)
-    print(_dict)
+    _dict = {'a':3,'b':2,'c':3,'d':4}
