@@ -102,6 +102,20 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
     finalresult = mechanicalDailyLineAnalysisCalcCoreCode(_time1dl_dict, _time2dl_dict, FundDate)
     return finalresult
 
+def exchang_dailyline_strategy(fundcode,day11,day12,day21,day22):
+    """
+    日均线互换策略，基于基础版本只能计算两个日期下面的日均线，不能计算不同策略之间的数据，所以进行进一步
+    的，例如我的买入日期我选择在20日均线穿越60日均线的时候进行买入，而在日常计算值突破60日均线时候卖出，
+    这样的盈利均值为多少，以这个目的进行数据计算
+    :param fundcode: 基金代码
+    :param day11: 买入策略第一条日均线
+    :param day12: 买入策略第二条日均线
+    :param day21: 卖出策略第一条日均线
+    :param day22: 卖出策略第二条日均线
+    :return:
+    """
+
+
 if __name__ == '__main__':
 
     pwd = os.getcwd()
