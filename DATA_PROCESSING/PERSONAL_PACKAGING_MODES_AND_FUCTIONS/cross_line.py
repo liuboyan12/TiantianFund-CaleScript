@@ -35,7 +35,7 @@ def cross_line(dictA={},dictB={},startLocation=1):
     dictR = {}
     dictPart = '{"pointNo":{"firstPoint":"","secondPoint":"","way":""}}'
     while 1<2:
-        if i+1>=len(Xi):
+        if i+step-1>=len(Xi):
             break
         else:
             X = Xi[i-1]
