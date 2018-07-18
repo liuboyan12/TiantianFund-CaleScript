@@ -2,6 +2,7 @@ from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.cross_line import cro
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import singleness_fund_inquire as data,cut_Data_ACWorthTrend as ljjz
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.daily_line import daily_line_dict_assembly_ACWorthTrend as dl
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import abandon_front_section_dict as ab1dict
+import os
 
 def makeUseAbleDict(dailyline):
     """
@@ -103,8 +104,11 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
 
 if __name__ == '__main__':
 
-    fundlist = []
-    filepath = 'C:\\Users\Administrator\Desktop'
+    pwd = os.getcwd()
+    pwd = pwd.replace(":\\", ':\\\\')
+
+    fundlist = ['165312']
+    filepath = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
 
     for i in fundlist:
         fundcode = i
