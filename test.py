@@ -1,9 +1,24 @@
-from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.base_request import *
+# A = 1
+# Tst = 2
+# exec("use%s=A"%Tst)
+# print(use2)
+def tprint(obj, except_word=""):
+    """
+    #脚本编辑打印辅助工具
+    ┏━━━━┳━━┓
+    ┃传入值  ┃类型┃
+    ┣━━━━╋━━┫
+    ┃任何变量┃ all┃
+    ┗━━━━┻━━┛
+    #要复制到编写的函数中使用，不可跨py使用
+    """
+    for name, item in globals().items():
+        if item == obj and name != except_word:
+            print(name + ':',type(obj))
+            print(obj)
+            print()
 
-#
 
-print()
-a = base_request("http://app.fxh.io/api/coin/get?name=ethereum&page=1")
+dict = {}
+a = dict.get('1')
 print(a)
-# http://app.fxh.io/api/coin/get?name=ethereum&page=1
-# http://app.fxh.io/api/coin/coinrank?page=1&sortfield=market&asc=0&update=1

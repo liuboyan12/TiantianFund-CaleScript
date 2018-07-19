@@ -50,7 +50,7 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
         :param _dictFundDate: 该基金的累计净值
         :return:一个周期盈利能力dict（不加%号的百分比值）
         """
-        _result_dict = cline(dict1,dict2,1)
+        _result_dict = cline(dict1,dict2)
         keylist = _result_dict.keys()
         resultDict = {}
         for i in keylist:
@@ -68,6 +68,7 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
         ifcode = resultDict[popValue]
         if ifcode == 'BAX':
             resultDict.pop(popValue)
+
         transactionList = list(resultDict.keys())
         doubleCode = 0
         inValueKey =1
@@ -115,6 +116,71 @@ def exchang_dailyline_strategy(fundcode,day11,day12,day21,day22):
     :return:
     """
 
+    """获取基金数据"""
+    FundDate = ljjz(data(fundcode))
+
+
+    """日均线计算"""
+    _time11dl = dl(FundDate,day11)
+    _time12dl = dl(FundDate,day12)
+    _time11dl_dict = makeUseAbleDict(_time11dl)
+    _time12dl_dict = makeUseAbleDict(_time12dl)
+
+    _time21dl = dl(FundDate, day21)
+    _time22dl = dl(FundDate, day22)
+    _time21dl_dict = makeUseAbleDict(_time21dl)
+    _time22dl_dict = makeUseAbleDict(_time22dl)
+
+
+    """制作两条穿线结果"""
+    waitToTrateDataList = [_time11dl_dict,_time12dl_dict,_time21dl_dict,_time22dl_dict]
+    _result_dict = cline(waitToTrateDataList[0], waitToTrateDataList[1])
+    keylist = _result_dict.keys()
+    resultDict1 = {}
+    for i1 in keylist:
+        point = _result_dict[i1]["secondPoint"]
+        way = _result_dict[i1]["way"]
+        appendString = eval('{"' + point + '":"' + way + '"}')
+        resultDict1.update(appendString)
+
+    _result_dict = cline(waitToTrateDataList[2], waitToTrateDataList[3])
+    keylist = _result_dict.keys()
+    resultDict2 = {}
+    for i1 in keylist:
+        point = _result_dict[i1]["secondPoint"]
+        way = _result_dict[i1]["way"]
+        appendString = eval('{"' + point + '":"' + way + '"}')
+        resultDict2.update(appendString)
+
+    def popvalue(resultDict):
+        ifKeylist1 = list(resultDict.keys())
+        ifcode = resultDict[ifKeylist1[0]]
+        if ifcode == 'ABX':
+            resultDict = ab1dict(resultDict, 1)
+
+        popValue = ifKeylist1[len(ifKeylist1) - 1]
+        ifcode = resultDict[popValue]
+        if ifcode == 'BAX':
+            resultDict.pop(popValue)
+        return resultDict
+
+    resultDict1=popvalue(resultDict1)
+    resultDict2=popvalue(resultDict2)
+
+    #得到两条穿线数据
+    # {'1077552000000': 'ABX', '1079280000000': 'BAX', '1081872000000': 'ABX', '1086537600000': 'BAX',
+    # {'1086537600000': 'ABX', '1094659200000': 'BAX', '1106236800000': 'ABX', '1110297600000':
+
+    datelist = keylist
+    for i in datelist:
+        ifcode = 'y'
+        resultDict1.get(i,default="n")
+        if ifcode == 'y':
+            a = a
+
+
+
+
 
 if __name__ == '__main__':
 
@@ -159,3 +225,4 @@ if __name__ == '__main__':
         print("最值为:",maxdata,ratedata,'%',file=dox)
         print("最值为:", maxdata, ratedata, '%', file=doc)
 
+    # exchang_dailyline_strategy('002001',5,20,50,60)
