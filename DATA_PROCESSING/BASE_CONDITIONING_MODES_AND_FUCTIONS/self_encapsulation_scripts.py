@@ -202,7 +202,16 @@ def abandon_front_section_dict(dict={},num=1):
             dict.pop(i1)
     return dict
 
-def fetch_maxormin_key_pairs(dict={},maxormin='max',num=1):
+def fetch_maxormin_key_pairs(indict={},maxormin='max',num=1):
+    """
+    取出最大或者最小的键值对
+    :param dict: 要处理的字典
+    :param maxormin: 输入为最大或者最小max,min
+    :param num: 取多少个
+    :return: 返回值为取出最大/最小的键值对的字典
+    """
+    dict = indict
+    controlnum = 1
     while 1<2:
         returndict={}
         if len(dict)<=num:
@@ -225,12 +234,29 @@ def fetch_maxormin_key_pairs(dict={},maxormin='max',num=1):
                     maxormin=input()
                     continue
             returndict.update(madedict)
+            dict.pop(i)
+        controlnum=controlnum+1
+        if controlnum>num:
+            return returndict
+            break
+
+def Erase_delete_corresponding_value(dict,value):
+    """
+    遍历dict删除对应value值的键值对
+    :param dict:待处理字典
+    :param value:要去掉的value值
+    :return:处理完成的字典
+    """
+    keylist=list(dict.keys())
+    for i in keylist:
+        ifcode = dict[i]
+        if ifcode == value:
+            dict.pop(i)
+        else:
+            pass
+    return dict
 
 
-
-
-
-        break
 
 
 

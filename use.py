@@ -2,6 +2,8 @@ from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.cross_line import cro
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import singleness_fund_inquire as data,cut_Data_ACWorthTrend as ljjz
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.daily_line import daily_line_dict_assembly_ACWorthTrend as dl
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import abandon_front_section_dict as ab1dict
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import Erase_delete_corresponding_value as dropvalue
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import fetch_maxormin_key_pairs
 import os
 
 def makeUseAbleDict(dailyline):
@@ -113,7 +115,7 @@ def exchang_dailyline_strategy(fundcode,day11,day12,day21,day22):
     :param day12: 买入策略第二条日均线
     :param day21: 卖出策略第一条日均线
     :param day22: 卖出策略第二条日均线
-    :return:
+    :return:收益百分比
     """
 
     """获取基金数据"""
@@ -152,77 +154,96 @@ def exchang_dailyline_strategy(fundcode,day11,day12,day21,day22):
         appendString = eval('{"' + point + '":"' + way + '"}')
         resultDict2.update(appendString)
 
-    def popvalue(resultDict):
-        ifKeylist1 = list(resultDict.keys())
-        ifcode = resultDict[ifKeylist1[0]]
-        if ifcode == 'ABX':
-            resultDict = ab1dict(resultDict, 1)
-
-        popValue = ifKeylist1[len(ifKeylist1) - 1]
-        ifcode = resultDict[popValue]
-        if ifcode == 'BAX':
-            resultDict.pop(popValue)
-        return resultDict
-
-    resultDict1=popvalue(resultDict1)
-    resultDict2=popvalue(resultDict2)
+    resultDict1 = dropvalue(resultDict1, 'BAX')
+    resultDict2 = dropvalue(resultDict2, 'ABX')
 
     #得到两条穿线数据
-    # {'1077552000000': 'ABX', '1079280000000': 'BAX', '1081872000000': 'ABX', '1086537600000': 'BAX',
-    # {'1086537600000': 'ABX', '1094659200000': 'BAX', '1106236800000': 'ABX', '1110297600000':
+    keylist1 = list(resultDict1.keys())
+    keylist2 = list(resultDict2.keys())
 
-    datelist = keylist
-    for i in datelist:
-        ifcode = 'y'
-        resultDict1.get(i,default="n")
-        if ifcode == 'y':
-            a = a
+    sellout = []
 
+    while 1 < 2:
+        n = keylist1[-1:]
+        m = keylist2[-1:]
+        if  n>m:
+            keylist1=keylist1[:len(keylist1)-1]
+            if len(keylist1)==0:
+                print("1线没有比2线时间往前的值，请检查程序")
+        else:
+            break
+    buyin = keylist1
+
+    for i in buyin:
+        for q in keylist2:
+            if i<q:
+                sellout.append(q)
+                break
+    #制作两条数据list买入日期与卖出日期一一对应
+
+    returndict = {}
+
+    for i in range(len(buyin)):
+        buysingle = buyin[i]
+        salesingle = sellout[i]
+        buyprice = float(FundDate[buysingle]['ACWorthTrend'])
+        sellprice = float(FundDate[salesingle]['ACWorthTrend'])
+        D_value_rate = round(((sellprice-buyprice)/buyprice),4)
+        Pdict=eval('{"income_rate'+str(i)+'":"'+str(D_value_rate)+'"}')
+        returndict.update(Pdict)
+
+    return returndict
+
+
+def many_exchange_line_report(fundcode):
+    pwd = os.getcwd()
+    pwd = pwd.replace(":\\", ':\\\\')
+    filepath = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
+
+    funddoc=open(filepath+'\\'+str(fundcode)+".txt",'w')
+    sumdoc=open(filepath+"\\总览.txt",'w')
+
+    daylist1=[1,5,10,20,30]
+    daylist2=[40,50,60,90,120]
+    daylist3=[1,5,10,20,30]
+    daylist4=[40,50,60,90,120]
+    print("基金：" + str(fundcode),file=funddoc)
+    pindict = {}
+    for i in daylist1:
+        day1=i
+        for i2 in daylist2:
+            day2=i2
+            for i3 in daylist3:
+                day3=i3
+                for i4 in daylist4:
+                    day4=i4
+
+                    dict = exchang_dailyline_strategy(fundcode,day1,day2,day3,day4)
+                    lists = list(dict.values())
+                    num = 0
+                    maxvalue=float(max(lists))
+                    minvalue=float(min(lists))
+                    for i in lists:
+                        num=float(i)+num
+                    mean_value=(num-maxvalue-minvalue)/(len(lists)-2)
+                    updatekey = str(day1)+'-'+str(day2)+'-'+str(day3)+'-'+str(day4)
+                    Pdict = eval('{"'+updatekey+'":""}')
+                    Pdict[updatekey]=mean_value
+                    pindict.update(Pdict)
+
+                    print("机械规则："+str(day1)+'-'+str(day2)+'  '+str(day3)+'-'+str(day4),file=funddoc)
+                    print("收益均值："+str(mean_value),file=funddoc)
+                    print("最大值为："+str(maxvalue)+" 最小值为："+str(minvalue),file=funddoc)
+                    print('',file=funddoc)
+
+    alldict = fetch_maxormin_key_pairs(pindict)
+    stratigy = list(alldict.keys())
+    rates = list(alldict.values())
+    print("基金名称："+str(fundcode),file=sumdoc)
+    print("最大收益策略："+str(stratigy)+" 最大收益："+str(rates),file=sumdoc)
 
 
 
 
 if __name__ == '__main__':
-
-    pwd = os.getcwd()
-    pwd = pwd.replace(":\\", ':\\\\')
-
-    fundlist = ['165312']
-    filepath = pwd+'\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
-
-    for i in fundlist:
-        fundcode = i
-        dox =open(filepath+'\\总览.txt','w')
-        filename='\\'+fundcode+'.txt'
-        doc = open(filepath+filename, 'w')
-        day1=[5,10,15,20,15,30]
-        day2=[35,40,45,50,55,60]
-        print("基金",fundcode,"数据",file=doc)
-
-
-        maxdata = ''
-        ratedata = 0
-        for dayi1 in day1:
-            for dayi2 in day2:
-                i = mechanicalDailyLineAnalysisCalc(fundcode,dayi1,dayi2)
-                a = 0
-                ill=0
-                for i1 in list(i.keys()):
-                    ill=i[i1]
-                    a = a+i[i1]
-
-                # p=a
-
-                print('选择日期为:',dayi1,dayi2,file=doc)
-                junzhi = round(a/len(list(i.keys())),4)
-                print('收益均值：',str(junzhi)+" %",file=doc)
-                print(file=doc)
-                print(dayi1,dayi2)
-            if ratedata <= junzhi:
-                ratedata = junzhi
-                maxdata = str(dayi1) + ' ' + str(dayi2)
-        print(fundcode,file=dox)
-        print("最值为:",maxdata,ratedata,'%',file=dox)
-        print("最值为:", maxdata, ratedata, '%', file=doc)
-
-    # exchang_dailyline_strategy('002001',5,20,50,60)
+    many_exchange_line_report('002001')

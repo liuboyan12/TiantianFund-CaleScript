@@ -19,6 +19,6 @@ def tprint(obj, except_word=""):
             print()
 
 
-dict = {}
-a = dict.get('1')
-print(a)
+keylist1 = {'002001':[1,2,3]}
+keylist1.update({'002001':[4]})
+print(keylist1)
