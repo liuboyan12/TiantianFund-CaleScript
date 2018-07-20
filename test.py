@@ -1,24 +1,15 @@
-# A = 1
-# Tst = 2
-# exec("use%s=A"%Tst)
-# print(use2)
-def tprint(obj, except_word=""):
-    """
-    #脚本编辑打印辅助工具
-    ┏━━━━┳━━┓
-    ┃传入值  ┃类型┃
-    ┣━━━━╋━━┫
-    ┃任何变量┃ all┃
-    ┗━━━━┻━━┛
-    #要复制到编写的函数中使用，不可跨py使用
-    """
-    for name, item in globals().items():
-        if item == obj and name != except_word:
-            print(name + ':',type(obj))
-            print(obj)
-            print()
+from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import *
 
 
-keylist1 = {'002001':[1,2,3]}
-keylist1.update({'002001':[4]})
-print(keylist1)
+codelist = all_fundcode_2_list()
+returnlist = []
+for i in codelist:
+    d = open("C:\\Users\Administrator\Desktop\空.txt", 'a')
+    try:
+        singleness_fund_inquire(i)
+        print(str(i) + ",", file=d)
+    except Exception as e :
+        continue
+    d.close()
+
+
