@@ -22,7 +22,6 @@ def makeUseAbleDict(dailyline):
         _return_dict.update(pinzhuangdict)
     return _return_dict
 
-
 def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
     """
     计算基金的日均线机械买卖盈利能力
@@ -201,7 +200,7 @@ def many_exchange_line_report(fundcode):
     filepath = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
 
     funddoc=open(filepath+'\\'+str(fundcode)+".txt",'w')
-    sumdoc=open(filepath+"\\总览.txt",'w')
+
 
     daylist1=[1,5,10,20,30]
     daylist2=[40,50,60,90,120]
@@ -235,15 +234,33 @@ def many_exchange_line_report(fundcode):
                     print("收益均值："+str(mean_value),file=funddoc)
                     print("最大值为："+str(maxvalue)+" 最小值为："+str(minvalue),file=funddoc)
                     print('',file=funddoc)
-
-    alldict = fetch_maxormin_key_pairs(pindict)
-    stratigy = list(alldict.keys())
-    rates = list(alldict.values())
-    print("基金名称："+str(fundcode),file=sumdoc)
-    print("最大收益策略："+str(stratigy)+" 最大收益："+str(rates),file=sumdoc)
+                    print("当前计算"+str(fundcode),"机械规则：" + str(day1) + '-' + str(day2) + '  ' + str(day3) + '-' + str(day4))
+    funddoc.close()
+    return pindict
 
 
+def runner(fundcodelist=[]):
+    codelist = fundcodelist
+    pwd = os.getcwd()
+    pwd = pwd.replace(":\\", ':\\\\')
+    filepath = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
+    sumdoc = open(filepath + "\\总览.txt", 'w')
 
+    for i in codelist:
+        try:
+            lastdict = many_exchange_line_report(i)
+
+            fundcode = i
+            alldict = fetch_maxormin_key_pairs(lastdict)
+            stratigy = list(alldict.keys())
+            rates = list(alldict.values())
+            print("基金名称：" + str(fundcode), file=sumdoc)
+            print("最大收益策略：" + str(stratigy) + " 最大收益：" + str(rates), file=sumdoc)
+        except Exception as e:
+            print(e)
+            continue
+    sumdoc.close()
 
 if __name__ == '__main__':
-    many_exchange_line_report('002001')
+
+    runner(['002001'])
