@@ -1,4 +1,3 @@
-
 def tprint(obj, except_word=""):
     """
     #脚本编辑打印辅助工具
