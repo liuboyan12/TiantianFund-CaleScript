@@ -1,7 +1,6 @@
 import re
-
 from urllib.request import urlopen
-from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.adjust_string import format_removeal
+import urllib.request
 
 def tprint(obj, except_word=""):
     """
@@ -18,9 +17,7 @@ def tprint(obj, except_word=""):
             print(name + ':',type(obj))
             print(obj)
             print()
-page=urlopen('http://cn.morningstar.com/quickrank/default.aspx')
-htmlcode = format_removeal(str(page.read()))
-print(htmlcode)
+
 
 # url = 'http://cn.morningstar.com/handler/quicktake.ashx?command=fee&fcid=0P00015XQU&randomid=0.41830457233925933'
 # headers = {'Accept': 'application/json, text/javascript, */*',
@@ -34,14 +31,19 @@ print(htmlcode)
 #            'Referer': 'http://cn.morningstar.com/quicktake/0P00015XQU',
 #            'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36',
 #            'X-Requested-With': 'XMLHttpRequest'}
+page=urlopen('http://cn.morningstar.com/quickrank/default.aspx?ctl00%24cphMain%24ddlPageSite=10000')
+htmlcode = str(page.read())
+htmlcode=htmlcode[htmlcode.index("<table"):htmlcode.index("table>")+6].replace("\\n","").replace("\\t","").replace("\\r","").replace("&nbsp;","").replace("><",">\n<")
+# outlist= re.findall(r'target="_blank">(.+?)</a>',htmlcode)
+# finallist = []
+# for i in outlist:
+#     tprint(i)
+#     strings = str(i)
+#     ifstings=strings[0]
+#     if ifstings == "\\":
+#         pass
+#     else:
+#         finallist.append(i)
+# print(finallist)
 
-# i =int(htmlcode.find('<span id="cphMain_gridResult_lblRowNo_0">1</span>'))
-# htmlcode=htmlcode[i:]
-# tprint(htmlcode)
-#
-#
-#
-#
-# stirngs = '<a>6666<i>'
-# a = re.findall('(?<=<a>).*?(?=<i>)',stirngs)
-# print(a)
+print(htmlcode)
