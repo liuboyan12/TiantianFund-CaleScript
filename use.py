@@ -202,8 +202,8 @@ def many_exchange_line_report(fundcode):
     funddoc=open(filepath+'\\'+str(fundcode)+".txt",'w')
 
 
-    daylist1=[1,5,10,20,30]
-    daylist2=[40,50,60,90,120]
+    daylist1=[1]#,5,10,20,30]
+    daylist2=[90]#[40,50,60,90,120]
     daylist3=[1,5,10,20,30]
     daylist4=[40,50,60,90,120]
     print("基金：" + str(fundcode),file=funddoc)
@@ -263,4 +263,4 @@ def runner(fundcodelist=[]):
 
 if __name__ == '__main__':
 
-    runner(['002001'])
+    runner(['519670'])

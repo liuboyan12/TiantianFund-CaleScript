@@ -1,0 +1,779 @@
+headers{
+GET /quickrank/default.aspx HTTP/1.1
+Host: cn.morningstar.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ASP.NET_SessionId=fdmdaupcnaj540jszrt3rmod; Hm_lvt_eca85e284f8b74d1200a42c9faa85464=1532399316; __utmc=172984700; __utmz=172984700.1532403957.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BIGipServercn=2241222154.20480.0000; __utma=172984700.580412375.1532403957.1532417501.1532419678.5; __utmt=1; __utmb=172984700.1.10.1532419678; Hm_lpvt_eca85e284f8b74d1200a42c9faa85464=1532419678
+}
+
+raw{
+GET http://cn.morningstar.com/quickrank/default.aspx HTTP/1.1
+Host: cn.morningstar.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3371.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: ASP.NET_SessionId=fdmdaupcnaj540jszrt3rmod; Hm_lvt_eca85e284f8b74d1200a42c9faa85464=1532399316; __utmc=172984700; __utmz=172984700.1532403957.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BIGipServercn=2241222154.20480.0000; __utma=172984700.580412375.1532403957.1532417501.1532419678.5; __utmt=1; __utmb=172984700.1.10.1532419678; Hm_lpvt_eca85e284f8b74d1200a42c9faa85464=1532419678
+}
+
+txtview{
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><title>
+	基金龙虎榜_晨星网
+</title><meta http-equiv="Content-Type" content="text/html;charset=utf-8" /><link rel="shortcut icon" href="../favicon.ico" /><link href="/localization/cn/skin/default/css/common.css?v=2015.1.3" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/jquery.package.min.js" type="text/javascript"></script>
+    <script src="/javascripts/jquery.sexymormenu.js" type="text/javascript"></script>
+    <script src="/javascripts/common.js?v=2015.1.3" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cbjs.baidu.com/js/m.js"></script>
+    <script type="text/javascript">BAIDU_CLB_preloadSlots("889053","889054","889056");</script>
+<meta name="keywords" content="基金龙虎榜" /><meta name="description" content="全方位列举基金情况，包括以下信息：基金分类、晨星评级、当前净值、收益（各时间段）、标准差、风险系数、投资风格箱、组合情况、净资产、费用收取情况。" /></head>
+<body>
+    <form method="post" action="./default.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTI2NDQ3NTQ1NQ8WBh4KQ3VycmVudFRhYgUIc25hcHNob3QeCVNvcnRGaWxlZAUKU3RhclJhdGluZx4HU29ydERpcgUEREVTQxYCZg9kFgICAw9kFgJmD2QWFgIBDw8WAh4EVGV4dAUZ6K+E57qn5pel5pyf77yaMjAxOC0wNi0zMGRkAgcPEA8WBh4NRGF0YVRleHRGaWVsZAUETmFtZR4ORGF0YVZhbHVlRmllbGQFAklkHgtfIURhdGFCb3VuZGdkEBWHARAtLeWfuumHkeWFrOWPuC0tJOWuieS/oeWfuumHkeeuoeeQhuaciemZkOi0o+S7u+WFrOWPuB7lrp3nm4jln7rph5HnrqHnkIbmnInpmZDlhazlj7gk5YyX5L+h55Ge5Liw5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4HuWNmumBk+WfuumHkeeuoeeQhuaciemZkOWFrOWPuB7ljZrml7bln7rph5HnrqHnkIbmnInpmZDlhazlj7gq5rik5rW35rGH6YeR6K+B5Yi46LWE5Lqn566h55CG5pyJ6ZmQ5YWs5Y+4Hui0oumAmuWfuumHkeeuoeeQhuaciemZkOWFrOWPuB7otKLpgJror4HliLjmnInpmZDotKPku7vlhazlj7ge6ZW/5a6J5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4HumVv+WfjuWfuumHkeeuoeeQhuaciemZkOWFrOWPuCrplb/msZ/vvIjkuIrmtbfvvInotYTkuqfnrqHnkIbmnInpmZDlhazlj7ge6ZW/55ub5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4JOmVv+S/oeWfuumHkeeuoeeQhuaciemZkOi0o+S7u+WFrOWPuBjliJvph5HlkIjkv6Hln7rph5Hlhazlj7ge5aSn5oiQ5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4HuW+t+mCpuWfuumHkeeuoeeQhuaciemZkOWFrOWPuCfkuJzmlrnpmL/lsJTms5Xln7rph5HnrqHnkIbmnInpmZDlhazlj7gq5Lic5pa55rGH55CG6LWE5Lqn566h55CG6aaZ5riv5pyJ6ZmQ5YWs5Y+4HuS4nOaWueWfuumHkeeuoeeQhuaciemZkOWFrOWPuB7kuJzmlrnor4HliLjogqHku73mnInpmZDlhazlj7gk5Lic5rW35Z+66YeR566h55CG5pyJ6ZmQ6LSj5Lu75YWs5Y+4HuS4nOWQtOWfuumHkeeuoeeQhuaciemZkOWFrOWPuB7kuJzlhbTor4HliLjogqHku73mnInpmZDlhazlj7go5Lic5LqaIOiBlCDkuLDmipXotYQg566h55CG5pyJIOmZkOWFrOWPuCTmlrnmraPlr4zpgqbln7rph5HnrqHnkIbmnInpmZDlhazlj7gh5a+M5a6J6L6+5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4HuWvjOWbveWfuumHkeeuoeeQhuaciemZkOWFrOWPuB7lr4zojaPln7rph5HnrqHnkIbmnInpmZDlhazlj7ge5qC85p6X5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4JOW3pemTtueRnuS/oeWfuumHkeeuoeeQhuaciemZkOWFrOWPuCflhYnlpKfkv53lvrfkv6Hln7rph5HnrqHnkIbmnInpmZDlhazlj7ge5bm/5Y+R5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4HuWbvemDveivgeWIuOiCoeS7veaciemZkOWFrOWPuCrlm73mtbflr4zlhbDlhYvmnpfln7rph5HnrqHnkIbmnInpmZDlhazlj7ge5Zu96YeR5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4KuWbveW8gOazsOWvjOWfuumHkeeuoeeQhuaciemZkOi0o+S7u+WFrOWPuCHlm73ogZTlronln7rph5HnrqHnkIbmnInpmZDlhazlj7ge5Zu96J6N5Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4JOWbveWvv+WuieS/neWfuumHkeeuoeeQhuaciemZkOWFrOWPuB7lm73ms7Dln7rph5HnrqHnkIbmnInpmZDlhazlj7gk5Zu95oqV55Ge6ZO25Z+66YeR566h55CG5pyJ6ZmQ5YWs5Y+4Iea1t+WvjOmAmuWfuumHkeeuoeeQhuaciemZkOWFrOWPuCTmgZLnlJ/liY3mtbfln7rph5HnrqHnkIbmnInpmZDlhazlj7ge5oGS55Sf5oqV6LWE566h55CG5pyJ6ZmQ5YWs5Y+4HuaBkui2iuWfuumHkeeuoeeQhuaciemZkOWFrOWPuCTnuqLloZTnuqLlnJ/ln7rph5HnrqHnkIbmnInpmZDlhazlj7gk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Z2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkAggPEGQQFQIQLS3mipXotYTnu4TlkIgtLQ/nmbvlvZXlkI7lj6/nlKgVAgAAFCsDAmdnZGQCCQ8QZBAVAhAtLeinguWvn+WIl+ihqC0tD+eZu+W9leWQjuWPr+eUqBUCAAAUKwMCZ2dkZAIMDw8WBB4IQ3NzQ2xhc3MFBmFjdGl2ZR4EXyFTQgICZGQCDQ8PFgQfB2UfCAICZGQCDg8PFgQfB2UfCAICZGQCDw8PFgQfB2UfCAICZGQCEg8PFgIfAwUENzUwNGRkAhMPDxYEHgtSZWNvcmRjb3VudALQOh4IUGFnZVNpemUCGWRkAhQPEGRkFgFmZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WSwUdY3RsMDAkY3BoTWFpbiRjYmxTdGFyUmF0aW5nJDAFHWN0bDAwJGNwaE1haW4kY2JsU3RhclJhdGluZyQxBR1jdGwwMCRjcGhNYWluJGNibFN0YXJSYXRpbmckMgUdY3RsMDAkY3BoTWFpbiRjYmxTdGFyUmF0aW5nJDMFHWN0bDAwJGNwaE1haW4kY2JsU3RhclJhdGluZyQ0BR1jdGwwMCRjcGhNYWluJGNibFN0YXJSYXRpbmckNQUdY3RsMDAkY3BoTWFpbiRjYmxTdGFyUmF0aW5nJDUFHmN0bDAwJGNwaE1haW4kY2JsU3RhclJhdGluZzUkMAUeY3RsMDAkY3BoTWFpbiRjYmxTdGFyUmF0aW5nNSQxBR5jdGwwMCRjcGhNYWluJGNibFN0YXJSYXRpbmc1JDIFHmN0bDAwJGNwaE1haW4kY2JsU3RhclJhdGluZzUkMwUeY3RsMDAkY3BoTWFpbiRjYmxTdGFyUmF0aW5nNSQ0BR5jdGwwMCRjcGhNYWluJGNibFN0YXJSYXRpbmc1JDUFHmN0bDAwJGNwaE1haW4kY2JsU3RhclJhdGluZzUkNQUYY3RsMDAkY3BoTWFpbiRjYmxHcm91cCQwBRhjdGwwMCRjcGhNYWluJGNibEdyb3VwJDEFGGN0bDAwJGNwaE1haW4kY2JsR3JvdXAkMgUYY3RsMDAkY3BoTWFpbiRjYmxHcm91cCQzBRhjdGwwMCRjcGhNYWluJGNibEdyb3VwJDQFGGN0bDAwJGNwaE1haW4kY2JsR3JvdXAkNQUYY3RsMDAkY3BoTWFpbiRjYmxHcm91cCQ2BRhjdGwwMCRjcGhNYWluJGNibEdyb3VwJDcFGGN0bDAwJGNwaE1haW4kY2JsR3JvdXAkOAUYY3RsMDAkY3BoTWFpbiRjYmxHcm91cCQ4BRtjdGwwMCRjcGhNYWluJGNibENhdGVnb3J5JDAFG2N0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMQUbY3RsMDAkY3BoTWFpbiRjYmxDYXRlZ29yeSQyBRtjdGwwMCRjcGhNYWluJGNibENhdGVnb3J5JDMFG2N0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkNAUbY3RsMDAkY3BoTWFpbiRjYmxDYXRlZ29yeSQ1BRtjdGwwMCRjcGhNYWluJGNibENhdGVnb3J5JDYFG2N0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkNwUbY3RsMDAkY3BoTWFpbiRjYmxDYXRlZ29yeSQ4BRtjdGwwMCRjcGhNYWluJGNibENhdGVnb3J5JDkFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTAFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTEFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTIFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTMFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTQFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTUFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTYFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTcFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTgFHGN0bDAwJGNwaE1haW4kY2JsQ2F0ZWdvcnkkMTgFGGN0bDAwJGNwaE1haW4kY2JsTGV2ZWwkMAUYY3RsMDAkY3BoTWFpbiRjYmxMZXZlbCQxBRhjdGwwMCRjcGhNYWluJGNibExldmVsJDIFGGN0bDAwJGNwaE1haW4kY2JsTGV2ZWwkMwUYY3RsMDAkY3BoTWFpbiRjYmxMZXZlbCQzBStjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMDEkaW1nU29ydEFycm93BSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMDIkY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDAzJGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwwNCRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMDUkY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDA2JGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwwNyRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMDgkY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDA5JGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwxMCRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMTEkY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDEyJGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwxMyRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMTQkY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDE1JGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwxNiRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMTckY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDE4JGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwxOSRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMjAkY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDIxJGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwyMiRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMjMkY2hrRnVuZAUmY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0JGN0bDI0JGNoa0Z1bmQFJmN0bDAwJGNwaE1haW4kZ3JpZFJlc3VsdCRjdGwyNSRjaGtGdW5kBSZjdGwwMCRjcGhNYWluJGdyaWRSZXN1bHQkY3RsMjYkY2hrRnVuZAUYY3RsMDAkY3BoTWFpbiRncmlkUmVzdWx0DzwrAAwBCAIBZARam1rBE8j0U5xMGNWy93qIqnOw" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="302D9840" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+    <div id="top">
+        <div id="topNav" class="areaInner clearfix"><span style="color:Red"></span>
+            <h1>晨星网--照亮投资人生</h1>
+            <div id="headerNav">
+                <a href="http://cn.morningstar.com/award" target="_blank" style="float:left">历年基金奖</a>
+                <!--<ul class="navItem">
+                    <li id="nav2">
+                        <div class="navOut">基金奖</div>
+                        <ul>
+                            <li style="height:153px;"><a href="http://cn.morningstar.com/awards/morningstar-awards-2015.html" target="_blank"><img src="//cn.morningstar.com/awards/images/2015/map/awards-370x210.png" width="270" height="153" /></a></li>
+                            <li><span style="width:30%; float:left;">基金奖项</span><span class="txtRight" style="width:70%; float:left;">提名</span></li>
+                            <li><a href="#" style="width:30%;">股票型</a><a href="/quicktake/F0000004IG?place=awards" target="_blank" style="width:70%; text-align:right;">新华钻石品质企业股票</a></li>
+                            <li><a href="#" style="width:30%; border-top:dotted 1px #bebebe;">激进配置型</a><a href="/quicktake/F00000042E?place=awards" target="_blank" style="width:70%; text-align:right; border-top:dotted 1px #bebebe;">华商领先企业混合</a></li>
+                            <li><a href="#" style="width:30%; border-top:dotted 1px #bebebe;">混合型</a><a href="/quicktake/F00000049V?place=awards" target="_blank" style="width:70%; text-align:right; border-top:dotted 1px #bebebe;">诺安灵活配置混合</a></li>
+                            <li><a href="#" style="width:30%; border-top:dotted 1px #bebebe;">债券型</a><a href="/quicktake/0P0000SLRN?place=awards" target="_blank" style="width:70%; text-align:right;border-top:dotted 1px #bebebe;">长城积极增利债券</a></li>
+                            <li><a href="#" style="width:30%; border-top:dotted 1px #bebebe;">中国股票型</a><a href="/hedgefund/quicktake/F00000J8B1?place=awards" target="_blank" style="width:70%; text-align:right; border-top:dotted 1px #bebebe;">中信信托•和聚4期</a></li>
+                            <li><a style="width:100%; border-top:solid 1px #bebebe; font-weight:bold;">历届基金奖回顾</a></li>
+                            <li>
+                                <a href="/awards/morningstar-awards-2014.html" target="_blank" style="width:48px;">2014</a>
+                                <a href="/awards/morningstar-awards-2013.html" target="_blank" style="width:48px;">2013</a>
+                                <a href="/awards/morningstar-awards-2012.html" target="_blank" style="width:48px;">2012</a>
+                                <a href="/article/AR00003851" target="_blank" style="width:48px;">2010</a>
+                                <a href="/article/AR00003131" target="_blank" style="width:48px;">2009</a>
+                                <a href="/article/AR00002201" target="_blank" style="width:30px; text-align:right;">2008</a>
+                            </li>
+                            <li>
+                                <a href="/article/AR00001979" target="_blank" style="width:48px;">2007</a>
+                                <a href="/article/AR00001975" target="_blank" style="width:48px;">2006</a>
+                                <a href="/article/AR00001976" target="_blank" style="width:48px;">2005</a>
+                                <a href="/article/AR00001977" target="_blank" style="width:48px;">2004</a>
+                                <a href="/article/AR00001978" target="_blank" style="width:48px;">2003</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>-->
+                <ul class="navItem">
+                    <li id="nav3">
+                        <div class="navOut">晨星产品</div>
+                        <ul>
+                            <li><span>授权数据及工具</span></li>
+                            <li><a href="/AboutUs/licensedata.htm" target="_blank">晨星授权数据</a></li>
+                            <li><a href="/AboutUs/InternetTools.htm" target="_blank">基金超市授权工具及资讯</a></li>
+                            <li><span>软件平台</span></li>
+                            <li><a href="/AboutUs/Direct.htm" target="_blank">晨星全球投资研究平台</a></li>
+                            <li><a href="http://corporate.morningstar.com/ib/asp/subject.aspx?xmlfile=1221.xml" target="_blank">资产配置软件</a></li>
+                            <li><span>基金评鉴</span></li>
+                            <li><a href="/AboutUs/profiles.htm" target="_blank">评鉴和指南</a></li>
+                            <li><span>投资咨询</span></li>
+                            <li><a href="/AboutUs/consulting.htm" target="_blank">咨询服务</a></li>
+                            <li><span>出版物</span></li>
+                            <li><a href="/AboutUs/book_fund.htm" target="_blank">晨星海外出版物</a></li>
+                            <li><span>其他</span></li>
+                            <li><a href="/AboutUs/Fund_Indexes.htm" target="_blank">晨星指数产品</a></li>
+                            <li><a href="/AboutUs/Websites.htm" target="_blank">晨星网站广告和赞助</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navItem">
+                    <li id="nav1">
+                        <div class="navOut">晨星中国</div>
+                        <ul>
+                            <li><a href="/disclosure" target="_blank">信息披露</a></li>
+                            <li><a href="/index/default.aspx" target="_blank">晨星指数</a></li>
+                            <li><a href="/methodology" target="_blank">晨星方法</a></li>
+                            <li><a href="/mornnews" target="_blank">晨星新闻</a></li>
+                            <li><a href="/company/job/job.html" target="_blank">招聘信息</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navItem">
+                    <li id="nav4">
+                        <div class="navOut">黄页</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="areaInner clearfix">
+        <div id="logo"></div>
+        <div id="login">
+            <div class="load">Loading...</div>
+            <div class="guest">
+                <span>游客！</span> 
+                <a href="/membership/signin.aspx?ReturnUrl=/main/default.aspx">登录</a> 
+                
+            </div>
+            <div class="welcome">
+                欢迎您，<span class="name"></span>
+                <a class="exit" href="javascript:void(0)">退出</a> 
+            </div>
+        </div>
+        <div id="quickquery">
+            <input class="queryTxt" type="text" value="" />
+            <ul>
+                <li class="active" data="fund">基金</li><li data="company">公司</li><li data="manager">经理</li><li data="article">文章</li>
+            </ul>
+        </div>
+    </div>
+    <div id="adT" class="areaOuter clearfix">
+        <div class="areaInner">
+            <div id="idAdBannerLeft"><script type="text/javascript">BAIDU_CLB_fillSlot("889002");</script></div>        
+            <div id="idAdBannerRight"><script type="text/javascript">BAIDU_CLB_fillSlot("889003");</script></div>
+        </div>
+    </div> 
+    <div id="menus" class="areaOuter clearfix">
+        <div class="menu areaInner clearfix">
+            <ul id='sexmormenu' class='topnav'>
+                <li class="topnavitem" style='width:75px'><a class="parnav dot1" href='/membership/center.aspx'>会员</a>
+                    <ul class='subnav submember'>
+                        
+                        <li><a href="/membership/center.aspx">我的状态</a></li>
+                        <li><a href="/membership/updatepassword.aspx">修改密码</a></li>
+                        <li><a href="/membership/lostpassword.aspx">找回密码</a></li>
+                        <li><a href="/membership/updateusername.aspx">修改昵称</a></li>
+                        <li><a href="/membership/updateemail.aspx">修改邮箱</a></li>
+                        <li><a href="/membership/updatepersonal.aspx">修改注册信息</a></li>
+                        <li class="bottom"><a href="/membership/subscription.aspx">订阅晨星资讯</a></li>
+                    </ul>
+                </li>
+                <li class="topnavitem" style='width:99px'><a href='/main/default.aspx'>首页</a></li>
+                <li class="topnavitem" style='width:75px'><a class="parnav dot1" href='/research/new'>文章</a>
+                    <ul class='subnav subarticle'>
+                        <li class="top"><a class="ico1" href='/research/fundreport'>基金报告</a><a href='/research/macro'>宏观报告</a></li>
+                        <li><a href='/research/mutualfund/CA00001033'>股票型基金</a><a href='/research/institution'>机构视点</a></li>
+                        <li><a href='/research/mutualfund/CA00001035'>混合型基金</a><a href='/research/market'>市场盘点</a></li>
+                        <li><a href='/research/mutualfund/CA00001037'>债券型基金</a><a href='/research/abroad'>海外市场</a></li>
+                        <li><a href='/research/mutualfund/CA00001038'>货币市场基金</a><a href='/research/expert'>理财札记</a></li>
+                        <li><a href='/research/mutualfund/CA00001039'>保本基金</a><a href='/research/mutualfund/CA00001010'>数据透视</a></li>
+                        <li><a href='/research/mutualfund/CA00001036'>封闭式基金</a><a href='/research/mutualfund/CA00001032'>行业分析</a></li>
+                        <li><a href='/research/mutualfund/CA00001034'>指数型基金</a><a href='/research/mutualfund/CA00001076'>新基金观察</a></li>
+                        <li><a href='/research/mutualfund/CA00001042'>QDII</a></li>
+                        <li class="bottom"><a href='/research/mutualfund/CA00001070'>分级基金</a></li>
+                    </ul>
+                </li>
+                <li class="topnavitem" style='width:100px'><a href='/portfolio/'>组合管理</a></li>
+                <li class="topnavitem" style='width:100px'><a class="parnav dot2" href='/cover/tools.aspx'>基金工具</a>
+                    <ul class='subnav subtools'>
+                        
+                        <li><a href='/quickrank/default.aspx'>基金龙虎榜</a><a class="ico2" href='/xray/default.html'>组合透视</a></li>
+                        <li><a href='/quickrank/rqfii.aspx'>基金龙虎榜(RQFII)</a><a href='/topholding/default.aspx'>基金重仓股</a></li>
+                        <li><a href='/fundselect/default.aspx'>基金筛选器</a><a href='/fundmanagers/default.aspx'>基金经理</a></li>
+                        <li class="bottom"><a class="ico2" href='/fundcompare/compare.aspx'>基金对比</a><a href='/fundcompany/default.aspx'>基金公司</a></li>
+                    </ul>
+                </li>
+                <li class="topnavitem" style='width:100px'><a class="parnav dot2" href='/fundnews/default.aspx'>基金动态</a>
+                    <ul class='subnav subnews'>
+                        <li class="top"><a href='/quickrank/default.aspx'>净值变动</a></li>
+                        <li><a href='/fundnews/default.aspx?activetab=funddividend'>基金分红</a></li>
+                        <li><a href='/fundnews/default.aspx?activetab=splitsinfo'>基金拆分</a></li>
+                        <li><a href='/fundnews/default.aspx?activetab=newfund'>新发基金</a></li>
+                        <li><a href='/fundnews/default.aspx?activetab=managerchange'>经理变更</a></li>
+                        <li class="bottom"><a href='/fundnews/default.aspx?activetab=executivechange'>高管变动</a></li>
+                    </ul>
+                </li>
+                <li class="topnavitem" style='width:100px'><a href='/cover/etf.aspx'>ETFs</a></li>
+                <li class="topnavitem" style='width:100px'><a class="parnav dot2" href='/cover/hedgefund.aspx'>对冲基金</a>
+                    <ul class='subnav subhedge'>
+                        <li class="top"><a href="/research/hedgefund/">研究报告</a></li>
+                        
+                        <li><a href="/hedgefund/selector/default.aspx">对冲基金筛选器</a></li>
+                        <li><a href="/hedgefund/manager/default.aspx">对冲基金经理</a></li>
+                        <li><a href="/hedgefund/company/default.aspx">对冲基金公司</a></li>
+                        <li class="bottom"><a href="/research/hedgefund/CA00007002">新手必读</a></li>
+                    </ul>
+                </li>
+                <li class="topnavitem" style='width:100px'><a href='/disclosure'>披露</a></li>
+                <li class="topnavitem" style='width:100px'><a href='/cover/school.aspx'>投资学堂</a></li>
+            </ul>
+        </div>
+    </div>
+    
+<link href="/localization/cn/skin/default/css/quickrank.css?v=2014.1" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    $("#sexmormenu").sexymorMenu({directLink:true,activeIndex:4});
+</script>
+<div id="title" class="areaOuter clearfix">
+    <div class="areaInner clearfix"><h1>基金龙虎榜</h1></div>
+</div>
+<div class="areaOuter clearfix">
+    <div class="areaInner clearfix">
+        <div class="blank10"></div>
+        <div id="qr_search">
+            <div class="clearfix">
+                <span>三年评级：</span>
+                <div class="star">
+                    <table id="cphMain_cblStarRating">
+	<tr>
+		<td><input id="cphMain_cblStarRating_0" type="checkbox" name="ctl00$cphMain$cblStarRating$0" value="5" /><label for="cphMain_cblStarRating_0"><img src="/common/images/5stars.gif" alt="5"/></label></td><td><input id="cphMain_cblStarRating_1" type="checkbox" name="ctl00$cphMain$cblStarRating$1" value="4" /><label for="cphMain_cblStarRating_1"><img src="/common/images/4stars.gif" alt="4"/></label></td><td><input id="cphMain_cblStarRating_2" type="checkbox" name="ctl00$cphMain$cblStarRating$2" value="3" /><label for="cphMain_cblStarRating_2"><img src="/common/images/3stars.gif" alt="3"/></label></td><td><input id="cphMain_cblStarRating_3" type="checkbox" name="ctl00$cphMain$cblStarRating$3" value="2" /><label for="cphMain_cblStarRating_3"><img src="/common/images/2stars.gif" alt="2"/></label></td><td><input id="cphMain_cblStarRating_4" type="checkbox" name="ctl00$cphMain$cblStarRating$4" value="1" /><label for="cphMain_cblStarRating_4"><img src="/common/images/1stars.gif" alt="1"/></label></td><td><input id="cphMain_cblStarRating_5" type="checkbox" name="ctl00$cphMain$cblStarRating$5" value="0" /><label for="cphMain_cblStarRating_5"><img src="/common/images/0stars.gif" alt="0"/></label></td>
+	</tr>
+</table>
+                </div>
+                
+                <div class="qr_comment">
+                    <span id="cphMain_lblRatingDate">评级日期：2018-06-30</span>
+                    
+                </div>
+            </div>
+            <div class="clearfix">
+                <span>五年评级：</span>
+                <div class="star">
+                    <table id="cphMain_cblStarRating5">
+	<tr>
+		<td><input id="cphMain_cblStarRating5_0" type="checkbox" name="ctl00$cphMain$cblStarRating5$0" value="55" /><label for="cphMain_cblStarRating5_0"><img src="/common/images/5stars.gif" alt="5"/></label></td><td><input id="cphMain_cblStarRating5_1" type="checkbox" name="ctl00$cphMain$cblStarRating5$1" value="54" /><label for="cphMain_cblStarRating5_1"><img src="/common/images/4stars.gif" alt="4"/></label></td><td><input id="cphMain_cblStarRating5_2" type="checkbox" name="ctl00$cphMain$cblStarRating5$2" value="53" /><label for="cphMain_cblStarRating5_2"><img src="/common/images/3stars.gif" alt="3"/></label></td><td><input id="cphMain_cblStarRating5_3" type="checkbox" name="ctl00$cphMain$cblStarRating5$3" value="52" /><label for="cphMain_cblStarRating5_3"><img src="/common/images/2stars.gif" alt="2"/></label></td><td><input id="cphMain_cblStarRating5_4" type="checkbox" name="ctl00$cphMain$cblStarRating5$4" value="51" /><label for="cphMain_cblStarRating5_4"><img src="/common/images/1stars.gif" alt="1"/></label></td><td><input id="cphMain_cblStarRating5_5" type="checkbox" name="ctl00$cphMain$cblStarRating5$5" value="50" /><label for="cphMain_cblStarRating5_5"><img src="/common/images/0stars.gif" alt="0"/></label></td>
+	</tr>
+</table>
+                </div>
+                
+                <div class="qr_comment"></div>
+            </div>
+            <div class="clearfix">
+                <span>基金组别：</span>
+                <div class="group">
+                    <table id="cphMain_cblGroup">
+	<tr>
+		<td><input id="cphMain_cblGroup_0" type="checkbox" name="ctl00$cphMain$cblGroup$0" value="O" /><label for="cphMain_cblGroup_0">开放式</label></td><td><input id="cphMain_cblGroup_1" type="checkbox" name="ctl00$cphMain$cblGroup$1" value="C" /><label for="cphMain_cblGroup_1">封闭式</label></td><td><input id="cphMain_cblGroup_2" type="checkbox" name="ctl00$cphMain$cblGroup$2" value="QD" /><label for="cphMain_cblGroup_2">QDII</label></td><td><input id="cphMain_cblGroup_3" type="checkbox" name="ctl00$cphMain$cblGroup$3" value="AC" /><label for="cphMain_cblGroup_3">主动管理</label></td><td><input id="cphMain_cblGroup_4" type="checkbox" name="ctl00$cphMain$cblGroup$4" value="IN" /><label for="cphMain_cblGroup_4">指数型</label></td><td><input id="cphMain_cblGroup_5" type="checkbox" name="ctl00$cphMain$cblGroup$5" value="EI" /><label for="cphMain_cblGroup_5">指数增强</label></td><td><input id="cphMain_cblGroup_6" type="checkbox" name="ctl00$cphMain$cblGroup$6" value="ET" /><label for="cphMain_cblGroup_6">ETF</label></td><td><input id="cphMain_cblGroup_7" type="checkbox" name="ctl00$cphMain$cblGroup$7" value="LO" /><label for="cphMain_cblGroup_7">LOF</label></td><td><input id="cphMain_cblGroup_8" type="checkbox" name="ctl00$cphMain$cblGroup$8" value="MS" /><label for="cphMain_cblGroup_8">中小盘</label></td>
+	</tr>
+</table>
+                </div>
+            </div>
+            <div class="clearfix">
+                <span>基金分类：</span>
+                <div class="cat options">
+                    <table id="cphMain_cblCategory">
+	<tr>
+		<td><input id="cphMain_cblCategory_0" type="checkbox" name="ctl00$cphMain$cblCategory$0" value="PGSZ01,PGSZA6" /><label for="cphMain_cblCategory_0">股票型</label></td><td><input id="cphMain_cblCategory_1" type="checkbox" name="ctl00$cphMain$cblCategory$1" value="PGSZB1,PGSZR6" /><label for="cphMain_cblCategory_1">行业股票-医药</label></td><td><input id="cphMain_cblCategory_2" type="checkbox" name="ctl00$cphMain$cblCategory$2" value="PGSZC1,PGSZS6" /><label for="cphMain_cblCategory_2">行业股票-科技、传媒及通讯</label></td><td><input id="cphMain_cblCategory_3" type="checkbox" name="ctl00$cphMain$cblCategory$3" value="PGSZA1,PGSZQ6" /><label for="cphMain_cblCategory_3">沪港深股票</label></td><td><input id="cphMain_cblCategory_4" type="checkbox" name="ctl00$cphMain$cblCategory$4" value="PGSZD1,PGSZF6" /><label for="cphMain_cblCategory_4">激进配置</label></td>
+	</tr><tr>
+		<td><input id="cphMain_cblCategory_5" type="checkbox" name="ctl00$cphMain$cblCategory$5" value="PGSZF3,PGSZP6" /><label for="cphMain_cblCategory_5">灵活配置</label></td><td><input id="cphMain_cblCategory_6" type="checkbox" name="ctl00$cphMain$cblCategory$6" value="PGSZC3,PGSZC6" /><label for="cphMain_cblCategory_6">标准混合</label></td><td><input id="cphMain_cblCategory_7" type="checkbox" name="ctl00$cphMain$cblCategory$7" value="PGSZD3,PGSZH6" /><label for="cphMain_cblCategory_7">保守混合</label></td><td><input id="cphMain_cblCategory_8" type="checkbox" name="ctl00$cphMain$cblCategory$8" value="PGSZG3,PGSZT6" /><label for="cphMain_cblCategory_8">沪港深混合</label></td><td><input id="cphMain_cblCategory_9" type="checkbox" name="ctl00$cphMain$cblCategory$9" value="PGSZE3,PGSZL6" /><label for="cphMain_cblCategory_9">可转债</label></td>
+	</tr><tr>
+		<td><input id="cphMain_cblCategory_10" type="checkbox" name="ctl00$cphMain$cblCategory$10" value="PGSZC2,PGSZD6" /><label for="cphMain_cblCategory_10">激进债券</label></td><td><input id="cphMain_cblCategory_11" type="checkbox" name="ctl00$cphMain$cblCategory$11" value="PGSZA2,PGSZB6" /><label for="cphMain_cblCategory_11">普通债券</label></td><td><input id="cphMain_cblCategory_12" type="checkbox" name="ctl00$cphMain$cblCategory$12" value="PGSZD2,PGSZK6" /><label for="cphMain_cblCategory_12">纯债基金</label></td><td><input id="cphMain_cblCategory_13" type="checkbox" name="ctl00$cphMain$cblCategory$13" value="PGSZB2,PGSZJ6" /><label for="cphMain_cblCategory_13">短债基金</label></td><td><input id="cphMain_cblCategory_14" type="checkbox" name="ctl00$cphMain$cblCategory$14" value="PGSZ04,PGSZE6" /><label for="cphMain_cblCategory_14">货币基金</label></td>
+	</tr><tr>
+		<td><input id="cphMain_cblCategory_15" type="checkbox" name="ctl00$cphMain$cblCategory$15" value="PGSZ0E,PGSZM6" /><label for="cphMain_cblCategory_15">市场中性</label></td><td><input id="cphMain_cblCategory_16" type="checkbox" name="ctl00$cphMain$cblCategory$16" value="PGSZ0F,PGSZN6" /><label for="cphMain_cblCategory_16">商品</label></td><td><input id="cphMain_cblCategory_17" type="checkbox" name="ctl00$cphMain$cblCategory$17" value="PGSZ05,PGSZI6" /><label for="cphMain_cblCategory_17">保本基金</label></td><td><input id="cphMain_cblCategory_18" type="checkbox" name="ctl00$cphMain$cblCategory$18" value="PGSZ0X,PGSZG6" /><label for="cphMain_cblCategory_18">其它</label></td><td></td>
+	</tr>
+</table>
+                </div>
+            </div>
+            <div class="clearfix">
+                <span>基金份额：</span>
+                <div class="cat">
+                    <table id="cphMain_cblLevel">
+	<tr>
+		<td><input id="cphMain_cblLevel_0" type="checkbox" name="ctl00$cphMain$cblLevel$0" value="A" /><label for="cphMain_cblLevel_0">A类</label></td><td><input id="cphMain_cblLevel_1" type="checkbox" name="ctl00$cphMain$cblLevel$1" value="B" /><label for="cphMain_cblLevel_1">B类</label></td><td><input id="cphMain_cblLevel_2" type="checkbox" name="ctl00$cphMain$cblLevel$2" value="AB" /><label for="cphMain_cblLevel_2">A/B类</label></td><td><input id="cphMain_cblLevel_3" type="checkbox" name="ctl00$cphMain$cblLevel$3" value="C" /><label for="cphMain_cblLevel_3">C类</label></td>
+	</tr>
+</table>
+                </div>
+            </div>
+            <div class="advanced clearfix">
+                <div class="left">
+                    <select name="ctl00$cphMain$ddlCompany" id="cphMain_ddlCompany" style="width:180px;">
+	<option selected="selected" value="">--基金公司--</option>
+	<option value="560">安信基金管理有限责任公司</option>
+	<option value="475">宝盈基金管理有限公司</option>
+	<option value="595">北信瑞丰基金管理有限公司</option>
+	<option value="676">博道基金管理有限公司</option>
+	<option value="476">博时基金管理有限公司</option>
+	<option value="656">渤海汇金证券资产管理有限公司</option>
+	<option value="556">财通基金管理有限公司</option>
+	<option value="640">财通证券有限责任公司</option>
+	<option value="558">长安基金管理有限公司</option>
+	<option value="529">长城基金管理有限公司</option>
+	<option value="674">长江（上海）资产管理有限公司</option>
+	<option value="479">长盛基金管理有限公司</option>
+	<option value="478">长信基金管理有限责任公司</option>
+	<option value="608">创金合信基金公司</option>
+	<option value="491">大成基金管理有限公司</option>
+	<option value="568">德邦基金管理有限公司</option>
+	<option value="663">东方阿尔法基金管理有限公司</option>
+	<option value="662">东方汇理资产管理香港有限公司</option>
+	<option value="517">东方基金管理有限公司</option>
+	<option value="585">东方证券股份有限公司</option>
+	<option value="604">东海基金管理有限责任公司</option>
+	<option value="520">东吴基金管理有限公司</option>
+	<option value="621">东兴证券股份有限公司</option>
+	<option value="664">东亚 联 丰投资 管理有 限公司</option>
+	<option value="557">方正富邦基金管理有限公司</option>
+	<option value="555">富安达基金管理有限公司</option>
+	<option value="528">富国基金管理有限公司</option>
+	<option value="647">富荣基金管理有限公司</option>
+	<option value="655">格林基金管理有限公司</option>
+	<option value="509">工银瑞信基金管理有限公司</option>
+	<option value="493">光大保德信基金管理有限公司</option>
+	<option value="500">广发基金管理有限公司</option>
+	<option value="627">国都证券股份有限公司</option>
+	<option value="498">国海富兰克林基金管理有限公司</option>
+	<option value="567">国金基金管理有限公司</option>
+	<option value="583">国开泰富基金管理有限责任公司</option>
+	<option value="547">国联安基金管理有限公司</option>
+	<option value="673">国融基金管理有限公司</option>
+	<option value="586">国寿安保基金管理有限公司</option>
+	<option value="504">国泰基金管理有限公司</option>
+	<option value="523">国投瑞银基金管理有限公司</option>
+	<option value="496">海富通基金管理有限公司</option>
+	<option value="651">恒生前海基金管理有限公司</option>
+	<option value="632">恒生投资管理有限公司</option>
+	<option value="675">恒越基金管理有限公司</option>
+	<option value="598">红塔红土基金管理有限公司</option>
+	<option value="620">红土创新基金管理有限公司</option>
+	<option value="612">泓德基金管理有限公司</option>
+	<option value="536">华安基金管理有限公司</option>
+	<option value="497">华宝基金管理有限公司</option>
+	<option value="575">华宸未来基金管理有限公司</option>
+	<option value="507">华富基金管理有限公司</option>
+	<option value="600">华融证券股份有限公司</option>
+	<option value="578">华润元大基金管理有限公司</option>
+	<option value="508">华商基金管理有限公司</option>
+	<option value="530">华泰柏瑞基金管理有限公司</option>
+	<option value="648">华泰保兴基金管理有限公司</option>
+	<option value="658">华泰证券股份有限公司</option>
+	<option value="480">华夏基金管理有限公司</option>
+	<option value="646">汇安基金管理有限责任公司</option>
+	<option value="506">汇丰晋信基金管理有限公司</option>
+	<option value="488">汇添富基金管理股份有限公司</option>
+	<option value="609">嘉合基金管理有限公司</option>
+	<option value="505">嘉实基金管理有限公司</option>
+	<option value="477">建信基金管理有限责任公司</option>
+	<option value="652">建银国际资产管理有限公司</option>
+	<option value="594">江信基金管理有限公司</option>
+	<option value="544">交银施罗德基金管理有限公司</option>
+	<option value="636">金信基金管理有限公司</option>
+	<option value="501">金鹰基金管理有限公司</option>
+	<option value="533">金元顺安基金管理有限公司</option>
+	<option value="511">景顺长城基金管理有限公司</option>
+	<option value="615">九泰基金管理有限公司</option>
+	<option value="537">民生加银基金管理有限公司</option>
+	<option value="623">摩根基金（亚洲）有限公司</option>
+	<option value="515">摩根士丹利华鑫基金管理有限公司</option>
+	<option value="487">南方基金管理有限公司</option>
+	<option value="657">南华基金管理有限公司</option>
+	<option value="531">农银汇理基金管理有限公司</option>
+	<option value="512">诺安基金管理有限公司</option>
+	<option value="514">诺德基金管理有限公司</option>
+	<option value="518">鹏华基金管理有限公司</option>
+	<option value="653">鹏扬基金管理有限公司</option>
+	<option value="554">平安大华基金管理有限公司</option>
+	<option value="471">浦银安盛基金管理有限公司</option>
+	<option value="582">前海开源基金管理有限公司</option>
+	<option value="519">融通基金管理有限公司</option>
+	<option value="610">山西证券股份有限公司</option>
+	<option value="482">上投摩根基金管理有限公司</option>
+	<option value="591">上银基金管理有限公司</option>
+	<option value="521">申万菱信基金管理有限公司</option>
+	<option value="661">施罗德投资管理(香港)有限公司</option>
+	<option value="599">太平基金管理有限公司</option>
+	<option value="469">泰达宏利基金管理有限公司</option>
+	<option value="618">泰康资产管理有限责任公司</option>
+	<option value="495">泰信基金管理有限公司</option>
+	<option value="522">天弘基金管理有限公司</option>
+	<option value="485">天治基金管理有限公司</option>
+	<option value="524">万家基金管理有限公司</option>
+	<option value="548">西部利得基金管理公司</option>
+	<option value="645">先锋基金管理有限公司</option>
+	<option value="516">新华基金管理股份有限公司</option>
+	<option value="628">新疆前海联合基金管理有限公司</option>
+	<option value="625">新沃基金管理有限公司</option>
+	<option value="584">鑫元基金管理有限公司</option>
+	<option value="494">信达澳银基金管理有限公司</option>
+	<option value="470">兴全基金管理有限公司</option>
+	<option value="592">兴业基金管理有限公司</option>
+	<option value="597">兴银基金管理有限责任公司</option>
+	<option value="633">行健资产管理有限公司</option>
+	<option value="492">易方达基金管理有限公司</option>
+	<option value="525">益民基金管理有限公司</option>
+	<option value="499">银河基金管理有限公司</option>
+	<option value="526">银华基金管理有限公司</option>
+	<option value="574">英大基金管理有限公司</option>
+	<option value="590">永赢基金管理有限公司</option>
+	<option value="593">圆信永丰基金管理有限公司</option>
+	<option value="483">招商基金管理有限公司</option>
+	<option value="551">浙商基金管理有限公司</option>
+	<option value="606">浙商证券有限责任公司</option>
+	<option value="659">中国人保资产管理有限公司</option>
+	<option value="527">中海基金管理有限公司</option>
+	<option value="649">中航基金管理有限公司</option>
+	<option value="580">中加基金管理有限公司</option>
+	<option value="603">中金基金管理有限公司</option>
+	<option value="639">中科沃土基金管理有限公司</option>
+	<option value="513">中欧基金管理有限公司</option>
+	<option value="660">中融基金管理有限公司</option>
+	<option value="490">中信保诚基金管理有限公司</option>
+	<option value="589">中信建投基金管理有限公司</option>
+	<option value="637">中银国际证券股份有限公司</option>
+	<option value="535">中银基金管理有限公司</option>
+	<option value="641">中银香港资产管理有限公司</option>
+	<option value="486">中邮创业基金管理股份有限公司</option>
+
+</select>
+                    <select name="ctl00$cphMain$ddlPortfolio" id="cphMain_ddlPortfolio" style="width:130px;">
+	<option selected="selected" value="">--投资组合--</option>
+	<option value="">登录后可用</option>
+
+</select>
+                    <select name="ctl00$cphMain$ddlWatchList" id="cphMain_ddlWatchList" style="width:130px;">
+	<option selected="selected" value="">--观察列表--</option>
+	<option value="">登录后可用</option>
+
+</select>
+                    <input name="ctl00$cphMain$txtFund" type="text" id="cphMain_txtFund" class="fund" />
+                </div>
+                <div class="right">
+                    <a href="/fundselect/default.aspx">更多筛选条件>></a><input type="submit" name="ctl00$cphMain$btnGo" value="查询" id="cphMain_btnGo" class="msbtn_search" />
+                </div>
+            </div>
+        </div>
+        <div class="blank10"></div>
+        <div id="qr_grid">
+            <div id="qr_tabcommand" class="clearfix">
+                <div id="qr_tab" class="clearfix">
+                    <a id="cphMain_lbSnapshot" class="active" href="javascript:__doPostBack(&#39;ctl00$cphMain$lbSnapshot&#39;,&#39;&#39;)">快照</a>
+                    <a id="cphMain_lbPerformance" href="javascript:__doPostBack(&#39;ctl00$cphMain$lbPerformance&#39;,&#39;&#39;)">业绩和风险</a>
+                    <a id="cphMain_lbPortfolio" href="javascript:__doPostBack(&#39;ctl00$cphMain$lbPortfolio&#39;,&#39;&#39;)">投资组合</a>
+                    <a id="cphMain_lbOperations" href="javascript:__doPostBack(&#39;ctl00$cphMain$lbOperations&#39;,&#39;&#39;)">购买信息</a>
+                </div>
+                
+                <div id="qr_command">
+                    <a id="qr_addoption" href="javascript:void(0)">加入观察</a>
+                    <a id="qr_deleteoption" href="javascript:void(0)">取消观察</a>
+                    <a id="qr_xray" href="javascript:void(0)" title="生成组合分析报告">组合透视</a>
+                    <a id="qr_compare" href="javascript:void(0)" title="最多可对比4只基金">基金对比</a>
+                    <input id="qr_login" type="hidden" value="false" />
+                </div>
+            </div>        
+            <div>
+	<table cellspacing="0" id="cphMain_gridResult" style="width:100%;border-collapse:collapse;">
+		<tr class="header">
+			<th scope="col">&nbsp;</th><th scope="col">&nbsp;</th><th class="gridHeaderText" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$Symbol&#39;)">代码</a></th><th class="gridHeaderText" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$FundName&#39;)">基金名称</a></th><th class="gridHeaderText" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$CategoryName&#39;)">基金分类</a></th><th class="gridHeaderText" scope="col"><input type="image" name="ctl00$cphMain$gridResult$ctl01$imgSortArrow" id="cphMain_gridResult_imgSortArrow" class="GridArrow" src="/Localization/CN/skin/default/images/arrow_desc_small.gif" align="middle" /> <a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$StarRating&#39;)">晨星评级<br>(三年)</a></th><th class="gridHeaderText" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$StarRating5Year&#39;)">晨星评级<br>(五年)</a></th><th class="gridHeaderNumeric" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$ClosePriceDate&#39;)">净值日期</a></th><th class="gridHeaderNumeric" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$ClosePrice&#39;)">单位净值<br/>(元)</a></th><th class="gridHeaderNumeric" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$NavDayChange&#39;)">净值日变动<br/>(元)</a></th><th class="gridHeaderNumeric" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$gridResult&#39;,&#39;Sort$ReturnYTD&#39;)">今年以来<br/>回报(%)</a></th>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_0">1</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P0001606X|招商中证白酒指数分级"><input id="cphMain_gridResult_chkFund_0" type="checkbox" name="ctl00$cphMain$gridResult$ctl02$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P0001606X" target="_blank">161725</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P0001606X" target="_blank">招商中证白酒指数分级</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.1948</td><td class="msDataNumeric" style="width:80px;">-0.0218</td><td class="msDataNumeric" style="width:80px;">4.72</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_1">2</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P0000Z821|交银定期支付双息平衡混合"><input id="cphMain_gridResult_chkFund_1" type="checkbox" name="ctl00$cphMain$gridResult$ctl03$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P0000Z821" target="_blank">519732</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P0000Z821" target="_blank">交银定期支付双息平衡混合</a></td><td class="msDataText">标准混合型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.9980</td><td class="msDataNumeric" style="width:80px;">0.0170</td><td class="msDataNumeric" style="width:80px;">8.94</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_2">3</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P0000P5UD|易方达消费行业股票"><input id="cphMain_gridResult_chkFund_2" type="checkbox" name="ctl00$cphMain$gridResult$ctl04$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P0000P5UD" target="_blank">110022</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P0000P5UD" target="_blank">易方达消费行业股票</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.2770</td><td class="msDataNumeric" style="width:80px;">-0.0160</td><td class="msDataNumeric" style="width:80px;">-2.32</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_3">4</span>
+                        </td><td style="width:22px;">
+                            <span tag="F0000004AI|易方达中小盘混合"><input id="cphMain_gridResult_chkFund_3" type="checkbox" name="ctl00$cphMain$gridResult$ctl05$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/F0000004AI" target="_blank">110011</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/F0000004AI" target="_blank">易方达中小盘混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">4.0621</td><td class="msDataNumeric" style="width:80px;">-0.0550</td><td class="msDataNumeric" style="width:80px;">5.50</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_4">5</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P000147K8|国泰国证食品饮料行业指数分级"><input id="cphMain_gridResult_chkFund_4" type="checkbox" name="ctl00$cphMain$gridResult$ctl06$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P000147K8" target="_blank">160222</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P000147K8" target="_blank">国泰国证食品饮料行业指数分级</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.3253</td><td class="msDataNumeric" style="width:80px;">-0.0170</td><td class="msDataNumeric" style="width:80px;">0.92</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_5">6</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P0000V7GF|交银优势行业混合"><input id="cphMain_gridResult_chkFund_5" type="checkbox" name="ctl00$cphMain$gridResult$ctl07$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P0000V7GF" target="_blank">519697</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P0000V7GF" target="_blank">交银优势行业混合</a></td><td class="msDataText">标准混合型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">3.2720</td><td class="msDataNumeric" style="width:80px;">-0.0070</td><td class="msDataNumeric" style="width:80px;">16.40</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_6">7</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P000130RU|东方红产业升级灵活配置混合"><input id="cphMain_gridResult_chkFund_6" type="checkbox" name="ctl00$cphMain$gridResult$ctl08$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P000130RU" target="_blank">000619</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P000130RU" target="_blank">东方红产业升级灵活配置混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">3.2460</td><td class="msDataNumeric" style="width:80px;">0.0340</td><td class="msDataNumeric" style="width:80px;">-1.87</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_7">8</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00015U43|鹏华中证酒指数分级"><input id="cphMain_gridResult_chkFund_7" type="checkbox" name="ctl00$cphMain$gridResult$ctl09$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00015U43" target="_blank">160632</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00015U43" target="_blank">鹏华中证酒指数分级</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">0.9320</td><td class="msDataNumeric" style="width:80px;">-0.0170</td><td class="msDataNumeric" style="width:80px;">4.37</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_8">9</span>
+                        </td><td style="width:22px;">
+                            <span tag="F000000416|银华富裕主题混合"><input id="cphMain_gridResult_chkFund_8" type="checkbox" name="ctl00$cphMain$gridResult$ctl10$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/F000000416" target="_blank">180012</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/F000000416" target="_blank">银华富裕主题混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.7421</td><td class="msDataNumeric" style="width:80px;">-0.0041</td><td class="msDataNumeric" style="width:80px;">-3.38</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_9">10</span>
+                        </td><td style="width:22px;">
+                            <span tag="F0000004GZ|诺德成长优势混合"><input id="cphMain_gridResult_chkFund_9" type="checkbox" name="ctl00$cphMain$gridResult$ctl11$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/F0000004GZ" target="_blank">570005</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/F0000004GZ" target="_blank">诺德成长优势混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.9540</td><td class="msDataNumeric" style="width:80px;">-0.0030</td><td class="msDataNumeric" style="width:80px;">4.27</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_10">11</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00012MO2|交银新成长混合"><input id="cphMain_gridResult_chkFund_10" type="checkbox" name="ctl00$cphMain$gridResult$ctl12$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00012MO2" target="_blank">519736</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00012MO2" target="_blank">交银新成长混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.0250</td><td class="msDataNumeric" style="width:80px;">0.0220</td><td class="msDataNumeric" style="width:80px;">-0.69</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_11">12</span>
+                        </td><td style="width:22px;">
+                            <span tag="F0000004G6|新华泛资源优势混合"><input id="cphMain_gridResult_chkFund_11" type="checkbox" name="ctl00$cphMain$gridResult$ctl13$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/F0000004G6" target="_blank">519091</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/F0000004G6" target="_blank">新华泛资源优势混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.6730</td><td class="msDataNumeric" style="width:80px;">0.0310</td><td class="msDataNumeric" style="width:80px;">-1.51</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_12">13</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P0000WEF3|交银阿尔法核心混合"><input id="cphMain_gridResult_chkFund_12" type="checkbox" name="ctl00$cphMain$gridResult$ctl14$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P0000WEF3" target="_blank">519712</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P0000WEF3" target="_blank">交银阿尔法核心混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.0850</td><td class="msDataNumeric" style="width:80px;">-0.0020</td><td class="msDataNumeric" style="width:80px;">16.70</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_13">14</span>
+                        </td><td style="width:22px;">
+                            <span tag="F0000003ZX|景顺长城新兴成长混合"><input id="cphMain_gridResult_chkFund_13" type="checkbox" name="ctl00$cphMain$gridResult$ctl15$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/F0000003ZX" target="_blank">260108</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/F0000003ZX" target="_blank">景顺长城新兴成长混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/4stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.3230</td><td class="msDataNumeric" style="width:80px;">-0.0090</td><td class="msDataNumeric" style="width:80px;">3.17</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_14">15</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00015CVF|嘉实新消费股票"><input id="cphMain_gridResult_chkFund_14" type="checkbox" name="ctl00$cphMain$gridResult$ctl16$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00015CVF" target="_blank">001044</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00015CVF" target="_blank">嘉实新消费股票</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.4620</td><td class="msDataNumeric" style="width:80px;">-0.0180</td><td class="msDataNumeric" style="width:80px;">4.58</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_15">16</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00014IRO|汇丰晋信双核策略混合C"><input id="cphMain_gridResult_chkFund_15" type="checkbox" name="ctl00$cphMain$gridResult$ctl17$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00014IRO" target="_blank">000850</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00014IRO" target="_blank">汇丰晋信双核策略混合C</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.0521</td><td class="msDataNumeric" style="width:80px;">0.0048</td><td class="msDataNumeric" style="width:80px;">-4.18</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_16">17</span>
+                        </td><td style="width:22px;">
+                            <span tag="F0000003XA|景顺长城鼎益混合(LOF)"><input id="cphMain_gridResult_chkFund_16" type="checkbox" name="ctl00$cphMain$gridResult$ctl18$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/F0000003XA" target="_blank">162605</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/F0000003XA" target="_blank">景顺长城鼎益混合(LOF)</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/4stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.3420</td><td class="msDataNumeric" style="width:80px;">-0.0090</td><td class="msDataNumeric" style="width:80px;">2.05</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_17">18</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P0000Z3OV|汇添富中证主要消费ETF"><input id="cphMain_gridResult_chkFund_17" type="checkbox" name="ctl00$cphMain$gridResult$ctl19$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P0000Z3OV" target="_blank">159928</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P0000Z3OV" target="_blank">汇添富中证主要消费ETF</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.2311</td><td class="msDataNumeric" style="width:80px;">-0.0193</td><td class="msDataNumeric" style="width:80px;">-4.49</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_18">19</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00014IRN|汇丰晋信双核策略混合A"><input id="cphMain_gridResult_chkFund_18" type="checkbox" name="ctl00$cphMain$gridResult$ctl20$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00014IRN" target="_blank">000849</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00014IRN" target="_blank">汇丰晋信双核策略混合A</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.0549</td><td class="msDataNumeric" style="width:80px;">0.0048</td><td class="msDataNumeric" style="width:80px;">-3.86</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_19">20</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P000156SD|大成高新技术产业股票"><input id="cphMain_gridResult_chkFund_19" type="checkbox" name="ctl00$cphMain$gridResult$ctl21$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P000156SD" target="_blank">000628</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P000156SD" target="_blank">大成高新技术产业股票</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.5780</td><td class="msDataNumeric" style="width:80px;">-0.0090</td><td class="msDataNumeric" style="width:80px;">-4.42</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_20">21</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00011RK1|南方新优享灵活配置混合"><input id="cphMain_gridResult_chkFund_20" type="checkbox" name="ctl00$cphMain$gridResult$ctl22$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00011RK1" target="_blank">000527</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00011RK1" target="_blank">南方新优享灵活配置混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.4900</td><td class="msDataNumeric" style="width:80px;">-0.0220</td><td class="msDataNumeric" style="width:80px;">-1.66</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_21">22</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00013WJU|国泰新经济灵活配置混合"><input id="cphMain_gridResult_chkFund_21" type="checkbox" name="ctl00$cphMain$gridResult$ctl23$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00013WJU" target="_blank">000742</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00013WJU" target="_blank">国泰新经济灵活配置混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">2.0350</td><td class="msDataNumeric" style="width:80px;">-0.0330</td><td class="msDataNumeric" style="width:80px;">-13.81</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_22">23</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P0000ZD5J|易方达沪深300医药卫生ETF"><input id="cphMain_gridResult_chkFund_22" type="checkbox" name="ctl00$cphMain$gridResult$ctl24$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P0000ZD5J" target="_blank">512010</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P0000ZD5J" target="_blank">易方达沪深300医药卫生ETF</a></td><td class="msDataText">行业股票 - 医药</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.8796</td><td class="msDataNumeric" style="width:80px;">-0.0791</td><td class="msDataNumeric" style="width:80px;">14.09</td>
+		</tr><tr class="gridAlternateItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_23">24</span>
+                        </td><td style="width:22px;">
+                            <span tag="F00000043X|华安策略优选混合"><input id="cphMain_gridResult_chkFund_23" type="checkbox" name="ctl00$cphMain$gridResult$ctl25$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/F00000043X" target="_blank">040008</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/F00000043X" target="_blank">华安策略优选混合</a></td><td class="msDataText">激进配置型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.5395</td><td class="msDataNumeric" style="width:80px;">0.0221</td><td class="msDataNumeric" style="width:80px;">-5.98</td>
+		</tr><tr class="gridItem">
+			<td style="width:20px;">
+                            <span id="cphMain_gridResult_lblRowNo_24">25</span>
+                        </td><td style="width:22px;">
+                            <span tag="0P00015HFT|汇添富中证主要消费ETF联接"><input id="cphMain_gridResult_chkFund_24" type="checkbox" name="ctl00$cphMain$gridResult$ctl26$chkFund" /></span>
+                        </td><td class="msDataText" style="width:60px;"><a href="/quicktake/0P00015HFT" target="_blank">000248</a></td><td class="msDataText" style="width:150px;"><a href="/quicktake/0P00015HFT" target="_blank">汇添富中证主要消费ETF联接</a></td><td class="msDataText">股票型基金</td><td class="msDataText" style="width:90px;"><img src="../common/images/5stars.gif" /></td><td class="msDataText" style="width:90px;"><img src="../common/images/0stars.gif" /></td><td class="msDataNumeric" style="width:80px;">2018-07-23</td><td class="msDataNumeric" style="width:80px;">1.5005</td><td class="msDataNumeric" style="width:80px;">-0.0122</td><td class="msDataNumeric" style="width:80px;">-3.88</td>
+		</tr>
+	</table>
+</div>
+            <div id="qr_pager" class="clearfix">
+                <div class="left">
+                    <span id="cphMain_Label1" class="ms_label">共有记录数:</span>
+                </div>
+                <div class="left">
+                    <span id="cphMain_TotalResultLabel" class="ms_text">7504</span>
+                </div>                
+                <div class="right">
+                    
+<!-- AspNetPager V6.0.0 for VS2005  Copyright:2003-2006 Webdiyer (www.webdiyer.com) -->
+<div id="cphMain_AspNetPager1">
+	<a disabled="true" style="margin-right:5px;">&lt;&lt;</a><a disabled="true" style="margin-right:5px;">&lt;</a><span style="margin-right:5px;font-weight:Bold;color:red;">1</span><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;2&#39;)" style="margin-right:5px;">2</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;3&#39;)" style="margin-right:5px;">3</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;4&#39;)" style="margin-right:5px;">4</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;5&#39;)" style="margin-right:5px;">5</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;6&#39;)" style="margin-right:5px;">6</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;7&#39;)" style="margin-right:5px;">7</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;8&#39;)" style="margin-right:5px;">8</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;9&#39;)" style="margin-right:5px;">9</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;10&#39;)" style="margin-right:5px;">10</a><span style="margin-right:5px;"><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;11&#39;)">...</a></span><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;2&#39;)" style="margin-right:5px;">&gt;</a><a href="javascript:__doPostBack(&#39;ctl00$cphMain$AspNetPager1&#39;,&#39;301&#39;)" style="margin-right:5px;">&gt;&gt;</a>
+</div>
+<!-- AspNetPager V6.0.0 for VS2005 End -->
+
+
+                    <div>
+                        <span>每页行数</span>
+                        <select name="ctl00$cphMain$ddlPageSite" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$cphMain$ddlPageSite\&#39;,\&#39;\&#39;)&#39;, 0)" id="cphMain_ddlPageSite">
+	<option selected="selected" value="25">25</option>
+	<option value="50">50</option>
+	<option value="10000">全部</option>
+
+</select>
+                    </div>  
+                </div>
+            </div>
+            <div class="blank10"></div>
+        </div>
+        <div class="blank10"></div>
+    </div>
+</div>
+<script src="/javascripts/quickrank.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $("#cphMain_txtFund").val('基金名称');
+    $("#cphMain_txtFund").blur(function(){
+        if($(this).val()===''){
+            $(this).val('基金名称');
+        }
+    }).click(function(){
+        $(this).focus();
+        if($(this).val()==='基金名称'){
+            $(this).val('');
+        }
+    }); 
+    var $qrapp=new quickrank();
+    $qrapp.init();
+</script>
+
+    <div id="foot" class="clearfix">
+        <div class="areaInner clearfix">
+            <div class="aboutUs clearfix">
+                <h4>关于晨星网</h4>
+                <a href="#">版权所有 &copy; 晨星资讯（深圳）有限公司 2004-2018</a>
+                <a href="/Localization/CN/other/termsofuse.html" target="_blank">服务条款：阅读晨星网服务条款</a>
+                <a href="/help/site/siteintro.html" target="_blank">网站帮助：晨星网使用攻略</a>
+                <a href="/help/site/FAQ.html" target="_blank" style='padding-left:70px;'>FAQ</a>
+                <a href="mailto:cnwebsiteservice@morningstar.com" target="_blank">客服邮箱：cnwebsiteservice@morningstar.com</a>
+                <a href="#">客服电话：0755-33110988 或 0755-33110998</a>
+                <a href="http://www.miibeian.gov.cn/" target="_blank">备案查询：粤ICP备07001594号</a>
+                <a href="#">建议使用浏览器：Google Chrome / Firefox / IE8+</a>
+                <div style="width:36px;height:50px;margin-top:10px;">
+                    <script id="ebsgovicon" src="https://szcert.ebs.org.cn/govicon.js?id=2ff25eac-2dde-4625-a4c7-2b67b30eeb88&width=36&height=50&type=1" type="text/javascript" charset="utf-8"></script>
+                </div>
+            </div>
+            <div class="maps clearfix">
+                <h4>晨星中国</h4>
+                <a href="/AboutUs/aboutus.htm" target="_blank">关于我们</a>
+                <a href="/disclosure" target="_blank">信息披露</a>
+                <a href="/AboutUs/Websites.htm" target="_blank">广告资讯</a>
+                <a href="/company/job/job.html" target="_blank">招聘信息</a>
+                <a href="/AboutUs/product_list.htm" target="_blank">晨星产品</a>
+                <a href="/AboutUs/address.htm" target="_blank">联系晨星</a>
+                <a href="/award" target="_blank">晨星基金奖</a>
+                <a href="/index/default.aspx" target="_blank">晨星指数</a>
+                <a href="/methodology" target="_blank">晨星方法</a>
+                <a href="/mornnews" target="_blank">晨星新闻</a>
+            </div>
+            <div class="sites clearfix">
+                <h4>全球官网</h4>
+                <a href="http://www.morningstar.com">美国</a>
+                <a href="http://hk.morningstar.com">中国香港</a>
+                <a href="http://tw.morningstar.com">中国台湾</a>
+                <a href="http://www.morningstar.com.au">澳大利亚</a>
+                <a href="http://www.morningstar.ca">加拿大</a>
+                <a href="http://www.morningstar.fr">法国</a>
+                <a href="http://www.morningstar.de">德国</a>
+                <a href="http://www.morningstar.it">意大利</a>
+                <a href="http://www.morningstar.nl">新西兰</a>
+                <a href="http://www.morningstar.no">挪威</a>
+                <a href="http://www.morningstar.es">西班牙</a>
+                <a href="http://www.morningstar.co.uk">英国</a>
+                <a href="http://www.morningstar.ch">瑞士</a> 
+            </div>
+            
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">
+        var $home=new cnhome();
+        $home.init();
+    </script>
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?eca85e284f8b74d1200a42c9faa85464";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        //for google
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-184317-16']);
+        _gaq.push(['_setDomainName', '.morningstar.com']);
+        _gaq.push(['_setAllowHash', 'false']);
+        _gaq.push(['_trackPageview']);
+        
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>
+
+
+}
