@@ -213,7 +213,7 @@ def fetch_maxormin_key_pairs(indict={},maxormin='max',num=1):
     controlnum = 1
     while 1<2:
         returndict={}
-        if len(dict)<=num:
+        if len(dict)<num:
             print('取出个数太多，请调整个数')
         else:
             keylist = list(dict.keys())

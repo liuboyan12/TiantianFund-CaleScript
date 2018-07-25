@@ -160,36 +160,28 @@ def exchang_dailyline_strategy(fundcode,day11,day12,day21,day22):
     keylist1 = list(resultDict1.keys())
     keylist2 = list(resultDict2.keys())
 
-    sellout = []
-
-    while 1 < 2:
-        n = keylist1[-1:]
-        m = keylist2[-1:]
-        if  n>m:
-            keylist1=keylist1[:len(keylist1)-1]
-            if len(keylist1)==0:
-                print("1线没有比2线时间往前的值，请检查程序")
-        else:
-            break
-    buyin = keylist1
-
-    for i in buyin:
-        for q in keylist2:
-            if i<q:
-                sellout.append(q)
+    #拼买入卖出时间对
+    tradedict={}
+    # tradedict={num:[buyin,sellout]}
+    for buyin in keylist1:
+        for sellout in keylist2:
+            if buyin >= sellout:
+                continue
+            if buyin < sellout:
+                ptradedict = {"t" + str(keylist1.index(buyin)): [buyin, sellout]}
+                tradedict.update(ptradedict)
                 break
-    #制作两条数据list买入日期与卖出日期一一对应
 
     returndict = {}
-
-    for i in range(len(buyin)):
-        buysingle = buyin[i]
-        salesingle = sellout[i]
-        buyprice = float(FundDate[buysingle]['ACWorthTrend'])
-        sellprice = float(FundDate[salesingle]['ACWorthTrend'])
-        D_value_rate = round(((sellprice-buyprice)/buyprice),4)
-        Pdict=eval('{"income_rate'+str(i)+'":"'+str(D_value_rate)+'"}')
-        returndict.update(Pdict)
+    for i in tradedict.keys():
+        pair = tradedict[i]
+        buydate=pair[0]
+        selldate=pair[1]
+        buyinprice=float(FundDate[buydate]['ACWorthTrend'])
+        selloutprice=float(FundDate[selldate]['ACWorthTrend'])
+        D_value_rate = round(((selloutprice - buyinprice) / buyinprice), 4)
+        PpriceDict ={"income_rate"+str(i):str(D_value_rate)}
+        returndict.update(PpriceDict)
 
     return returndict
 
@@ -202,12 +194,16 @@ def many_exchange_line_report(fundcode):
     funddoc=open(filepath+'\\'+str(fundcode)+".txt",'w')
 
 
-    daylist1=[1]#,5,10,20,30]
-    daylist2=[90]#[40,50,60,90,120]
+    daylist1=[1,5,10,20,30]
+    daylist2=[40,50,60,90,120]
     daylist3=[1,5,10,20,30]
     daylist4=[40,50,60,90,120]
+    # daylist1 = [1, 5]
+    # daylist2 = [90, 120]
+    # daylist3 = [5, 10]
+    # daylist4 = [120]
     print("基金：" + str(fundcode),file=funddoc)
-    pindict = {}
+
     for i in daylist1:
         day1=i
         for i2 in daylist2:
@@ -216,12 +212,12 @@ def many_exchange_line_report(fundcode):
                 day3=i3
                 for i4 in daylist4:
                     day4=i4
-
                     dict = exchang_dailyline_strategy(fundcode,day1,day2,day3,day4)
                     lists = list(dict.values())
                     num = 0
                     maxvalue=float(max(lists))
                     minvalue=float(min(lists))
+                    pindict = {}
                     for i in lists:
                         num=float(i)+num
                     mean_value=(num-maxvalue-minvalue)/(len(lists)-2)
@@ -245,22 +241,26 @@ def runner(fundcodelist=[]):
     pwd = pwd.replace(":\\", ':\\\\')
     filepath = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
     sumdoc = open(filepath + "\\总览.txt", 'w')
+    print("",file=sumdoc)
+    sumdoc.close()
 
     for i in codelist:
-        try:
-            lastdict = many_exchange_line_report(i)
-
-            fundcode = i
+        sumdoc = open(filepath + "\\总览.txt", 'a')
+        lastdict = many_exchange_line_report(i)
+        fundcode = i
+        ifcode = len(lastdict)
+        if ifcode==0:
+            stratigy = 0
+            rates = 0
+        else:
             alldict = fetch_maxormin_key_pairs(lastdict)
             stratigy = list(alldict.keys())
             rates = list(alldict.values())
-            print("基金名称：" + str(fundcode), file=sumdoc)
-            print("最大收益策略：" + str(stratigy) + " 最大收益：" + str(rates), file=sumdoc)
-        except Exception as e:
-            print(e)
-            continue
-    sumdoc.close()
+        print("基金代码：" + str(fundcode), file=sumdoc)
+        print("最大收益策略：" + str(stratigy) + " 最大收益：" + str(rates), file=sumdoc)
+        sumdoc.close()
 
 if __name__ == '__main__':
 
-    runner(['519670'])
+    runner(['110022', '110011', '519697', '180012', '570005', '519091', '519712', '040008', '070032', '270041', '510630', '519700', '519702', '540006', '163412', '165312', '690001', '160212', '519066', '202023', '519069', '002021', '110003', '519068', '166005', '020026', '340008', '320011', '163406', '217022', '519669', '233005', '160916', '320021', '570001', '163415', '121012', '163402', '128112', '159905', '481012', '040011', '050027', '166008', '159916', '050011', '110008', '233012', '340009', '050111', '530015', '110007', '110051', '091023', '270047', '110053', '471060', '163407', '310398', '160716', '090007', '202005', '166001', '166002', '260112', '519977', '530020'])
+

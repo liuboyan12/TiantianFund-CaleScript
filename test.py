@@ -116,36 +116,37 @@ def change_2_useable_code(htmlcode):
     return finallist
 
 if __name__ == '__main__':
-    f = open('C:\\Users\Administrator\Desktop\second请求.txt',"r",encoding='utf-8')
-    strings= format_removeal(f.read())
-    f.close()
-    # print(strings)
-    # lists = change_2_useable_code(strings)
-    outlist = re.findall(r'target="_blank">(.+?)</a>', strings)
-    filist=[]
-    for i in outlist:
-        ifcode = i[0]
-        # tprint(ifcode)
-        if ifcode == '1':
-            filist.append(i)
-        elif ifcode =='2':
-            filist.append(i)
-        elif ifcode =='3':
-            filist.append(i)
-        elif ifcode =='4':
-            filist.append(i)
-        elif ifcode =='5':
-            filist.append(i)
-        elif ifcode =='6':
-            filist.append(i)
-        elif ifcode =='7':
-            filist.append(i)
-        elif ifcode =='8':
-            filist.append(i)
-        elif ifcode =='9':
-            filist.append(i)
-        elif ifcode =='0':
-            filist.append(i)
-        else:
-            continue
-    print(filist)
+    # f = open('C:\\Users\Administrator\Desktop\second请求.txt',"r",encoding='utf-8')
+    # strings= format_removeal(f.read())
+    # f.close()
+    # # print(strings)
+    # # lists = change_2_useable_code(strings)
+    # outlist = re.findall(r'target="_blank">(.+?)</a>', strings)
+    # filist=[]
+    # for i in outlist:
+    #     ifcode = i[0]
+    #     # tprint(ifcode)
+    #     if ifcode == '1':
+    #         filist.append(i)
+    #     elif ifcode =='2':
+    #         filist.append(i)
+    #     elif ifcode =='3':
+    #         filist.append(i)
+    #     elif ifcode =='4':
+    #         filist.append(i)
+    #     elif ifcode =='5':
+    #         filist.append(i)
+    #     elif ifcode =='6':
+    #         filist.append(i)
+    #     elif ifcode =='7':
+    #         filist.append(i)
+    #     elif ifcode =='8':
+    #         filist.append(i)
+    #     elif ifcode =='9':
+    #         filist.append(i)
+    #     elif ifcode =='0':
+    #         filist.append(i)
+    #     else:
+    #         continue
+    # print(filist)
+    test()
