@@ -103,7 +103,7 @@ def mechanicalDailyLineAnalysisCalc(fundcode,time1=20,time2=60):
     finalresult = mechanicalDailyLineAnalysisCalcCoreCode(_time1dl_dict, _time2dl_dict, FundDate)
     return finalresult
 
-def exchang_dailyline_strategy(fundcode,day11,day12,day21,day22):
+def exchang_dailyline_strategy(day11,day12,day21,day22,DATA):
     """
     日均线互换策略，基于基础版本只能计算两个日期下面的日均线，不能计算不同策略之间的数据，所以进行进一步
     的，例如我的买入日期我选择在20日均线穿越60日均线的时候进行买入，而在日常计算值突破60日均线时候卖出，
@@ -117,7 +117,7 @@ def exchang_dailyline_strategy(fundcode,day11,day12,day21,day22):
     """
 
     """获取基金数据"""
-    FundDate = ljjz(data(fundcode))
+    FundDate =DATA
 
 
     """日均线计算"""
@@ -192,7 +192,7 @@ def many_exchange_line_report(fundcode):
 
     funddoc=open(filepath+'\\'+str(fundcode)+".txt",'w')
 
-
+    FundDate = ljjz(data(fundcode))
     daylist1=[1,5,10,20,30]
     daylist2=[40,50,60,90,120]
     daylist3=[1,5,10,20,30]
@@ -211,7 +211,7 @@ def many_exchange_line_report(fundcode):
                 day3=i3
                 for i4 in daylist4:
                     day4=i4
-                    dict = exchang_dailyline_strategy(fundcode,day1,day2,day3,day4)
+                    dict = exchang_dailyline_strategy(day1,day2,day3,day4,FundDate)
                     lists = list(dict.values())
                     num = 0
                     maxvalue=float(max(lists))
