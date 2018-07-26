@@ -28,8 +28,8 @@
 #     buydate = pair[0]
 #     print(buydate)
 #     selldate = pair[1]
-for i in [1,2,3,4,6]:
+#
 
-    f= open("C:\\Users\Administrator\Desktop\pnull.txt",'a')
-    print(i,file=f)
-    f.close()
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import fetch_maxormin_key_pairs
+dict = {"A":'110022', "B":'110011', "c":'519697', "d":'180012', "D":'570005', "E":'570005'}
+print(fetch_maxormin_key_pairs(dict))

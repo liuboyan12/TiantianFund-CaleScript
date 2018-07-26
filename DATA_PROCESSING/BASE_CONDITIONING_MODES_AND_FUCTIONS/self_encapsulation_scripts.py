@@ -219,15 +219,14 @@ def fetch_maxormin_key_pairs(indict={},maxormin='max',num=1):
             keylist = list(dict.keys())
             dict_value = 0
             for i in keylist:
-                dict_key = i
-                if maxormin==max:
+                if maxormin=='max':
                     if dict_value<=float(dict[i]):
                        dict_value=float(dict[i])
-                       madedict='{"'+i+'":"'+str(dict_value)+'"}'
-                elif maxormin==min:
+                       madedict={str(i):str(dict_value)}
+                elif maxormin=='min':
                     if dict_value>=float(dict[i]):
                        dict_value=float(dict[i])
-                       madedict = '{"' + i + '":"' + str(dict_value) + '"}'
+                       madedict = {str(i):str(dict_value)}
                 else:
                     print('请输入正确的取值,max/min:')
                     maxormin=input()

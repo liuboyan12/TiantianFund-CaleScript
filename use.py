@@ -2,8 +2,7 @@ from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.cross_line import cro
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuChuLi_ChangeData import singleness_fund_inquire as data,cut_Data_ACWorthTrend as ljjz
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.daily_line import daily_line_dict_assembly_ACWorthTrend as dl
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import abandon_front_section_dict as ab1dict
-from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import Erase_delete_corresponding_value as dropvalue
-from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import fetch_maxormin_key_pairs
+from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import value_2_key,Erase_delete_corresponding_value as dropvalue
 import os
 
 def makeUseAbleDict(dailyline):
@@ -198,9 +197,9 @@ def many_exchange_line_report(fundcode):
     daylist2=[40,50,60,90,120]
     daylist3=[1,5,10,20,30]
     daylist4=[40,50,60,90,120]
-    # daylist1 = [1, 5]
-    # daylist2 = [90, 120]
-    # daylist3 = [5, 10]
+    # daylist1 = [1]
+    # daylist2 = [90]
+    # daylist3 = [5]
     # daylist4 = [120]
     print("基金：" + str(fundcode),file=funddoc)
 
@@ -220,7 +219,8 @@ def many_exchange_line_report(fundcode):
                     pindict = {}
                     for i in lists:
                         num=float(i)+num
-                    mean_value=(num-maxvalue-minvalue)/(len(lists)-2)
+                    mean_value=num/len(lists)
+
                     updatekey = str(day1)+'-'+str(day2)+'-'+str(day3)+'-'+str(day4)
                     Pdict = eval('{"'+updatekey+'":""}')
                     Pdict[updatekey]=mean_value
@@ -248,19 +248,15 @@ def runner(fundcodelist=[]):
         sumdoc = open(filepath + "\\总览.txt", 'a')
         lastdict = many_exchange_line_report(i)
         fundcode = i
-        ifcode = len(lastdict)
-        if ifcode==0:
-            stratigy = 0
-            rates = 0
-        else:
-            alldict = fetch_maxormin_key_pairs(lastdict)
-            stratigy = list(alldict.keys())
-            rates = list(alldict.values())
+        maxvalue = max(list(lastdict.values()))
+        stratigy=value_2_key(lastdict,maxvalue)
+        rates=round(maxvalue,4)
         print("基金代码：" + str(fundcode), file=sumdoc)
         print("最大收益策略：" + str(stratigy) + " 最大收益：" + str(rates), file=sumdoc)
         sumdoc.close()
 
 if __name__ == '__main__':
 
-    runner(['110022', '110011', '519697', '180012', '570005', '519091', '519712', '040008', '070032', '270041', '510630', '519700', '519702', '540006', '163412', '165312', '690001', '160212', '519066', '202023', '519069', '002021', '110003', '519068', '166005', '020026', '340008', '320011', '163406', '217022', '519669', '233005', '160916', '320021', '570001', '163415', '121012', '163402', '128112', '159905', '481012', '040011', '050027', '166008', '159916', '050011', '110008', '233012', '340009', '050111', '530015', '110007', '110051', '091023', '270047', '110053', '471060', '163407', '310398', '160716', '090007', '202005', '166001', '166002', '260112', '519977', '530020'])
-
+    runner([  '050011', '110008', '233012', '340009', '050111', '530015', '110007', '110051', '091023', '270047', '110053', '471060', '163407', '310398', '160716', '090007', '202005', '166001', '166002', '260112', '519977', '530020'])
+    #'110022', '110011', '519697', '180012', '570005', '519091', '519712', '040008', '070032', '270041', '510630', '519700', '519702', '540006', '163412', '165312', '690001', '160212', '519066', '202023', '519069', '002021', '110003', '519068', '166005', '020026', '340008', '320011', '163406', '217022', '519669', '233005', '160916', '320021',
+    #'570001', '163415', '121012', '163402', '128112', '159905', '481012', '040011', '050027', '166008','159916',
