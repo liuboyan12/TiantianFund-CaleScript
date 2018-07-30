@@ -3,8 +3,7 @@ from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.A_TianTianJiJinShuJuC
 from DATA_PROCESSING.PERSONAL_PACKAGING_MODES_AND_FUCTIONS.daily_line import daily_line_dict_assembly_ACWorthTrend as dl
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import abandon_front_section_dict as ab1dict
 from DATA_PROCESSING.BASE_CONDITIONING_MODES_AND_FUCTIONS.self_encapsulation_scripts import value_2_key,Erase_delete_corresponding_value as dropvalue
-import os
-
+import os,time,random
 def makeUseAbleDict(dailyline):
     """
     传本py里面的dl跑出值将值转化为穿线py中可以用的数据格式
@@ -191,8 +190,21 @@ def many_exchange_line_report(fundcode):
     filepath = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
 
     funddoc=open(filepath+'\\'+str(fundcode)+".txt",'w')
+    sleeptime = 5
+    while(1<2):
+        eout = ""
+        try:
+            FundDate = ljjz(data(fundcode))
+        except Exception as e:
+            eout = e
+        if eout=="":
+            break
+        else:
+            print("当前等待时间:",sleeptime,"进入等待")
+            time.sleep(sleeptime)
+            sleeptime=sleeptime+random.randint(5,15)*10+random(0,9)
 
-    FundDate = ljjz(data(fundcode))
+
     daylist1=[1,5,10,20,30]
     daylist2=[40,50,60,90,120]
     daylist3=[1,5,10,20,30]
@@ -246,7 +258,6 @@ def runner(fundcodelist=[]):
     for i in codelist:
         sumdoc = open(filepath + "\\总览.txt", 'a')
         lastdict = many_exchange_line_report(i)
-        print(lastdict)
         fundcode = i
         maxvalue = max(list(lastdict.values()))
         stratigy=value_2_key(lastdict,maxvalue)
