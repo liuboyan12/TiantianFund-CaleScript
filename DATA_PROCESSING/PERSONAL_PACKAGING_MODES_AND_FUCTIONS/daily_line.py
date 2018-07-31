@@ -76,11 +76,41 @@ def daily_line_dict_assembly_ACWorthTrend(_dict,days):
     _string = eval(_string)
     return _string
 
+def dict_value_average_line(_dict,_num):
+    _keys = list(_dict.keys())
+    _values=list(_dict.values())
+    _num=int(_num)
+    if _num>len(_keys):
+        print("dict_value_average_line函数报错：均线计算长度大于输入值个数")
+    else:
+        returndict = {}
+        for i in range(_num-1):
+            pardict1key=_keys[i]
+            pardict1={pardict1key:"0"}
+            returndict.update(pardict1)
+        for i in range(len(_values) - _num + 1):
+            locationnum = i + _num - 1
+            sum = 0
+            for i1 in range(_num):
+                value = float(_values[locationnum - i1])
+                sum = sum + value
+            returnvalue = round(sum / _num, 6)
+            pardict2key=_keys[locationnum]
+            pardict2 ={pardict2key:str(returnvalue)}
+            returndict.update(pardict2)
+    return returndict
+
+
+
 if __name__ == '__main__':
     _dict = singleness_fund_inquire('002001')
     _dict = cut_Data_ACWorthTrend(_dict)
-    a= daily_line_dict_assembly_ACWorthTrend(_dict,60)
-    print(type(a),a)
-
-
-
+    finaldict = {}
+    for i in list(_dict.keys()):
+        value = str(_dict[i]['ACWorthTrend'])
+        pardict = {i:value}
+        finaldict.update(pardict)
+    # print(type(finaldict),finaldict)
+    a= dict_value_average_line(finaldict,30)
+    print(a)
+    print(type(a))
