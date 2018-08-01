@@ -186,5 +186,6 @@ def fund_name(fundcode):
     return a
 
 if __name__ == '__main__':
-
-    print()
+    a = singleness_fund_inquire("163402")
+    a= cut_Data_ACWorthTrend(a)
+    print(a)

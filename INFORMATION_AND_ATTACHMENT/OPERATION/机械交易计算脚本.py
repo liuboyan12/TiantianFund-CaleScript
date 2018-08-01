@@ -222,27 +222,33 @@ def many_exchange_line_report(fundcode):
             for i3 in daylist3:
                 day3=i3
                 for i4 in daylist4:
-                    day4=i4
-                    dict = exchang_dailyline_strategy(day1,day2,day3,day4,FundDate)
-                    lists = list(dict.values())
-                    num = 0
-                    maxvalue=float(max(lists))
-                    minvalue=float(min(lists))
-                    for i in lists:
-                        num=float(i)+num
-                    mean_value=num/len(lists)
+                    try:
+                        day4=i4
+                        dict = exchang_dailyline_strategy(day1,day2,day3,day4,FundDate)
+                        lists = list(dict.values())
+                        num = 0
+                        maxvalue=float(max(lists))
+                        minvalue=float(min(lists))
+                        for i in lists:
+                            num=float(i)+num
+                        mean_value=num/len(lists)
 
-                    updatekey = str(day1)+'-'+str(day2)+'-'+str(day3)+'-'+str(day4)
-                    Pdict = eval('{"'+updatekey+'":""}')
-                    Pdict[updatekey]=mean_value
-                    pindict.update(Pdict)
+                        updatekey = str(day1)+'-'+str(day2)+'-'+str(day3)+'-'+str(day4)
+                        Pdict = eval('{"'+updatekey+'":""}')
+                        Pdict[updatekey]=mean_value
+                        pindict.update(Pdict)
 
-                    print("机械规则："+str(day1)+'-'+str(day2)+'  '+str(day3)+'-'+str(day4),file=funddoc)
-                    print("收益均值："+str(mean_value),file=funddoc)
-                    print("最大值为："+str(maxvalue)+" 最小值为："+str(minvalue),file=funddoc)
-                    print('',file=funddoc)
-                    print("当前计算"+str(fundcode),"机械规则：" + str(day1) + '-' + str(day2) + '  ' + str(day3) + '-' + str(day4))
-    funddoc.close()
+                        print("机械规则：" + str(day1) + '-' + str(day2) + '  ' + str(day3) + '-' + str(day4), file=funddoc)
+                        print("收益均值：" + str(mean_value), file=funddoc)
+                        print("最大值为：" + str(maxvalue) + " 最小值为：" + str(minvalue), file=funddoc)
+                        print('', file=funddoc)
+                        print("当前计算" + str(fundcode),
+                              "机械规则：" + str(day1) + '-' + str(day2) + '  ' + str(day3) + '-' + str(day4))
+
+                    except Exception as e:
+                        pass
+
+                    funddoc.close()
     return pindict
 
 
@@ -254,6 +260,7 @@ def runner(fundcodelist=[]):
     sumdoc = open(filepath + "\\总览.txt", 'w')
     print("",file=sumdoc)
     sumdoc.close()
+    stratigyDict={}
 
     for i in codelist:
         sumdoc = open(filepath + "\\总览.txt", 'a')
@@ -261,11 +268,21 @@ def runner(fundcodelist=[]):
         fundcode = i
         maxvalue = max(list(lastdict.values()))
         stratigy=value_2_key(lastdict,maxvalue)
-        print(stratigy)
+        # print(stratigy)
         rates=round(maxvalue,4)
         print("基金代码：" + str(fundcode), file=sumdoc)
         print("最大收益策略：" + str(stratigy) + " 最大收益：" + str(rates), file=sumdoc)
         sumdoc.close()
+        parstratigyDict={i:str(stratigy)}
+        stratigyDict.update(parstratigyDict)
+    return stratigyDict
 
 if __name__ == '__main__':
-    runner(['110022', '110011', '519697', '180012', '570005', '519091', '519712','040008', '070032', '270041', '510630', '519700', '519702', '540006', '163412', '165312', '690001', '160212', '519066', '202023', '519069', '002021', '110003', '519068', '166005', '020026', '340008', '320011', '163406', '217022', '519669', '233005', '160916', '320021','570001', '163415', '121012', '163402', '128112', '159905', '481012', '040011', '050027', '166008','159916','050011', '110008', '233012', '340009', '050111', '530015', '110007', '110051', '091023', '270047', '110053', '471060', '163407', '310398', '160716', '090007', '202005', '166001', '166002', '260112', '519977', '530020'])
+    a = runner(['110022'])
+    pwd = os.getcwd()
+    pwd = pwd.replace(":\\", ':\\\\')
+    filepath = pwd + '\INFORMATION_AND_ATTACHMENT\基金文件\机械交易算法结果'
+    ddoc = open(filepath + "\\策略字典.txt", 'w')
+    print(a,file=ddoc)
+    #不可查询'110051', '091023','270047', '110053',  '471060',
+    # '260112', '519977', '530020','110022', '110011', '519697', '180012', '570005', '519091', '519712', '040008', '070032', '270041', '510630', '519700', '519702', '540006', '163412', '165312', '690001', '160212', '519066', '202023', '519069', '002021', '110003', '519068', '166005', '020026', '340008', '320011', '163406', '217022', '519669', '233005', '160916', '320021','570001', '163415', '121012', '163402', '128112', '159905', '481012', '040011', '050027', '166008','159916','050011', '110008', '233012', '340009', '050111', '530015', '110007','163407', '310398', '160716', '090007', '202005', '166001', '166002',

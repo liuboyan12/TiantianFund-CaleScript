@@ -14,7 +14,7 @@ def tprint(obj, except_word=""):
     ┗━━━━┻━━┛
     #要复制到编写的函数中使用，不可跨py使用
     """
-    for name, item in globals().items():
+    for name, item in globalsa().items():
         if item == obj and name != except_word:
             print(name + ':',type(obj))
             print(obj)
@@ -149,4 +149,6 @@ if __name__ == '__main__':
     #     else:
     #         continue
     # print(filist)
-    test()
+
+    print(type(1<2),2<1)
+    print(1<2 and 1<2)
