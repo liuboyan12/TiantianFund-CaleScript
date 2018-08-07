@@ -15,13 +15,18 @@ def make_base_date_for_dailyline(fundcode):
     date_value_dict = {}
     def make_date_value_dict(fundcode):
         #制作时间：值函数方便计算日均线date_value_dict
-        dataACWorthTrend = cut_Data_ACWorthTrend(dwdata(fundcode))
-        datelist = list(dataACWorthTrend.keys())
-        dicts={}
-        for i in datelist:
-            value = dataACWorthTrend[i]['ACWorthTrend']
-            partdict = {i:value}
-            dicts.update(partdict)
+        while 1<2:
+            try:
+                dataACWorthTrend = cut_Data_ACWorthTrend(dwdata(fundcode))
+                datelist = list(dataACWorthTrend.keys())
+                dicts={}
+                for i in datelist:
+                    value = dataACWorthTrend[i]['ACWorthTrend']
+                    partdict = {i:value}
+                    dicts.update(partdict)
+                break
+            except:
+                time.sleep(10)
         return dicts
     def daysUnix():
         #获取今日的时间戳（今日0时）
@@ -57,12 +62,13 @@ def pick_rule(linerule):
     lists.append(nowstring)
     return lists
 
-def runner(ruledict):
+def runner(ruledict,printControl=0):
     """
     传入机械交易脚本的键值对{"110022": "30-90-20-120"}
     对今日基金进行检测，如果存在买入或者卖出的信号将进行提示
     并返回一个今日数据的数据字典
     :param ruledict:{"110022": "30-90-20-120"}
+    printControl:打印控制，如果为1(int)打印其他值都不打印
     :return:retDict:{'110022': {'Date': '1533052800000', 'buyIn': 'None', 'sellOut': 'None'}
     """
     retDict = {}
@@ -131,14 +137,32 @@ def runner(ruledict):
             outSign='卖出'
         else:
             outSign='None'
-        print("基金代码：",fund)
-        print("买入信号：",insign)
-        print("卖出信号：",outSign)
-        print()
+        if printControl==1:
+            print("基金代码：",fund)
+            print("买入信号：",insign)
+            print("卖出信号：",outSign)
+            print()
     return retDict
 
 if __name__ == '__main__':
 
-    ruledict = {"110022": "30-90-20-120","002001":"10-20-50-90"}
-
-
+    file = open("C:\\Users\Administrator\Desktop\strategy.txt")
+    ruledict = eval(file.read())
+    a = runner(ruledict)
+    # print(a)#{'260112': {'Date': '1533139200000', 'buyIn': 'None', 'sellOut': 'None'}
+    _list = list(a.keys())
+    buylist = []
+    selllist = []
+    for i in _list:
+        buysign=a[i]['buyIn']
+        sellsign=a[i]['sellOut']
+        if buysign!='None':
+            buylist.append(i)
+        else:
+            pass
+        if sellsign!='None':
+            selllist.append(i)
+        else:
+            pass
+    print('buylist',buylist)
+    print('selllist',selllist)

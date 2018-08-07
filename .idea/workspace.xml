@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85fb652d-169b-45cd-a5c4-7d52b51e7198" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" afterPath="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
-      <change beforePath="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械交易计算脚本.py" afterPath="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械交易计算脚本.py" />
-      <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
-      <change beforePath="$PROJECT_DIR$/test2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/TiantianFund-CaleScript.iml" afterPath="$PROJECT_DIR$/.idea/TiantianFund-CaleScript.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械信号判定脚本.py" afterPath="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械信号判定脚本.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,42 +20,20 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+        <entry file="file://$PROJECT_DIR$/../pythonTest/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="153" column="22" lean-forward="false" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+            <state relative-caret-position="75">
+              <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="机械信号判定脚本.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="机械信号判定脚本.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械信号判定脚本.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#159#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="A_TianTianJiJinShuJuChuLi_ChangeData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="182" column="7" lean-forward="true" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="机械交易计算脚本.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械交易计算脚本.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="285" column="22" lean-forward="true" selection-start-line="285" selection-start-column="22" selection-end-line="285" selection-end-column="22" />
+            <state relative-caret-position="175">
+              <caret line="149" column="32" lean-forward="true" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -140,10 +118,13 @@
         <option value="$PROJECT_DIR$/test2.py" />
         <option value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
         <option value="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械交易计算脚本.py" />
+        <option value="$PROJECT_DIR$/../pythonTest/program/test.py" />
+        <option value="$PROJECT_DIR$/../pythonTest/test.py" />
+        <option value="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械信号判定脚本.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="649" />
     <option name="width" value="648" />
     <option name="height" value="768" />
@@ -166,30 +147,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="ANALYTIC_FUNCTION" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="DATA_PROCESSING" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="DATA_PROCESSING" type="462c0819:PsiDirectoryNode" />
-              <item name="PERSONAL_PACKAGING_MODES_AND_FUCTIONS" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
@@ -202,16 +165,12 @@
               <item name="INFORMATION_AND_ATTACHMENT" type="462c0819:PsiDirectoryNode" />
               <item name="OPERATION" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TiantianFund-CaleScript" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiantianFund-CaleScript" type="462c0819:PsiDirectoryNode" />
-              <item name="INFORMATION_AND_ATTACHMENT" type="462c0819:PsiDirectoryNode" />
-              <item name="基金文件" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,7 +198,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.A_TianTianJiJinShuJuChuLi_ChangeData">
+  <component name="RunManager" selected="Python.机械信号判定脚本">
+    <configuration name="机械信号判定脚本" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TiantianFund-CaleScript" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械信号判定脚本.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="A_TianTianJiJinShuJuChuLi_ChangeData" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,24 +230,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="TiantianFund-CaleScript" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="TianTianfundition_static_module" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TiantianFund-CaleScript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/TianTianfundition_static_module.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -294,7 +253,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="daily_line" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -305,14 +264,14 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TiantianFund-CaleScript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py" />
+      <module name="pythonTest" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pythonTest/program/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -323,8 +282,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="TiantianFund-CaleScript" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <module name="pythonTest" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pythonTest/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -350,18 +309,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.test2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.TianTianfundition_static_module" />
-      <item index="2" class="java.lang.String" itemvalue="Python.daily_line" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.A_TianTianJiJinShuJuChuLi_ChangeData" />
+      <item index="1" class="java.lang.String" itemvalue="Python.A_TianTianJiJinShuJuChuLi_ChangeData" />
+      <item index="2" class="java.lang.String" itemvalue="Python.机械信号判定脚本" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.A_TianTianJiJinShuJuChuLi_ChangeData" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.daily_line" />
-        <item index="4" class="java.lang.String" itemvalue="Python.TianTianfundition_static_module" />
+        <item index="0" class="java.lang.String" itemvalue="Python.机械信号判定脚本" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.A_TianTianJiJinShuJuChuLi_ChangeData" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -394,19 +353,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1305" height="776" extended-state="6" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1305" height="776" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18326694" sideWeight="0.4938838" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1992032" sideWeight="0.4938838" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3940937" sideWeight="0.50215286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37003058" sideWeight="0.49784714" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8287462" sideWeight="0.49784714" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1561753" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32721713" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17609562" sideWeight="0.5061162" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1561753" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33126935" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38990825" sideWeight="0.49784714" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17609562" sideWeight="0.5061162" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -472,29 +430,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/RiJunXianFenXi.py_demand.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/JiJinShuJuShiFouKeChaXunJiaoBen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANALYTIC_FUNCTION/script/JiJinChiCangChongFuDuJiSuan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python36/Lib/site-packages/plotly/offline/offline.py" />
-    <entry file="file://D:/python36/Lib/ntpath.py" />
     <entry file="file://$PROJECT_DIR$/OPERATION/Daily_running.py" />
     <entry file="file://$PROJECT_DIR$/OPERATION/20、60日均线分析脚本.py" />
     <entry file="file://$PROJECT_DIR$/test1.py" />
@@ -559,13 +494,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/所有基金中可查询基金.txt" />
-    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/txt_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/个人基金.txt" />
     <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/媳妇基金.txt" />
     <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/基金文件/关注基金列表.txt" />
@@ -625,7 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -650,52 +577,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="142" column="0" lean-forward="true" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.py" />
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="3725">
           <caret line="153" column="22" lean-forward="false" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械交易计算脚本.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="285" column="22" lean-forward="false" selection-start-line="285" selection-start-column="22" selection-end-line="285" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/BASE_CONDITIONING_MODES_AND_FUCTIONS/txt_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/daily_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="78" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2625">
+          <caret line="107" column="4" lean-forward="false" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/1.py" />
+    <entry file="file://$PROJECT_DIR$/../pythonTest/program/test.py" />
+    <entry file="file://D:/python36/Lib/socketserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="390" column="15" lean-forward="false" selection-start-line="390" selection-start-column="6" selection-end-line="390" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python36/Lib/urllib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pythonTest/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械信号判定脚本.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DATA_PROCESSING/PERSONAL_PACKAGING_MODES_AND_FUCTIONS/A_TianTianJiJinShuJuChuLi_ChangeData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="182" column="7" lean-forward="true" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/INFORMATION_AND_ATTACHMENT/OPERATION/机械交易计算脚本.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="285" column="22" lean-forward="true" selection-start-line="285" selection-start-column="22" selection-end-line="285" selection-end-column="22" />
+        <state relative-caret-position="175">
+          <caret line="149" column="32" lean-forward="true" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
           <folding />
         </state>
       </provider>
