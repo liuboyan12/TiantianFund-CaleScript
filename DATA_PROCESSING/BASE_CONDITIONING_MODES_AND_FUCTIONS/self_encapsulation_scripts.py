@@ -1,3 +1,4 @@
+import time
 def tprint(obj, except_word=""):
     """
     #脚本编辑打印辅助工具
@@ -254,7 +255,12 @@ def Erase_delete_corresponding_value(dict,value):
             pass
     return dict
 
-
+def daysUnix():
+    #获取今日的时间戳（今日0时）
+    now_time = int(time.time())
+    day_time = now_time - now_time % 86400 + time.timezone
+    unix=str(day_time)+"000"
+    return unix
 
 
 
